@@ -1,0 +1,17 @@
+# 拉取的上游素材（不入库，用 scripts/fetch-assets.sh 获取）
+assets/repos/
+
+# 本地视觉基准图等私有素材（含第三方图片，不入库）
+assets/private/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.idea/
+.vscode/
+
+# 缓存
+__pycache__/
+*.pyc
