@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28T18:49:02.539220+00:00",
+  "purpose": "为用户VideoPipeline偏好提供官方接入来源与待解析字段；没有API调用、凭据读取、SDK/真实adapter实现、外包endpoint或推理。",
+  "routing_semantics": {
+    "source": "user-defined workflow stages",
+    "draft": [
+      "海螺/Lite",
+      "Grok",
+      "Veo"
+    ],
+    "standard": [
+      "可灵720p",
+      "Wan/即梦"
+    ],
+    "polish": [
+      "Seedance",
+      "Veo Fast"
+    ],
+    "stage_is_not": [
+      "cross-provider quality ranking",
+      "price order",
+      "automatic resolution level",
+      "availability or authorization proof"
+    ],
+    "Veo_Fast_in_polish": "用户把它放在精修工作阶段，不是更高画质承诺。",
+    "recommended_separation": [
+      "stage",
+      "provider_id",
+      "backend/channel",
+      "model_id or service req_key",
+      "region/project/workspace",
+      "requested_resolution",
+      "actual_supported_inputs",
+      "adapter_implemented",
+      "account_access_verified"
+    ],
+    "ambiguous_slashes": "海螺/Lite、Wan/即梦保留为用户备选路由表达；Lite变体和不同厂商provider应分别解析，不自动随机选择。"
+  },
+  "providers": [
+    {
+      "provider_id_suggestion": "minimax_hailuo",
+      "user_labels": [
+        "海螺",
+        "Hailuo",
+        "Lite"
+      ],
+      "user_work_stages": [
+        "draft"
+      ],
+      "official_docs": [
+        "https://platform.minimax.io/docs/api-reference/video-generation-v2-create",
+        "https://platform.minimax.io/docs/api-reference/video-generation-i2v",
+        "https://platform.minimax.io/docs/faq/models"
+      ],
+      "official_console": "https://platform.minimax.io/",
+      "model_id_examples_not_auto_selected": [
+        "MiniMax-H3",
+        "MiniMax-H3-Lite",
+        "MiniMax-Hailuo-2.3",
+        "MiniMax-Hailuo-2.3-Fast"
+      ],
+      "model_resolution": "海螺是产品/模型家族；Lite是变体提示而非独立provider。当前官方V2确有MiniMax-H3-Lite，但不得未经映射就把用户Lite替换成H3或旧Hailuo Fast。新V2与旧I2V接口分别有模型清单，选定后核验输入能力。",
+      "credentials": "MiniMax开放平台API key（Bearer）；与海螺网页登录、订阅/套餐及其它云厂商凭据分开核对。国内/国际平台和具体视频服务权限须以实际账号为准。",
+      "account_resolution_required": true,
+      "integration_state": "documentation_only_no_video_adapter_verified"
+    },
+    {
+      "provider_id_suggestion": "xai_grok",
+      "user_labels": [
+        "Grok"
+      ],
+      "user_work_stages": [
+        "draft"
+      ],
+      "official_docs": [
+        "https://docs.x.ai/developers/model-capabilities/video/overview",
+        "https://docs.x.ai/developers/model-capabilities/video/generation",
+        "https://docs.x.ai/developers/quickstart"
+      ],
+      "official_console": "https://console.x.ai/",
+      "model_id_examples_not_auto_selected": [
+        "grok-imagine-video-1.5",
+        "grok-imagine-video-1.5-lite",
+        "grok-imagine-video"
+      ],
+      "model_resolution": "Grok聊天品牌不是视频API模型ID。当前视频文档列Imagine Video系列；旧版及1.5/Lite能力不同，需锁定具体ID及可用参考输入。",
+      "credentials": "xAI开发者API key及API计费账户；不能把Grok网页登录或聊天订阅当作已配置API额度，也不复用Ark/MiniMax key。",
+      "account_resolution_required": true,
+      "integration_state": "documentation_only_no_video_adapter_verified"
+    },
+    {
+      "provider_id_suggestion": "google_veo",
+      "user_labels": [
+        "Veo",
+        "Veo Fast"
+      ],
+      "user_work_stages": [
+        "draft",
+        "polish"
+      ],
+      "official_docs": [
+        "https://ai.google.dev/gemini-api/docs/video",
+        "https://ai.google.dev/gemini-api/docs/models/veo-3.1-generate-preview",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate",
+        "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/generate-videos-from-an-image",
+        "https://docs.cloud.google.com/docs/authentication/application-default-credentials"
+      ],
+      "official_consoles": [
+        "https://aistudio.google.com/",
+        "https://console.cloud.google.com/"
+      ],
+      "backend_must_be_explicit": [
+        "Gemini Developer API",
+        "Google Cloud Vertex AI / Gemini Enterprise Agent Platform"
+      ],
+      "model_id_examples_not_auto_selected": [
+        "veo-3.1-generate-001",
+        "veo-3.1-fast-generate-001"
+      ],
+      "retired_ids_in_gemini_api": [
+        "veo-3.1-generate-preview",
+        "veo-3.1-fast-generate-preview",
+        "veo-3.1-lite-generate-preview"
+      ],
+      "time_sensitive_evidence": "Google当前官方Gemini文档公告上述3.1 Preview IDs于2026-10-22关闭；本研究日期2026-10-29。Cloud文档另列GA IDs，不可将一个渠道退役误说为所有Veo都不可用，亦不可继续硬编码旧preview为可用。",
+      "model_resolution": "必须先解析接入渠道、确切模型版本和Fast变体，再核对项目、区域、配额与参考输入；Gemini文档建议的其它视频模型不自动替换用户Veo路由。",
+      "credentials": "Gemini Developer API通常使用其API key；Cloud渠道使用项目/区域/IAM及ADC/OAuth等该渠道凭据。Google同品牌不表示AI Studio key、Cloud身份、计费和配额可以任意互换；也不把网页视频订阅当API权限。",
+      "polish_stage_meaning": "Veo Fast处于polish是用户指定的工作阶段。Fast名称或该阶段均不承诺比draft/standard模型更高画质、更高分辨率或更高价格；是否适合精修按实际任务评估。",
+      "account_resolution_required": true,
+      "integration_state": "documentation_only_no_video_adapter_verified"
+    },
+    {
+      "provider_id_suggestion": "kling",
+      "user_labels": [
+        "可灵",
+        "可灵720p",
+        "Kling"
+      ],
+      "user_work_stages": [
+        "standard"
+      ],
+      "official_docs": [
+        "https://app.klingai.com/global/dev",
+        "https://app.klingai.com/global/dev/document-api"
+      ],
+      "official_homepage": "https://app.klingai.com/",
+      "model_id_examples_not_auto_selected": [],
+      "model_resolution": "可灵720p表示品牌+目标输出规格，不是完整model_name。代际、具体视频能力、模式和该模式是否支持720p须从当前官方开发者文档/账号解析；不能从网页型号或第三方聚合站推断API ID。",
+      "credentials": "使用可灵官方开发者账户的专用API凭据；与网页会员/积分及Ark key区分。本次官方API文档受robots/动态页面限制，未核验当前AK/SK/JWT等具体签名合同，adapter实施前从官方控制台确认。",
+      "evidence_limit": "官方站点入口已定位；静态读取主要返回JS页面，搜索工具报告robots限制。因此不填未经核验的API模型ID、host或认证实现。",
+      "account_resolution_required": true,
+      "integration_state": "documentation_only_no_video_adapter_verified"
+    },
+    {
+      "provider_id_suggestion": "alibaba_wan",
+      "user_labels": [
+        "Wan",
+        "万相"
+      ],
+      "user_work_stages": [
+        "standard"
+      ],
+      "official_docs": [
+        "https://help.aliyun.com/zh/model-studio/use-video-generation/",
+        "https://help.aliyun.com/zh/model-studio/image-to-video-guide",
+        "https://help.aliyun.com/zh/model-studio/wan-video-to-video-api-reference"
+      ],
+      "official_console": "https://bailian.console.aliyun.com/",
+      "model_id_examples_not_auto_selected": [
+        "wan2.6-i2v-flash",
+        "wan2.7-i2v-2026-04-25"
+      ],
+      "model_resolution": "Wan是模型家族，文生/图生/参考生/编辑等具体ID和协议不同。本provider建议专指阿里云百炼托管通道；若用户指开源权重本地部署，另建wan_local部署项，不套用云API地址或凭据。",
+      "credentials": "百炼/DashScope API key、业务空间和地域；官方明确模型、Endpoint URL、API key须属于同一地域。北京/新加坡等资源不随意混用，现有Ark key或本地开源模型无需/不具备该云权限。",
+      "account_resolution_required": true,
+      "integration_state": "documentation_only_no_video_adapter_verified"
+    },
+    {
+      "provider_id_suggestion": "volcengine_jimeng",
+      "user_labels": [
+        "即梦",
+        "Jimeng"
+      ],
+      "user_work_stages": [
+        "standard"
+      ],
+      "official_docs": [
+        "https://docs.volcengine.com/docs/JimengAI/JimengAI-VideoGeneration30Pro-InterfaceDocumentation?lang=zh",
+        "https://docs.volcengine.com/docs/JimengAI/JimengAI-VideoGeneration301080P-GraphicVideo-FirstFrame-InterfaceDocumentation?lang=zh",
+        "https://api.volcengine.com/api-docs/view?action=JimengT2VV30SubmitTask&serviceCode=cv&version=2024-06-06",
+        "https://docs.volcengine.com/docs/iam/api-access-key-management?lang=zh"
+      ],
+      "official_homepage": "https://jimeng.jianying.com/",
+      "model_resolution": "即梦App/产品品牌、即梦同源视觉API和方舟Seedance不是同一个接入合同。Visual接口使用Action/Version/req_key等服务标识，而非把网页名作为Ark model。",
+      "official_service_key_examples_not_auto_selected": [
+        "jimeng_ti2v_v30_pro",
+        "jimeng_i2v_first_v30_1080"
+      ],
+      "credentials": "即梦同源Visual/OpenAPI通道须核对对应服务开通与AK/SK签名；现有Ark Bearer key不能据此当作Visual凭据，网页即梦会员也不等于API权限。",
+      "account_resolution_required": true,
+      "integration_state": "documentation_only_no_video_adapter_verified"
+    },
+    {
+      "provider_id_suggestion": "volcengine_seedance",
+      "user_labels": [
+        "Seedance"
+      ],
+      "user_work_stages": [
+        "polish"
+      ],
+      "official_docs": [
+        "https://docs.volcengine.com/docs/ark/seedance-2-5?lang=zh",
+        "https://docs.volcengine.com/docs/ark/seedance-2-0?lang=zh",
+        "https://docs.volcengine.com/docs/ark/create-video-generation-task-api?lang=zh",
+        "https://docs.volcengine.com/docs/ark/seedance-model-activation-usage-and-refund?lang=zh"
+      ],
+      "official_console": "https://ark.volcengine.com/",
+      "model_id_examples_not_auto_selected": [
+        "doubao-seedance-2-5-260628",
+        "doubao-seedance-2-0-260128",
+        "doubao-seedance-2-0-fast-260128",
+        "doubao-seedance-2-0-mini-260615"
+      ],
+      "model_resolution": "Seedance家族、代际及Fast/Mini需要具体ID或该账号Endpoint ID。需核验模型开通、输入方式和实际预算；本项目Seed3D/Hitem/Hyper3D成功不表示视频模型服务已开通。",
+      "credentials": "对应地域和权限的Ark API key；同账号是否可复用已有key仍需具体权限，且Seed3D/Hyper3D免费资源包不等于Seedance视频额度。即梦Visual AK/SK与Ark API key不可混用。",
+      "account_resolution_required": true,
+      "integration_state": "documentation_only_no_video_adapter_verified"
+    }
+  ],
+  "integration_claim_rule": "只有来源/路由配置或通用HTTP脚本时称planned/documentation_only；没有已实现并验证的对应视频adapter及该账号访问证据，不能称已接通。凭据存在、品牌同源或其它模型调用成功都不足以证明接通。",
+  "project_constraints": "未来执行仍需上传同角色同版本真实参考附件，固定梗原声取现成素材；生成服务自动音轨不应冒充原作口癖。多provider路由不放宽身份、媒体来源、授权或本地预算要求。",
+  "evidence_limit": "仅做官方入口与名称/账户差异核验，未详扫价格；示例ID来自当前官方文档，均需在实际账号、区域和执行日重新解析。Kling当前API字段读取受限已单独标注。"
+}

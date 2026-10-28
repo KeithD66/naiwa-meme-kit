@@ -1,0 +1,19 @@
+# Tested with Python 3.12 on Apple silicon macOS; isolate in .venv-render.
+# Two installation steps are required:
+#   .venv-render/bin/python -m pip install -r requirements-render.txt
+#   .venv-render/bin/python -m pip install --no-deps --upgrade PyOpenGL==3.1.10
+# pyrender 0.1.45 declares the obsolete PyOpenGL==3.1.0 pin, so the first step
+# bootstraps that version for resolver compatibility. Step two deliberately
+# overrides it: 3.1.10 was verified with the real textured GLB on Python 3.12.
+# pip check will still report the upstream declared-pin mismatch.
+trimesh==5.2.0
+pyrender==0.1.45
+pyglet==1.5.31
+PyOpenGL==3.1.0  # Bootstrap only; replace with runtime 3.1.10 using step two.
+numpy==2.5.4
+pillow==13.0.0
+scipy==1.18.1
+networkx==3.7
+imageio==2.38.1
+freetype-py==2.5.1
+six==1.17.0

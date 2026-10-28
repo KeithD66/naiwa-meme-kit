@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "scope": "仅登记本地衍生资产；其它机器没有这些文件时保持未落地，不自动调用计费API。",
+  "assets": [
+    {
+      "id": "hitem3d-naiwa-glb",
+      "title": "奶蛙Hitem3D重建候选（非网络原版模型）",
+      "kind": "model",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/private/generated-reference/hitem3d-naiwa/model.glb",
+      "source_url": "https://ark.volcengine.com/region:cn-beijing/docs/shumei-create-3d-generation-task-api",
+      "derived_from_asset_id": "naiwa-frame-0000",
+      "source_sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "expected_sha256": "d31adbf70d827bc8709d71093e65c48c2937480be91a87f671ab7322c6de9127",
+      "task_id": "cgt-20261029010628-j4qdj",
+      "identity_tier": "ai_reconstruction_candidate",
+      "license_status": "source_media_rights_unresolved_local_only",
+      "usage_scope": "local_reference_only",
+      "notes": "本次用户授权的图生3D衍生候选；原图来自现成网传奶蛙。需核对多角度，不冒称官方或原始网传3D资产。不是当前TCP视频的角色像素来源。",
+      "tags": [
+        "3d",
+        "glb",
+        "derived",
+        "requires_visual_review"
+      ]
+    },
+    {
+      "id": "hitem3d-naiwa-front",
+      "title": "奶蛙3D重建候选 · 校准相机 front",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-front.png",
+      "source_url": "https://ark.volcengine.com/region:cn-beijing/docs/shumei-create-3d-generation-task-api",
+      "derived_from_asset_id": "hitem3d-naiwa-glb",
+      "expected_sha256": "0c41149002fa48e65311dd9bce0f819cbef3e66c46f1876e53a14fc97bb8ccdf",
+      "identity_tier": "ai_reconstruction_candidate",
+      "identity_bundle_id": "hitem3d-naiwa-reconstruction-v1",
+      "reference_role": "front",
+      "camera_yaw_degrees": -45,
+      "license_status": "source_media_rights_unresolved_local_only",
+      "usage_scope": "local_reference_only",
+      "notes": "已看图并按模型朝向校准相机为正/侧/背候选；背身与腿部贴图接缝仍可见。它是源图约束的AI重建，不冒称网传原版3D，未用于TCP样片。",
+      "tags": [
+        "3d_render",
+        "derived",
+        "calibrated_camera_candidate"
+      ]
+    },
+    {
+      "id": "hitem3d-naiwa-side",
+      "title": "奶蛙3D重建候选 · 校准相机 side",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-side.png",
+      "source_url": "https://ark.volcengine.com/region:cn-beijing/docs/shumei-create-3d-generation-task-api",
+      "derived_from_asset_id": "hitem3d-naiwa-glb",
+      "expected_sha256": "12ca4537e9f138a699237cfffdd4c4a32c573c23105907d1d353afb19c4fa70f",
+      "identity_tier": "ai_reconstruction_candidate",
+      "identity_bundle_id": "hitem3d-naiwa-reconstruction-v1",
+      "reference_role": "side",
+      "camera_yaw_degrees": 45,
+      "license_status": "source_media_rights_unresolved_local_only",
+      "usage_scope": "local_reference_only",
+      "notes": "已看图并按模型朝向校准相机为正/侧/背候选；背身与腿部贴图接缝仍可见。它是源图约束的AI重建，不冒称网传原版3D，未用于TCP样片。",
+      "tags": [
+        "3d_render",
+        "derived",
+        "calibrated_camera_candidate"
+      ]
+    },
+    {
+      "id": "hitem3d-naiwa-back",
+      "title": "奶蛙3D重建候选 · 校准相机 back",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-back.png",
+      "source_url": "https://ark.volcengine.com/region:cn-beijing/docs/shumei-create-3d-generation-task-api",
+      "derived_from_asset_id": "hitem3d-naiwa-glb",
+      "expected_sha256": "c9c4fda67afa2e170393d551bf6999616a47f969458432bcfc2f5d7f10e4408a",
+      "identity_tier": "ai_reconstruction_candidate",
+      "identity_bundle_id": "hitem3d-naiwa-reconstruction-v1",
+      "reference_role": "back",
+      "camera_yaw_degrees": 135,
+      "license_status": "source_media_rights_unresolved_local_only",
+      "usage_scope": "local_reference_only",
+      "notes": "已看图并按模型朝向校准相机为正/侧/背候选；背身与腿部贴图接缝仍可见。它是源图约束的AI重建，不冒称网传原版3D，未用于TCP样片。",
+      "tags": [
+        "3d_render",
+        "derived",
+        "calibrated_camera_candidate"
+      ]
+    }
+  ]
+}

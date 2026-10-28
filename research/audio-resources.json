@@ -1,0 +1,930 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "scope": "公开来源与本地现成声音索引；不是再分发音效包。",
+  "audition_policy": "本次未试听，标签来自目录/文件名/原仓说明；未宣称目标版本匹配。",
+  "completeness": "未找到涵盖全生态且逐文件明确授权的万能整包；使用cue与多来源版本逐步补齐。",
+  "sources": [
+    {
+      "id": "nailoong_core",
+      "title": "NaiLoong 奶蛙与奶蛋共享语音目录",
+      "url": "https://github.com/lin-alg/NaiLoong/blob/main/data/manifest.json",
+      "resource_type": "local_audio_collection",
+      "evidence_status": "local_files_and_voice_catalog_checked",
+      "license_status": "recording_rights_unconfirmed",
+      "notes": "奶蛙语音表登记5条，奶蛋语音表登记andi.mp3一条；共享目录6个MP3，并非都属奶蛙，更不是六种笑声。目录角色映射已核对，目标录音版本尚未试听。",
+      "assets": [
+        {
+          "id": "nailoong_andi",
+          "label": "奶蛋：安~迪~（奶蛋语音表已登记）",
+          "repo_path": "assets/audio/andi.mp3",
+          "bytes": 13112,
+          "git_blob_sha1": "c45c052189455b01f1b4c055db4ad9868240b2c9",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/NaiLoong/assets/audio/andi.mp3",
+          "character_ids": [
+            "naidan"
+          ],
+          "role_assignment": "naidan_voice_catalog_confirmed",
+          "forbid_default_for": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "nailoong_dupu",
+          "label": "嘟噗。",
+          "repo_path": "assets/audio/dupu.mp3",
+          "bytes": 10596,
+          "git_blob_sha1": "0b703574c85d66a766427ccb2f75754df184ea39",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "nailoong_gagadilashui",
+          "label": "嘎嘎滴啦水~",
+          "repo_path": "assets/audio/gagadilashui.mp3",
+          "bytes": 12403,
+          "git_blob_sha1": "d80d32daaa5200a11b605e5bbdb1115ee0abd097",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/NaiLoong/assets/audio/gagadilashui.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "nailoong_gajiaosai",
+          "label": "嘎脚塞！",
+          "repo_path": "assets/audio/gajiaosai.mp3",
+          "bytes": 10265,
+          "git_blob_sha1": "9772871d709652346e0ada1619c2c8f5fbb7536d",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/NaiLoong/assets/audio/gajiaosai.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "nailoong_hola_ganbadie",
+          "label": "Hola~ 嘎巴跌！",
+          "repo_path": "assets/audio/hola_ganbadie.mp3",
+          "bytes": 27600,
+          "git_blob_sha1": "875be8ecaf4aca21441b05a5888935eb85b37b11",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/NaiLoong/assets/audio/hola_ganbadie.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "nailoong_nailong_laugh",
+          "label": "咳哈哈哈哈~（目录标签）",
+          "repo_path": "assets/audio/nailong_laugh.mp3",
+          "bytes": 125804,
+          "git_blob_sha1": "93ea9b3ac4a456871fbc4bbcc5d8740e0122cdfa",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/NaiLoong/assets/audio/nailong_laugh.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ],
+      "repository": "lin-alg/NaiLoong",
+      "commit": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "evidence_urls": [
+        "https://github.com/lin-alg/NaiLoong/blob/main/data/naiwa/voice.json",
+        "https://github.com/lin-alg/NaiLoong/blob/main/data/naidan/voice.json",
+        "https://github.com/lin-alg/NaiLoong/blob/main/data/manifest.json"
+      ]
+    },
+    {
+      "id": "naiwa_pet_original_track",
+      "title": "naiwa-pet 与438帧同源音轨",
+      "url": "https://github.com/LynnShaw/naiwa-pet",
+      "resource_type": "local_audio_track",
+      "evidence_status": "local_file_and_readme_checked",
+      "license_status": "no_license_local_only",
+      "notes": "README称从源素材提取；与438帧动作核对同步，不能再分发。",
+      "assets": [
+        {
+          "id": "naiwa_pet_audio",
+          "label": "原动画提取音轨",
+          "repo_path": "public/pets/naiwa/audio.m4a",
+          "bytes": 79554,
+          "git_blob_sha1": "8058541e5c3228cbe64d58d0b7dbebc68d301212",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/audio.m4a",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yugh6_original",
+      "title": "yugh6 奶蛙桌宠原版笑声",
+      "url": "https://github.com/yugh6/Naiwa",
+      "resource_type": "audio_file",
+      "evidence_status": "github_tree_and_readme_checked",
+      "license_status": "polyform_noncommercial_scope_review",
+      "notes": "README称从原视频提取。仓库LICENCE为PolyForm Noncommercial 1.0.0；不可仅凭文件名断言录音完全匹配或所有第三方权利已清。",
+      "assets": [
+        {
+          "id": "yugh6_original_laugh",
+          "label": "原版笑声候选",
+          "repo_path": "原版笑声.wav",
+          "bytes": 622482,
+          "git_blob_sha1": "649cf76c5619fc2aa28707e6032d85f9dfe7add7",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "noncommercial_candidate",
+          "download_url": "https://raw.githubusercontent.com/yugh6/Naiwa/72c763fe1349fb08a06f976e1709f4f5f80e09c7/%E5%8E%9F%E7%89%88%E7%AC%91%E5%A3%B0.wav",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ],
+      "repository": "yugh6/Naiwa",
+      "commit": "72c763fe1349fb08a06f976e1709f4f5f80e09c7",
+      "license_url": "https://github.com/yugh6/Naiwa/blob/72c763fe1349fb08a06f976e1709f4f5f80e09c7/LICENCE"
+    },
+    {
+      "id": "diyeego_voices",
+      "title": "Diyeego 奶蛙短口癖版本集",
+      "url": "https://github.com/Diyeego/naiwa-pet",
+      "resource_type": "audio_collection",
+      "evidence_status": "github_tree_and_readme_checked",
+      "license_status": "no_license_noncommercial_notice",
+      "notes": "未见LICENSE；README要求学习交流勿商用。只取奶蛙短声音，不下载大狗/歌曲合集，不运行程序。",
+      "assets": [
+        {
+          "id": "diyeego_andi",
+          "label": "安迪跨版本候选（待试听归属，不凭naiwa目录名判为奶蛙）",
+          "repo_path": "naiwa/voice/andi (1).mp3",
+          "bytes": 31764,
+          "git_blob_sha1": "3741ff510eb1d866780dfce9a0d7ddfcfe7098ba",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/andi%20%281%29.mp3",
+          "character_ids": [],
+          "candidate_character_ids": [
+            "naidan"
+          ],
+          "role_assignment": "cross_version_pending_audition",
+          "forbid_default_for": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "diyeego_gagadilaxia",
+          "label": "嘎嘎滴辣虾另一版本",
+          "repo_path": "naiwa/voice/gagadilaxia.mp3",
+          "bytes": 30929,
+          "git_blob_sha1": "add9f825d853411d10154bc4c0ff539344a04550",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/gagadilaxia.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "diyeego_gajiaosei",
+          "label": "嘎脚塞另一版本",
+          "repo_path": "naiwa/voice/gajiaosei.mp3",
+          "bytes": 28839,
+          "git_blob_sha1": "3282ec13d026d825b5dbecf6c368a5bda85c3fff",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/gajiaosei.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "diyeego_ganbadie",
+          "label": "嘎巴跌另一版本",
+          "repo_path": "naiwa/voice/ganbadie.mp3",
+          "bytes": 30511,
+          "git_blob_sha1": "5b0f882c130f8888bcb14d5068f96cf2cc85a552",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/ganbadie.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "diyeego_laugh_short",
+          "label": "短笑声版本",
+          "repo_path": "naiwa/voice/laugh.mp3",
+          "bytes": 55588,
+          "git_blob_sha1": "a86821895d9dd1ce9702f8eb7b948e35822cf698",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/laugh.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "diyeego_laugh_track",
+          "label": "奶蛙笑声音轨",
+          "repo_path": "naiwa/laugh.m4a",
+          "bytes": 145876,
+          "git_blob_sha1": "2ebd976f0fa7aca6884a08cad75db1c14fabaa6d",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/laugh.m4a",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ],
+      "repository": "Diyeego/naiwa-pet",
+      "commit": "1827c36d2abdca7935858ff11d37f50ec49d13af"
+    },
+    {
+      "id": "wallpaper_audio",
+      "title": "wallpaper 音效语音两项",
+      "url": "https://github.com/Nailong-Studio/wallpaper/tree/main/audio",
+      "resource_type": "audio_collection",
+      "evidence_status": "local_index_and_remote_tree_checked",
+      "license_status": "mixed_asset_specific",
+      "notes": "一个作者原创社区笑声，一个聚合网络爆笑录音；不能混写成同一权利状态。主代理会克隆wallpaper，不重复下载。",
+      "assets": [
+        {
+          "id": "wallpaper_laugh_short",
+          "label": "作者原创社区桌宠笑声",
+          "repo_path": "audio/奶蛙-桌宠笑声.wav",
+          "bytes": 79504,
+          "git_blob_sha1": "1e8f5136c2c805a3087acb262dc4b0c1d787f01b",
+          "audition_status": "not_auditioned",
+          "canonical_match": "community_variant_unreviewed",
+          "fetch_policy": "noncommercial_candidate",
+          "local_path": "assets/repos/wallpaper/audio/奶蛙-桌宠笑声.wav",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "wallpaper_laugh_original",
+          "label": "爆笑原声候选（Wencue镜像）",
+          "repo_path": "audio/奶蛙-爆笑原声.mp3",
+          "bytes": 228186,
+          "git_blob_sha1": "f3edfca31cc0d3081a8d68adef672560c7292890",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/wallpaper/audio/奶蛙-爆笑原声.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wencue_audio",
+      "title": "NaiWa-Universe 原声与BGM目录",
+      "url": "https://github.com/WencueCryforme/NaiWa-Universe",
+      "resource_type": "audio_collection",
+      "evidence_status": "github_tree_and_copyright_checked",
+      "license_status": "repository_mit_does_not_establish_recording_rights",
+      "notes": "COPYRIGHT声称粉丝角色属于全宇宙，不证明原录音或音乐权利。爆笑录音与wallpaper镜像相同，按blob去重。",
+      "assets": [
+        {
+          "id": "wencue_laugh",
+          "label": "奶蛙爆笑（已由wallpaper收录）",
+          "repo_path": "dist/sound/奶蛙爆笑合集/奶蛙爆笑.mp3",
+          "bytes": 228186,
+          "git_blob_sha1": "f3edfca31cc0d3081a8d68adef672560c7292890",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "local_path": "assets/repos/wallpaper/audio/奶蛙-爆笑原声.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "wencue_mermaid_tears",
+          "label": "人鱼的眼泪（只见文件名）",
+          "repo_path": "dist/sound/奶蛙专属BGM/人鱼的眼泪.mp3",
+          "bytes": 333783,
+          "git_blob_sha1": "7d173fd016f962e816bd70affc363321381e2456",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "manual_rights_review",
+          "download_url": "https://raw.githubusercontent.com/WencueCryforme/NaiWa-Universe/b717bc9980922b649815f4626c2f2b7949172d70/dist/sound/%E5%A5%B6%E8%9B%99%E4%B8%93%E5%B1%9EBGM/%E4%BA%BA%E9%B1%BC%E7%9A%84%E7%9C%BC%E6%B3%AA.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ],
+      "repository": "WencueCryforme/NaiWa-Universe",
+      "commit": "b717bc9980922b649815f4626c2f2b7949172d70"
+    },
+    {
+      "id": "codex_voice_original",
+      "title": "Codex-Voice-Input 作者社区笑声及素材说明",
+      "url": "https://github.com/liaosongjie/Codex-Voice-Input/blob/main/assets/pet/ASSET-NOTICE.md",
+      "resource_type": "asset_notice",
+      "evidence_status": "asset_specific_notice_checked",
+      "license_status": "author_declared_mit",
+      "notes": "ASSET-NOTICE明确作者制作的laugh.wav采用MIT。仍是社区版本，未确认匹配网络目标笑声；其他4通知音为脚本生成，不当经典口癖。",
+      "assets": [
+        {
+          "id": "codex_voice_laugh",
+          "label": "作者社区桌宠笑声（wallpaper同blob）",
+          "repo_path": "assets/pet/sounds/laugh.wav",
+          "bytes": 79504,
+          "git_blob_sha1": "1e8f5136c2c805a3087acb262dc4b0c1d787f01b",
+          "audition_status": "not_auditioned",
+          "canonical_match": "community_variant_unreviewed",
+          "fetch_policy": "noncommercial_candidate",
+          "local_path": "assets/repos/wallpaper/audio/奶蛙-桌宠笑声.wav",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ],
+      "repository": "liaosongjie/Codex-Voice-Input",
+      "commit": "1737c34388a24330f526fc522bbd458c46d3e78c"
+    },
+    {
+      "id": "niulai_jxwb",
+      "title": "电影牛来两段现成原声",
+      "url": "https://github.com/jxwb125646/dsh-niu-lai",
+      "resource_type": "audio_pair",
+      "evidence_status": "readme_audio_notice_fixed_commit_tree_and_raw_head_checked",
+      "license_status": "third_party_movie_personal_noncommercial_only",
+      "notes": "NOTICE明确电影录音不适用代码MIT。只作本地研究候选，不当可再分发声音包。",
+      "assets": [
+        {
+          "id": "niulai_mama_mp3",
+          "label": "妈妈（电影片段）",
+          "repo_path": "assets/妈妈.mp3",
+          "bytes": 210759,
+          "git_blob_sha1": "ce7a85be73c6b671f705731a0a86e323cc146b30",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "noncommercial_candidate",
+          "download_url": "https://raw.githubusercontent.com/jxwb125646/dsh-niu-lai/c856997b74f9900e719ec63261d15f4db02035ca/assets/%E5%A6%88%E5%A6%88.mp3",
+          "character_ids": [
+            "niulai"
+          ],
+          "metadata_verification": "固定提交filter=blob:none元数据克隆的ls-tree核对blobSHA；原站raw HEAD核对Content-Length；未下载音频blob。"
+        },
+        {
+          "id": "niulai_name_mp3",
+          "label": "牛来（电影片段）",
+          "repo_path": "assets/牛来.mp3",
+          "bytes": 63381,
+          "git_blob_sha1": "1f40776a7f03998a91f54d86a2f19972cd0bce72",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "noncommercial_candidate",
+          "download_url": "https://raw.githubusercontent.com/jxwb125646/dsh-niu-lai/c856997b74f9900e719ec63261d15f4db02035ca/assets/%E7%89%9B%E6%9D%A5.mp3",
+          "character_ids": [
+            "niulai"
+          ],
+          "metadata_verification": "固定提交filter=blob:none元数据克隆的ls-tree核对blobSHA；原站raw HEAD核对Content-Length；未下载音频blob。"
+        }
+      ],
+      "repository": "jxwb125646/dsh-niu-lai",
+      "commit": "c856997b74f9900e719ec63261d15f4db02035ca",
+      "license_url": "https://github.com/jxwb125646/dsh-niu-lai/blob/c856997b74f9900e719ec63261d15f4db02035ca/NOTICE.md"
+    },
+    {
+      "id": "niulai_isheng",
+      "title": "牛来确认音的WAV剪辑版本",
+      "url": "https://github.com/isheng-eqi/dsh-niulai-sound",
+      "resource_type": "audio_pair",
+      "evidence_status": "readme_paths_and_reported_durations_checked",
+      "license_status": "movie_recording_rights_unconfirmed",
+      "notes": "README称电影原声，mama.wav约6.2秒、niulai.wav约1.8秒。作为候选来源，不因代码MIT推断电影授权；与MP3先试听去重。",
+      "assets": [
+        {
+          "id": "niulai_mama_wav",
+          "label": "妈妈WAV版本",
+          "repo_path": "assets/mama.wav",
+          "bytes": null,
+          "git_blob_sha1": null,
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "manual_rights_review",
+          "download_url": "https://raw.githubusercontent.com/isheng-eqi/dsh-niulai-sound/ab48ef06568561400c1a09ec265d3488562b48a3/assets/mama.wav",
+          "character_ids": [
+            "niulai"
+          ]
+        },
+        {
+          "id": "niulai_name_wav",
+          "label": "牛来WAV版本",
+          "repo_path": "assets/niulai.wav",
+          "bytes": null,
+          "git_blob_sha1": null,
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "manual_rights_review",
+          "download_url": "https://raw.githubusercontent.com/isheng-eqi/dsh-niulai-sound/ab48ef06568561400c1a09ec265d3488562b48a3/assets/niulai.wav",
+          "character_ids": [
+            "niulai"
+          ]
+        }
+      ],
+      "repository": "isheng-eqi/dsh-niulai-sound",
+      "commit": "ab48ef06568561400c1a09ec265d3488562b48a3"
+    },
+    {
+      "id": "dsh_theme_edits",
+      "title": "网络视频编辑的奶蛙短笑声/爬行音",
+      "url": "https://github.com/DevourerM/dsh-naiwa-theme/blob/main/ASSETS_NOTICE.md",
+      "resource_type": "audio_pair",
+      "evidence_status": "github_tree_and_asset_notice_checked",
+      "license_status": "third_party_recordings_excluded_from_mit",
+      "notes": "ASSETS_NOTICE明确音效由网络视频音轨剪出，第三方权利未转授；仅本地研究。",
+      "assets": [
+        {
+          "id": "dsh_theme_laugh",
+          "label": "完成短笑声候选",
+          "repo_path": "assets/naiwa-complete-laugh.mp3",
+          "bytes": 44096,
+          "git_blob_sha1": "28fa61c2534256b4d7c0e5fb27dc87c3ac868674",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/DevourerM/dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/assets/naiwa-complete-laugh.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        },
+        {
+          "id": "dsh_theme_crawl",
+          "label": "爬行动作音候选",
+          "repo_path": "assets/naiwa-send-crawl.mp3",
+          "bytes": 18392,
+          "git_blob_sha1": "0130e7ade3688bc729ff0011bff8ecc187f18864",
+          "audition_status": "not_auditioned",
+          "canonical_match": "unreviewed",
+          "fetch_policy": "local_only",
+          "download_url": "https://raw.githubusercontent.com/DevourerM/dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/assets/naiwa-send-crawl.mp3",
+          "character_ids": [
+            "naiwa"
+          ]
+        }
+      ],
+      "repository": "DevourerM/dsh-naiwa-theme",
+      "commit": "e25421d9247aceecdc97852091991708a5897df0"
+    },
+    {
+      "id": "montagem_release",
+      "title": "MONTAGEM ALQUIMIA 正式发行页",
+      "url": "https://music.apple.com/us/album/montagem-alquimia-ep/1867871586",
+      "resource_type": "music_release",
+      "evidence_status": "official_release_metadata_checked",
+      "license_status": "copyrighted_music_platform_terms_required",
+      "notes": "艺人h6itam / n7san7os / Mc Menor Do Alvorada；2026-01-16；℗2026 Black17 Media。具体舞步对应版本与配乐使用条件待核对，未下载。",
+      "assets": []
+    },
+    {
+      "id": "montagem_dance_report",
+      "title": "唐嘉琦舞步与小曲关联报道",
+      "url": "https://cp.newrank.cn/article/detail/34447",
+      "resource_type": "report",
+      "evidence_status": "direct_publisher_report_checked",
+      "license_status": "reference_only",
+      "notes": "用于曲名/舞步关联证据，不是音乐授权。原库Monica/jim okimia不作确认曲名。",
+      "assets": []
+    },
+    {
+      "id": "feidudu_video_candidate",
+      "title": "胆子肥嘟嘟传播片段候选",
+      "url": "https://www.douyin.com/video/7677438628561811855",
+      "resource_type": "social_video",
+      "evidence_status": "search_index_only",
+      "license_status": "rights_and_original_author_unconfirmed",
+      "notes": "仅传播候选，非独立认证的原发、袋鼠官方配音或干净音轨；不自动下载。",
+      "assets": []
+    },
+    {
+      "id": "tea_brand_post",
+      "title": "茶百道联名曲品牌发布线索",
+      "url": "https://www.sina.cn/news/detail/5291574986805952.html",
+      "resource_type": "brand_post_reference",
+      "evidence_status": "indexed_verified_brand_post_metadata",
+      "license_status": "brand_music_terms_unconfirmed",
+      "notes": "品牌官方微博转载入口，帮助回溯原片；正式曲名和目标剪辑版本未锁定，不引入完整歌词。",
+      "assets": []
+    },
+    {
+      "id": "dagou_creator_example",
+      "title": "大狗衍生曲创作者公开视频示例",
+      "url": "https://www.bilibili.com/video/BV1oKNP6pEiS/",
+      "resource_type": "creator_video",
+      "evidence_status": "search_index_creator_credit",
+      "license_status": "composition_and_remix_rights_separate",
+      "notes": "不同大狗歌有不同原曲与二创作者；此例为突然的自我衍生，不把大狗大狗当唯一录音。",
+      "assets": []
+    },
+    {
+      "id": "neta_synthetic_laugh_exclusion",
+      "title": "Neta 八段笑声网页（非原声素材包）",
+      "url": "https://neta.art/explore/work/zh/milk-frog-laugh",
+      "resource_type": "excluded_synth_audio",
+      "evidence_status": "page_explicitly_states_browser_synthesis",
+      "license_status": "do_not_use_as_classic_recording",
+      "notes": "网页明确浏览器即时合成笑声，不收录为经典原声，不录制网页音效冒充。",
+      "assets": []
+    },
+    {
+      "id": "marshall_manifest_only",
+      "title": "naiwa-universe 音源manifest（待人工填入）",
+      "url": "https://github.com/Marshall-Jimmy/naiwa-universe",
+      "resource_type": "manifest_without_bundled_audio",
+      "evidence_status": "readme_and_git_tree_checked",
+      "license_status": "third_party_rights_reserved",
+      "notes": "需要人工填写音源，缺省可静默降级；不是已经齐全的现成包。",
+      "assets": []
+    },
+    {
+      "id": "soundboard_app_evidence",
+      "title": "奶蛙音乐键盘App的音效类别线索",
+      "url": "https://apps.apple.com/cn/app/id6762385358",
+      "resource_type": "commercial_app_reference",
+      "evidence_status": "official_store_description_checked",
+      "license_status": "no_asset_extraction_or_reuse_permission",
+      "notes": "商店描述列多类经典音效，可作为术语交叉核对，不购买/安装/拆包、不重发内部声音。",
+      "assets": []
+    }
+  ],
+  "audio_cues": [
+    {
+      "id": "naiwa.laugh",
+      "aliases": [
+        "齁齁齁",
+        "哟齁齁齁",
+        "捧腹大笑",
+        "咳哈哈哈哈"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "signature_laugh",
+      "asset_ids": [
+        "nailoong_nailong_laugh",
+        "naiwa_pet_audio",
+        "yugh6_original_laugh",
+        "diyeego_laugh_short",
+        "diyeego_laugh_track",
+        "wallpaper_laugh_original",
+        "dsh_theme_laugh"
+      ],
+      "planning_function": "反转破功、捧腹动作、结尾回扣；先锁网络目标音色，不能用生成笑声替代。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "naiwa.hola_ganbadie",
+      "aliases": [
+        "Hola",
+        "嘎巴跌",
+        "ganbadie"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nailoong_hola_ganbadie",
+        "diyeego_ganbadie"
+      ],
+      "planning_function": "出场识别、突然接话；核对是否含Hola前缀及变调版本。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "naiwa.gajiaosai",
+      "aliases": [
+        "嘎脚塞",
+        "卡脚塞",
+        "gajiaosei"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nailoong_gajiaosai",
+        "diyeego_gajiaosei"
+      ],
+      "planning_function": "动作卡点、短促反应；空耳别名不是官方译文。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "naiwa.gagadilashui",
+      "aliases": [
+        "嘎嘎滴啦水",
+        "嘎嘎滴辣虾",
+        "gagadilaxia"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nailoong_gagadilashui",
+        "diyeego_gagadilaxia"
+      ],
+      "planning_function": "口癖连击、转场反应；不同录音单独保存版本。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "naiwa.dupu",
+      "aliases": [
+        "嘟噗",
+        "dupu"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nailoong_dupu"
+      ],
+      "planning_function": "停顿后短点、动作句号。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "naidan.andi",
+      "aliases": [
+        "andi",
+        "安迪",
+        "安~迪~",
+        "奶蛋安迪"
+      ],
+      "character_ids": [
+        "naidan"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nailoong_andi"
+      ],
+      "planning_function": "奶蛋口癖目录映射已由naidan/voice.json与manifest确认；本地andi.mp3默认仅关联奶蛋。其他来源先试听，不加入奶蛙默认音轨。",
+      "verification_status": "role_catalog_confirmed_audio_version_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [
+        "diyeego_andi"
+      ]
+    },
+    {
+      "id": "naiwa.crawl",
+      "aliases": [
+        "爬行音",
+        "crawl"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "action_sound",
+      "asset_ids": [
+        "dsh_theme_crawl"
+      ],
+      "planning_function": "小幅爬行、启动动作的声音候选，需核对音画匹配。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "naiwa.community_laugh",
+      "aliases": [
+        "社区桌宠短笑声"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "community_variant",
+      "asset_ids": [
+        "wallpaper_laugh_short"
+      ],
+      "planning_function": "作者原创社区版本；即使有素材MIT声明，也不能冒充目标经典原声。",
+      "verification_status": "community_variant_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "niulai.mama",
+      "aliases": [
+        "妈妈",
+        "牛喊妈妈"
+      ],
+      "character_ids": [
+        "niulai"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [
+        "niulai_mama_mp3",
+        "niulai_mama_wav"
+      ],
+      "planning_function": "呼唤、蓄势；可被下一条牛来打断形成反差。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "niulai.name",
+      "aliases": [
+        "牛来"
+      ],
+      "character_ids": [
+        "niulai"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [
+        "niulai_name_mp3",
+        "niulai_name_wav"
+      ],
+      "planning_function": "呼应、揭晓、突然接话。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "meituan.feidudu",
+      "aliases": [
+        "胆子肥嘟嘟",
+        "你的胆子真是肥嘟嘟的"
+      ],
+      "character_ids": [
+        "meituan_kangaroo"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "只留字幕或等待原片，不让模型仿造品牌口吻。",
+      "verification_status": "source_page_only",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "mai.remix",
+      "aliases": [
+        "不知火舞变调",
+        "嘎嘎滴辣虾",
+        "嘎脚塞"
+      ],
+      "character_ids": [
+        "mai_shiranui"
+      ],
+      "layer": "voice_family_reference",
+      "asset_ids": [],
+      "planning_function": "先核对核心短文件是否是所需既有变调版本；不补造日本语台词或仿配。",
+      "verification_status": "version_mapping_pending",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "bgm.montagem_alquimia",
+      "aliases": [
+        "唐嘉琦小曲",
+        "嘉琦舞",
+        "雷霆小曲",
+        "MONTAGEM ALQUIMIA"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "bgm",
+      "asset_ids": [],
+      "planning_function": "锁定现成版本后按第一个明确重拍起舞，未取得音源前不编造BPM或精确切点。",
+      "verification_status": "release_confirmed_version_pending",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "bgm.dagou",
+      "aliases": [
+        "大狗大狗",
+        "大狗衍生曲"
+      ],
+      "character_ids": [
+        "dagou"
+      ],
+      "layer": "bgm",
+      "asset_ids": [],
+      "planning_function": "一个衍生曲族；逐曲锁原曲、二创作者与录音版本。",
+      "verification_status": "family_only",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "bgm.tea_shake",
+      "aliases": [
+        "来杯好茶摇一摇",
+        "茶百道星穹铁道联名"
+      ],
+      "character_ids": [],
+      "layer": "bgm",
+      "asset_ids": [],
+      "planning_function": "先核对品牌原片与平台曲库使用条件。",
+      "verification_status": "brand_post_reference_only",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "lulu.voice",
+      "aliases": [
+        "水豚噜噜原声"
+      ],
+      "character_ids": [
+        "lulu"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "角色身份和具体原片确认前保持无声/字幕，不造口癖。",
+      "verification_status": "missing",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "naifen.voice",
+      "aliases": [
+        "奶粉原声"
+      ],
+      "character_ids": [
+        "naifen"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "角色身份和具体原片确认前保持无声/字幕，不造口癖。",
+      "verification_status": "missing",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "tangniu.voice",
+      "aliases": [
+        "唐牛原声"
+      ],
+      "character_ids": [
+        "tangniu"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "角色身份和具体原片确认前保持无声/字幕，不造口癖。",
+      "verification_status": "missing",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。"
+    },
+    {
+      "id": "bgm.mermaid_tears",
+      "aliases": [
+        "人鱼的眼泪"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "bgm",
+      "asset_ids": [
+        "wencue_mermaid_tears"
+      ],
+      "planning_function": "只保留文件名来源；完成词曲/录音版本与使用许可核验前不作为配乐。",
+      "verification_status": "filename_only_rights_pending",
+      "selection_rule": "manual_rights_review；不自动下载或生成替代。"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "classic_voice_version_review",
+      "detail": "核心口癖与笑声需逐条试听确认目标变调版本；奶蛋andi的目录归属已确认，跨来源版本仍待试听。"
+    },
+    {
+      "id": "xinongbinouji",
+      "detail": "戏弄壁诺机有商店目录文字线索，尚无确认的现成独立文件及许可。"
+    },
+    {
+      "id": "feidudu_original",
+      "detail": "肥嘟嘟原始发言/官方与二创录音版本未认证，缺干净音轨与许可。"
+    },
+    {
+      "id": "montagem_version",
+      "detail": "曲名已核对，目标舞步具体原速/Slowed版本与平台使用条件未定。"
+    },
+    {
+      "id": "ecology_voices",
+      "detail": "噜噜/奶粉/唐牛原声映射待角色与原片确认；奶蛋安迪已有目录映射，不再列作身份缺失。"
+    }
+  ]
+}

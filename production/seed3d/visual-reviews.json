@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "job_id": "seed3d-naiwa-v1",
+      "working_model_sha256": "b6aa933a3a6587707de70a5d08b7423f6413f224b2d27a5e056059944ae57576",
+      "status": "candidate_expression_drift",
+      "notes": [
+        "实际看过原图、正面、侧面、背面和8向联系图；轮廓、圆眼、腹斑与深色手脚保持。",
+        "嘴成浅V弧且表面高光较强，与网传一字嘴基准有偏差；不覆盖原图或旧基准。",
+        "侧背和遮挡结构由单图推测，不是原型背面认证；无骨骼动作。"
+      ],
+      "default_identity": false,
+      "reviewed_date": "2026-10-29",
+      "method": "Actual source and multi-angle renders viewed with view_image",
+      "rigging_or_motion_approved": false,
+      "publishing_allowed": false
+    },
+    {
+      "job_id": "seed3d-naidan-v1",
+      "working_model_sha256": "159df0813276f9a150f54a1726e9933bbce978f73d690ca49d4bae1dcf232212",
+      "status": "usable_local_static_candidate",
+      "notes": [
+        "实际看过原图、正面和8向联系图；光滑蛋形、圆眼和浅弧嘴，未凭空添加四肢。",
+        "底面平整与侧背厚度为重建推测；保留原图触边的信息缺口。",
+        "适合本地静态参考，未绑定骨骼或表情。"
+      ],
+      "default_identity": false,
+      "reviewed_date": "2026-10-29",
+      "method": "Actual source and multi-angle renders viewed with view_image",
+      "rigging_or_motion_approved": false,
+      "publishing_allowed": false
+    },
+    {
+      "job_id": "seed3d-lulu-community-v1",
+      "working_model_sha256": "345e5974d988e237a160b1bee76c2a270b179aa1e448f06dc4fa8cf78f051b75",
+      "status": "requires_local_mesh_cleanup",
+      "notes": [
+        "实际看过原图、正面和8向联系图；社区橘子头饰、黄体、橙裤、蓝黑眼保持。",
+        "腰后推断出源图没有的细长杆，原始主包需几何清理，不默认用于视频。",
+        "另存lulu-rod-outer-v1可逆局部修订：仅删除明确外伸面；仍有短残根和86条开放切口，不称完全修复。",
+        "社区低分辨率来源，不作官方形象认证；无骨骼动作。"
+      ],
+      "default_identity": false,
+      "reviewed_date": "2026-10-29",
+      "method": "Actual source and multi-angle renders viewed with view_image",
+      "rigging_or_motion_approved": false,
+      "publishing_allowed": false
+    },
+    {
+      "job_id": "seed3d-feidudu-community-v1",
+      "working_model_sha256": "30a8517e849359351222b7b64ebdd9ff1ebbe83df882347965e95af4dbed7d25",
+      "status": "usable_local_community_candidate",
+      "notes": [
+        "实际看过原图、校准正面和8向联系图；长耳、褐大鼻、浅腹、短肢和长尾保持社区版本。",
+        "原生相机0度是背面，已单独按180度校准工作版正面朝+Z；不是套用奶蛙朝向。",
+        "原图单格192×208；背面由单图推测，不作官方标准或高精细来源认证。"
+      ],
+      "default_identity": false,
+      "reviewed_date": "2026-10-29",
+      "method": "Actual source and multi-angle renders viewed with view_image",
+      "rigging_or_motion_approved": false,
+      "publishing_allowed": false
+    }
+  ]
+}

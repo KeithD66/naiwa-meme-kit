@@ -1,0 +1,296 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28T17:42:24.731002+00:00",
+  "model": "doubao-seed3d-2-0-260328",
+  "scope": "Official public documentation review only; no inference, account queries, credential reading or settings changes performed by this research task.",
+  "sources": [
+    {
+      "id": "create-3d-generation-task-api",
+      "url": "https://docs.volcengine.com/docs/ark/create-3d-generation-task-api?lang=zh",
+      "title": "创建 3D 生成任务 API",
+      "official_updated_at": "2026-10-21T09:50:12Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "e3d071cb5e4e913289c47c959736585d1bb668f8f83079461d3a8aaf5d98564e"
+    },
+    {
+      "id": "get-3d-generation-task-api",
+      "url": "https://docs.volcengine.com/docs/ark/get-3d-generation-task-api?lang=zh",
+      "title": "查询 3D 生成任务 API",
+      "official_updated_at": "2026-09-29T06:48:36Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "2ba0ed7b47620b596f3e35e151478385ac0bcfcce752a797778139e658dba56f"
+    },
+    {
+      "id": "model-pricing",
+      "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "title": "模型价格",
+      "official_updated_at": "2026-10-24T11:43:57Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "0a2ff99a3275b02fe39fe083909b1aa96e9ad9e35a63fad444c24fec4ec3883b"
+    },
+    {
+      "id": "model-list",
+      "url": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+      "title": "模型列表",
+      "official_updated_at": "2026-10-24T11:43:57Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "717ad6c5bc6d5c8573b2343164f560671edb60950c4922b23987ce7a9bd10712"
+    },
+    {
+      "id": "free-inference-quota",
+      "url": "https://docs.volcengine.com/docs/ark/free-inference-quota?lang=zh",
+      "title": "免费推理额度",
+      "official_updated_at": "2026-08-24T13:58:51Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "4008b9aee5e849897dfb5e84abbecb51c0fcb0d68f62beeaaac2c055ba6aebfd"
+    },
+    {
+      "id": "free-tokens-only-mode",
+      "url": "https://docs.volcengine.com/docs/ark/free-tokens-only-mode?lang=zh",
+      "title": "安心体验模式细则说明",
+      "official_updated_at": "2026-09-30T08:16:44Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "9f329adec698160011d4895105434f93d11d785b8a25133c3023845bed74be1f"
+    },
+    {
+      "id": "get-model-activation-api",
+      "url": "https://docs.volcengine.com/docs/ark/get-model-activation-api?lang=zh",
+      "title": "查询模型开通详情",
+      "official_updated_at": "2026-09-04T12:24:13Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "e0acc495f94c9cd257222a09e6682e86711102bc7d92eee257241d4c2d98b5cd"
+    },
+    {
+      "id": "model-service-pricing",
+      "url": "https://docs.volcengine.com/docs/ark/model-service-pricing?lang=zh",
+      "title": "模型服务计费说明",
+      "official_updated_at": "2026-09-30T08:16:44Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "6ed6c4f858d4eeb6d8e9381e4c6596fe09479454ecd3bdf6dcbc073b33b5dabe"
+    },
+    {
+      "id": "3d-generation",
+      "url": "https://docs.volcengine.com/docs/ark/3d-generation?lang=zh",
+      "title": "3d-generation",
+      "official_updated_at": null,
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "8f16da933b4129512f8de2d9facc364c80a3d58ad127961e004e28f7de54aa9a"
+    },
+    {
+      "id": "delete-3d-api",
+      "url": "https://docs.volcengine.com/docs/ark/delete-3d-api?lang=zh",
+      "title": "取消或删除 3D 生成任务",
+      "official_updated_at": "2026-09-09T11:08:07Z",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent, no login or API credential",
+      "md_sha256": "efcf8827b6378709a1f67f159cceac522c185575d48764ece7e57d77f73393e1"
+    },
+    {
+      "id": "seed-research-overview",
+      "url": "https://seed.bytedance.com/en/seed3d_2_0",
+      "title": "ByteDance Seed3D 2.0",
+      "extraction": "official indexed page; research capability context only"
+    },
+    {
+      "id": "seed-research-blog",
+      "url": "https://seed.bytedance.com/en/blog/seed3d-2-0-released-higher-precision-and-greater-usability",
+      "title": "Seed3D 2.0 Released: Higher Precision and Greater Usability",
+      "extraction": "official indexed page; research capability context only"
+    }
+  ],
+  "api": {
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "create": {
+      "method": "POST",
+      "path": "/contents/generations/tasks",
+      "required": [
+        "model",
+        "content"
+      ],
+      "auth": "Ark API Key Bearer",
+      "source": "create-3d-generation-task-api"
+    },
+    "get": {
+      "method": "GET",
+      "path": "/contents/generations/tasks/{id}",
+      "auth": "Ark API Key Bearer",
+      "source": "get-3d-generation-task-api"
+    },
+    "delete": {
+      "method": "DELETE",
+      "path": "/contents/generations/tasks/{id}",
+      "queued": "cancel -> cancelled",
+      "running": "not supported",
+      "succeeded": "delete task record, not a refund/cancellation",
+      "failed": "delete task record",
+      "cancelled": "not supported; automatic deletion after 24h per get API",
+      "source": "delete-3d-api"
+    }
+  },
+  "input": {
+    "image_count": 1,
+    "multi_image_joint_conditioning": false,
+    "image_field": "content[].image_url.url",
+    "encodings": [
+      "public HTTPS URL",
+      "data:image/<lowercase-format>;base64,<data>"
+    ],
+    "formats": [
+      "jpeg",
+      "png",
+      "webp",
+      "bmp",
+      "tiff",
+      "gif"
+    ],
+    "width_height_px_inclusive": [
+      300,
+      6000
+    ],
+    "aspect_ratio_width_over_height_inclusive": [
+      0.4,
+      2.5
+    ],
+    "image_bytes_limit": "less than 30 MB",
+    "request_body_limit": "not more than 64 MB",
+    "text_role": "parameter flags only; no text-to-3D description support",
+    "source": "create-3d-generation-task-api"
+  },
+  "parameters": {
+    "text_flags": {
+      "subdivisionlevel": {
+        "default": "medium",
+        "values": {
+          "low": 100000,
+          "medium": 500000,
+          "high": 1000000
+        },
+        "meaning": "documented polygon face count"
+      },
+      "fileformat": {
+        "default": "glb",
+        "values": [
+          "glb",
+          "obj",
+          "usd",
+          "usdz"
+        ]
+      }
+    },
+    "documented_body_field_names": [
+      "subdivision_level",
+      "file_format"
+    ],
+    "use_current_official_example": "content text --subdivisionlevel high --fileformat obj",
+    "weak_validation": "invalid text flags can be silently ignored; check GET fields fileformat/subdivisionlevel and downloaded contents/mesh",
+    "not_documented_in_this_API": [
+      "seed",
+      "negative prompt",
+      "multiple reference views",
+      "rigging/skeleton",
+      "animation",
+      "neutral/T-pose conversion",
+      "texture-only regeneration",
+      "material mode switch",
+      "output face type selection"
+    ],
+    "source": "create-3d-generation-task-api"
+  },
+  "output": {
+    "states": [
+      "queued",
+      "running",
+      "cancelled",
+      "succeeded",
+      "failed"
+    ],
+    "url_field": "content.file_url",
+    "download_container": "zip archive regardless of chosen internal format",
+    "generated_file_ttl_hours": 24,
+    "task_metadata_ttl_days": 7,
+    "usage_fields": [
+      "usage.completion_tokens",
+      "usage.total_tokens"
+    ],
+    "input_tokens": 0,
+    "total_equals_completion": true,
+    "extra_fields": [
+      "model",
+      "fileformat",
+      "subdivisionlevel",
+      "created_at",
+      "updated_at",
+      "error.code",
+      "error.message"
+    ],
+    "source": "get-3d-generation-task-api"
+  },
+  "billing": {
+    "documented_tokens_per_successful_output": 30000,
+    "documented_yuan_per_10000_tokens": 0.8,
+    "documented_yuan_per_successful_output": 2.4,
+    "basis": "successful output 3D file count",
+    "failed_without_successful_output": "not billable according to successful-output rule; preserve terminal usage/error response for audit",
+    "subdivision_or_format_price_variation": "no variation listed for Seed3D 2.0 in current official pricing table",
+    "usage_authority": "GET usage.completion_tokens; pricing and account bill remain authoritative for settlement",
+    "source": "model-pricing"
+  },
+  "quota": {
+    "documented_initial_model_free_tokens": 2000000,
+    "source": "model-list",
+    "sharing": "per-model, shared across main account and its subaccounts",
+    "not_for": [
+      "paid plugins/knowledge base",
+      "batch inference"
+    ],
+    "user_reported_allowance_is_not_measured_account_remaining": true,
+    "mathematical_success_count_if_full_2m_untouched": 66,
+    "mathematical_unused_tokens_after_66": 20000,
+    "account_query": {
+      "endpoint": "POST https://ark.cn-beijing.volcengineapi.com/?Action=GetModelActivation&Version=2024-01-01",
+      "request_fields": [
+        "FoundationModelName",
+        "WithFreeUsage",
+        "WithPrice"
+      ],
+      "response_fields": [
+        "Item.FreeResourcePackItems.Consumed",
+        "Item.FreeResourcePackItems.Total",
+        "Item.FreeResourcePackItems.SyncTime",
+        "Item.FreeResourcePackItems.Type",
+        "Item.InitialInferenceFreeUsage.Consumed",
+        "Item.InitialInferenceFreeUsage.Total"
+      ],
+      "auth": "Access Key signed request only, not supplied Ark Bearer API key",
+      "source": "get-model-activation-api"
+    },
+    "hard_zero_overage_guarantee_with_only_local_ledger": false,
+    "why_not": "No authenticated account balance was measured; same main account can consume elsewhere; billing/quota reporting can lag; runtime requests do not expose an atomic reserve or max_tokens control.",
+    "free_only_mode": "Account setting exists with eligibility limits and irreversible disable; do not change settings implicitly. Detailed page refers to 500k general allowance, unlike model-specific Seed3D 2M. Current account state is unknown.",
+    "free_only_mode_source": "free-tokens-only-mode",
+    "readiness": "Use user statement as allowance evidence, begin with one job, record actual reported completion_tokens, reserve allowance for unresolved submissions, stop on unanticipated usage/terminal errors; never auto-retry ambiguous POST."
+  },
+  "limits": {
+    "rpm": 300,
+    "concurrency": 5,
+    "source": "model-list",
+    "recommended_for_this_work": "sequential first trial and deliberate small batches; no need to maximize rate"
+  },
+  "known_doc_inconsistencies": [
+    {
+      "source": "3d-generation",
+      "conflict": "One tutorial inline comment describes medium as 100000 while dedicated create API says medium 500000.",
+      "resolution": "Use dedicated API values and inspect actual returned asset/fields."
+    },
+    {
+      "source": "3d-generation",
+      "conflict": "Tutorial says task data retained 24h while dedicated GET says metadata 7 days, file 24h.",
+      "resolution": "Save response, archive and hashes promptly; do not depend on remote retention."
+    }
+  ],
+  "capability_boundary": {
+    "research_suite": "Official Seed pages discuss part decomposition, articulation and scene composition with multiple views/videos/text.",
+    "production_ark_api": "Current creation schema exposes single-image textured/PBR static model generation and two output-spec parameters only. Research claims do not authorize claiming those functions exist in this API.",
+    "semantic_canonical_backside": "Not guaranteed from single reference; generated unseen surfaces remain inferred candidates.",
+    "automatic_rights_clearance": "Model output licensing does not clear the input reference or character media rights."
+  }
+}

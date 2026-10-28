@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "model": "hyper3d-gen2-260112",
+  "execution_stage": "prepared_not_submitted",
+  "purpose": "同一现成奶蛙参考的四边面可编辑性与身份对照；不从文字重设计角色。",
+  "budget": {
+    "per_success_tokens": 30000,
+    "batch_limit_tokens": 30000,
+    "max_submissions": 1,
+    "free_balance_verified": false,
+    "declared_free_tokens": null,
+    "payg_price_cny_per_success": 1.8,
+    "note": "独立Hyper3D额度未知；Seed3D的2M不是本模型额度。本地准备不调用API。"
+  },
+  "jobs": [
+    {
+      "id": "hyper3d-naiwa-quad-v1",
+      "character_id": "naiwa",
+      "version_id": "naiwa-pet-network-3d-hyper3d-quad-v1",
+      "source_version_id": "naiwa-pet-network-3d",
+      "pose_id": "frame-0000-hands-on-belly",
+      "license_status": "source_no_license_authorized_local_reconstruction_only",
+      "references": [
+        {
+          "path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+          "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+          "source_asset_id": "naiwa-frame-0000",
+          "version_id": "naiwa-pet-network-3d",
+          "pose_id": "frame-0000-hands-on-belly",
+          "view": "three_quarter",
+          "origin": "existing_network_media",
+          "source_fixed_url": "https://raw.githubusercontent.com/LynnShaw/naiwa-pet/fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765/public/pets/naiwa/frames/frame_0000.webp",
+          "visual_review": {
+            "status": "visual_checked",
+            "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+            "note": "已实际看完整帧：金黄梨形无脖子、圆眼一字嘴、乳白大腹斑、褐色手脚；此帧为同源原序列的侧正面捧肚站姿，不是完整三视图。"
+          }
+        }
+      ],
+      "multiview_evidence": null,
+      "prompt": "",
+      "seed": 8648,
+      "parameters": {
+        "mesh_mode": "Quad",
+        "material": "PBR",
+        "quality_override": 50000,
+        "hd_texture": true,
+        "addons": "HighPack",
+        "use_original_alpha": false,
+        "TAPose": false,
+        "fileformat": "obj"
+      },
+      "expected_cost": {
+        "successful_generation_tokens": 30000,
+        "successful_generation_payg_cny": 1.8,
+        "actual_free_or_paid_billing_unverified": true
+      },
+      "input_preparation": "Preserve source file and hash; encode unsupported WebP as same-size RGBA PNG with identical decoded pixels, without crop, padding or synthesis.",
+      "output_acceptance": [
+        "原生OBJ确实包含四顶点面；记录三角面/四边面/n-gon分布。",
+        "检查贴图/MTL实际是否返回，不从PBR参数推断文件齐备。",
+        "比较嘴形、眼色、腹斑、手脚和轮廓，单图背面保持推断标签。",
+        "保留原始文件；GLB或trimesh派生预览会三角化，不替代原生Quad件。",
+        "TAPose=false保持原姿态；不宣称骨骼、蒙皮、动画或物理就绪。"
+      ],
+      "comparison_targets": [
+        {
+          "asset_id": "hitem3d-naiwa-glb",
+          "path": "assets/private/generated-reference/hitem3d-naiwa/model.glb",
+          "sha256": "d31adbf70d827bc8709d71093e65c48c2937480be91a87f671ab7322c6de9127",
+          "comparison_type": "same-source-image; normalization and render settings must be aligned before geometric/color ranking"
+        },
+        {
+          "asset_id": "seed3d-naiwa-v1-working-glb",
+          "path": "assets/private/seed3d/models/seed3d-naiwa-v1/package/character.glb",
+          "sha256": "b6aa933a3a6587707de70a5d08b7423f6413f224b2d27a5e056059944ae57576",
+          "comparison_type": "same-source-image; normalization and render settings must be aligned before geometric/color ranking"
+        }
+      ],
+      "promotion_policy": "只增加独立候选版本；实际看图和拓扑检查通过前不覆盖原图、Seed3D或Hitem3D。"
+    }
+  ],
+  "official_api_reference": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh"
+}

@@ -1,0 +1,38 @@
+{
+  "model": "hitem3d-2-0-251223",
+  "task_id": "cgt-20261029010628-j4qdj",
+  "status": "succeeded",
+  "reference_asset_id": "naiwa-frame-0000",
+  "source_sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+  "output_path": "assets/private/generated-reference/hitem3d-naiwa/model.glb",
+  "output_bytes": 18996584,
+  "output_sha256": "d31adbf70d827bc8709d71093e65c48c2937480be91a87f671ab7322c6de9127",
+  "usage": {
+    "completion_tokens": 163125,
+    "total_tokens": 163125
+  },
+  "identity_status": "source_pose_consistent_calibrated_multiview_candidate",
+  "used_in_tcp_video": false,
+  "notes": "以现成网传奶蛙为输入的AI重建候选，不冒称网络原版或官方3D模型；不包含API密钥或临时签名URL。",
+  "multiview_render_paths": [
+    "assets/private/generated-reference/hitem3d-naiwa/calibrated-front.png",
+    "assets/private/generated-reference/hitem3d-naiwa/calibrated-side.png",
+    "assets/private/generated-reference/hitem3d-naiwa/calibrated-back.png"
+  ],
+  "visual_findings": [
+    "已实际查看校准后的正/侧/背，保留金黄梨形无脖子、灰绿圆眼、一字嘴、浅色肚皮、褐手脚。",
+    "正侧背相机已按模型朝向校准为yaw -45/45/135度；旧0/90/180度文件只供调试。",
+    "背身与腿部仍有贴图接缝；单图推测的背面不是已核实的网传原型。",
+    "保留为本地重建候选，未替代TCP视频的现成角色画面。"
+  ],
+  "debug_uncalibrated_render_paths": [
+    "assets/private/generated-reference/hitem3d-naiwa/front.png",
+    "assets/private/generated-reference/hitem3d-naiwa/side.png",
+    "assets/private/generated-reference/hitem3d-naiwa/back.png"
+  ],
+  "camera_yaw_degrees": {
+    "front": -45,
+    "side": 45,
+    "back": 135
+  }
+}

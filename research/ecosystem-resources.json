@@ -1,0 +1,646 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "scope": "奶蛙雷霆短视频角色生态；只整理现成资源，不生成形象、音轨或成片。",
+  "evidence_method": "本地上游目录与README核对；原站/创作者页面和搜索索引分层记录。GitHub API限额后用blob:none/no-checkout元数据克隆只取树和README/NOTICE，取得固定commit/blobSHA；元数据Git传输使用单进程公共GitHub代理。未在本分支下载媒体或执行上游代码。",
+  "sources": [
+    {
+      "id": "eco-naiwa-frames",
+      "title": "Naiwa Pet 现成分帧",
+      "url": "https://github.com/LynnShaw/naiwa-pet",
+      "resource_type": "repository",
+      "evidence_status": "local_files_and_manifest_verified",
+      "license_status": "no_license_local_only",
+      "notes": "438帧、720x960、30fps；禁止由无LICENSE推导可分发。",
+      "checked_at": "2026-10-29",
+      "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/"
+    },
+    {
+      "id": "eco-naiwa-sprite",
+      "title": "Codex 奶蛙桌宠",
+      "url": "https://github.com/timerring/codex-pet-naiwa",
+      "resource_type": "repository",
+      "evidence_status": "local_readme_verified",
+      "license_status": "mit_original_only_third_party_excluded",
+      "notes": "README明确排除Credits第三方素材；预览与spritesheet仅先作本地候选。",
+      "checked_at": "2026-10-29",
+      "local_path": "assets/repos/codex-pet-naiwa/"
+    },
+    {
+      "id": "eco-naidan-catalog",
+      "title": "NaiLoong 奶蛋图像与语音目录",
+      "url": "https://github.com/lin-alg/NaiLoong/tree/ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0/data/naidan",
+      "resource_type": "catalog",
+      "evidence_status": "local_catalog_verified",
+      "license_status": "code_mit_media_unverified",
+      "notes": "5静态+1动图为远程索引；voice.json明确安~迪~→andi.mp3。",
+      "checked_at": "2026-10-29",
+      "local_path": "assets/repos/NaiLoong/data/naidan/"
+    },
+    {
+      "id": "eco-naiwhale-catalog",
+      "title": "NaiLoong 其他奶科生物目录",
+      "url": "https://github.com/lin-alg/NaiLoong/blob/ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0/data/others/static.json",
+      "resource_type": "catalog",
+      "evidence_status": "local_catalog_verified",
+      "license_status": "code_mit_media_unverified",
+      "notes": "含沉思的奶鲸条目；不是原图已落地。",
+      "checked_at": "2026-10-29",
+      "local_path": "assets/repos/NaiLoong/data/others/static.json"
+    },
+    {
+      "id": "eco-lulu-official-directory",
+      "title": "CLE 中国授权展·水豚噜噜",
+      "url": "https://www.chinalicensingexpo.com/cn/product/1849",
+      "resource_type": "rights_holder_directory",
+      "evidence_status": "primary_page_read",
+      "license_status": "copyrighted_no_media_reuse_grant",
+      "notes": "列出铁罐（北京）文化传媒有限公司，描述头顶橘子的水豚；纠正旧库元气造物说法。",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "eco-lulu-community-v2",
+      "title": "czy666chen/lulu",
+      "url": "https://github.com/czy666chen/lulu",
+      "resource_type": "repository",
+      "evidence_status": "git_tree_and_readme_verified",
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "notes": "有sprite、9组动作、16方向预览。尚未由本分支目视核验角色是否贴合原版。",
+      "checked_at": "2026-10-29",
+      "commit": "390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6"
+    },
+    {
+      "id": "eco-lulu-community-alternative",
+      "title": "lushengyin/Codex-Pets",
+      "url": "https://github.com/lushengyin/Codex-Pets",
+      "resource_type": "repository",
+      "evidence_status": "git_tree_and_readme_verified",
+      "license_status": "no_root_license_found",
+      "notes": "README将噜噜称作小河马、由用户参考图转制；与官方水豚定义有出入，不能当标准版。",
+      "checked_at": "2026-10-29",
+      "commit": "6888c67ae69f9439cb05dd78bd9ad3eae1ec815e"
+    },
+    {
+      "id": "eco-feidudu-community",
+      "title": "peibingchen/You-are-really-bold",
+      "url": "https://github.com/peibingchen/You-are-really-bold",
+      "resource_type": "repository",
+      "evidence_status": "git_tree_readme_notice_verified",
+      "license_status": "apache_contributions_only_external_character_rights_excluded",
+      "notes": "NOTICE明确不授第三方角色、商标、美术开发或外部资产权利；sprite和参考档案仅本地候选。",
+      "checked_at": "2026-10-29",
+      "commit": "4398a97bb2212919f530b1e168ae2828c477b0eb"
+    },
+    {
+      "id": "eco-meituan-brand-rules",
+      "title": "美团商家管理规范·品牌标识",
+      "url": "https://awp.meituan.com/reco/reco-fe-static-html/h5-bussiness-rules/3/4.html",
+      "resource_type": "brand_identity_reference",
+      "evidence_status": "primary_page_indexed",
+      "license_status": "brand_marks_no_reuse_grant",
+      "notes": "用于确认袋鼠为品牌相关标识，不是本项目的素材授权。",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "eco-naifen-creator-example",
+      "title": "奶粉看奶鼠出丑了·鼠粉动画（名画收藏）奶总",
+      "url": "https://www.douyin.com/video/7655968905470853738",
+      "resource_type": "creator_video_page",
+      "evidence_status": "search_index_title_and_creator_only",
+      "license_status": "video_rights_unverified_no_download",
+      "notes": "标题支持奶粉角色用法；直接页面动态加载，未据此确认视觉标准或最初作者。",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "eco-naifen-choice-example",
+      "title": "选择奶粉还是奶蛋",
+      "url": "https://www.douyin.com/video/7683022618401145829",
+      "resource_type": "creator_video_page",
+      "evidence_status": "search_index_title_only",
+      "license_status": "video_rights_unverified_no_download",
+      "notes": "另一条角色用法证据；尚未独立确认人物形象。",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "eco-niulai-film-directory",
+      "title": "中国电影票房·牛来",
+      "url": "https://zgdypf.zgdypw.cn/movie/detail/00103542025?from=box",
+      "resource_type": "film_identity_directory",
+      "evidence_status": "primary_page_read",
+      "license_status": "film_poster_and_audio_not_cleared",
+      "notes": "确认影片、信雨萌、2026-08-05上映与小牛角色；不是唐牛身份的证据。",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "eco-doubao-official",
+      "title": "豆包官方站",
+      "url": "https://www.doubao.com/",
+      "resource_type": "official_product_page",
+      "evidence_status": "product_title_verified_dynamic_page",
+      "license_status": "brand_and_character_rights_unverified",
+      "notes": "能确认产品；未从动态页面确认奶蛙视频里使用的某个视觉版本。",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "eco-nailoong-official",
+      "title": "第七印象官方IP孵化·奶龙",
+      "url": "https://www.nailoong.com/business/ipIncubation/",
+      "resource_type": "official_character_page",
+      "evidence_status": "primary_page_read",
+      "license_status": "copyrighted_no_reuse_grant",
+      "notes": "官方基础3D/Q版形象与第七印象版权署名，可用于区分奶龙和奶蛙。",
+      "checked_at": "2026-10-29"
+    },
+    {
+      "id": "eco-naidan-game",
+      "title": "奶蛋弹弓社区游戏",
+      "url": "https://github.com/busgm666-cloud/naidan-slingshot",
+      "resource_type": "repository",
+      "evidence_status": "git_tree_and_readme_verified",
+      "license_status": "repository_mit_fan_media_constraints",
+      "notes": "现成奶蛋图片与背面图，但README说明部分变体程序着色、另有生成表情，非原梗标准认证。",
+      "checked_at": "2026-10-29",
+      "commit": "d3c9fde55b2fd33060d76d167b55a2fc66c1fe5a"
+    },
+    {
+      "id": "eco-moss-model-card",
+      "title": "Civitai MOSS 多角色模型官方API",
+      "url": "https://civitai.com/api/v1/models/3006514",
+      "resource_type": "model_metadata",
+      "evidence_status": "primary_api_verified_by_identity_research",
+      "license_status": "model_terms_and_character_rights_separate",
+      "notes": "本库identity研究已核实MOSS Image v1.0/version3411275及naiwa、nailoong、naibao、Nai_DS_whale、zhiren触发词；权重未下载、未加载、未实测，人物视觉未因模型存在而通过。",
+      "checked_at": "2026-10-29",
+      "research_record": "research/identity-resources.json"
+    }
+  ],
+  "characters": [
+    {
+      "id": "naiwa",
+      "display_name": "奶蛙",
+      "aliases": [
+        "奶娃",
+        "大笑奶龙",
+        "变异奶龙"
+      ],
+      "identity_status": "reference_selection_required",
+      "source_ids": [
+        "eco-naiwa-frames",
+        "eco-naiwa-sprite"
+      ],
+      "must_not_confuse_with": [
+        "nailoong",
+        "generic_frog"
+      ],
+      "notes": "用户给定视觉标准；选同源现成帧锁定。",
+      "generation_ready": false
+    },
+    {
+      "id": "naidan",
+      "display_name": "奶蛋",
+      "aliases": [],
+      "identity_status": "catalog_identity_supported",
+      "source_ids": [
+        "eco-naidan-catalog",
+        "eco-naidan-game"
+      ],
+      "must_not_confuse_with": [
+        "naiwa",
+        "naibao",
+        "generic_egg"
+      ],
+      "notes": "andi.mp3由专属语音表指向奶蛋。",
+      "generation_ready": false
+    },
+    {
+      "id": "naifen_character",
+      "display_name": "奶粉（角色）",
+      "aliases": [
+        "奶粉"
+      ],
+      "identity_status": "character_context_supported_visual_unresolved",
+      "source_ids": [
+        "eco-naifen-creator-example",
+        "eco-naifen-choice-example"
+      ],
+      "must_not_confuse_with": [
+        "naifen_fandom",
+        "naibao",
+        "pink_naiwa"
+      ],
+      "notes": "仅标题支持角色语境；未从原片锁定造型。",
+      "generation_ready": false
+    },
+    {
+      "id": "naifen_fandom",
+      "display_name": "奶粉（粉丝称呼）",
+      "aliases": [
+        "奶粉们",
+        "十年奶粉"
+      ],
+      "identity_status": "textual_fandom_branch",
+      "source_ids": [],
+      "must_not_confuse_with": [
+        "naifen_character"
+      ],
+      "notes": "不作为可生成角色。",
+      "generation_ready": false
+    },
+    {
+      "id": "capylulu",
+      "display_name": "水豚噜噜",
+      "aliases": [
+        "噜噜",
+        "Capylulu"
+      ],
+      "identity_status": "official_identity_supported_reference_selection_required",
+      "source_ids": [
+        "eco-lulu-official-directory",
+        "eco-lulu-community-v2",
+        "eco-lulu-community-alternative"
+      ],
+      "must_not_confuse_with": [
+        "generic_capybara",
+        "generic_hippo"
+      ],
+      "notes": "权利方目录为铁罐（北京）文化传媒有限公司；社区转制包需与所选原版比较。",
+      "generation_ready": false
+    },
+    {
+      "id": "meituan_meme",
+      "display_name": "美团袋鼠胖版",
+      "aliases": [
+        "美团老鼠",
+        "肥嘟嘟"
+      ],
+      "identity_status": "variant_selection_required",
+      "source_ids": [
+        "eco-meituan-brand-rules",
+        "eco-feidudu-community"
+      ],
+      "must_not_confuse_with": [
+        "naishu",
+        "generic_mouse",
+        "generic_kangaroo"
+      ],
+      "notes": "品牌版、胖版二创与奶鼠分别处理。",
+      "generation_ready": false
+    },
+    {
+      "id": "doubao",
+      "display_name": "豆包",
+      "aliases": [],
+      "identity_status": "product_identity_supported_visual_unresolved",
+      "source_ids": [
+        "eco-doubao-official"
+      ],
+      "must_not_confuse_with": [
+        "dounai",
+        "generic_robot"
+      ],
+      "notes": "官方Logo/App头像/二创拟人版不自动等价。",
+      "generation_ready": false
+    },
+    {
+      "id": "niulai",
+      "display_name": "牛来",
+      "aliases": [],
+      "identity_status": "film_identity_supported_reference_selection_required",
+      "source_ids": [
+        "eco-niulai-film-directory"
+      ],
+      "must_not_confuse_with": [
+        "tangniu_unresolved",
+        "generic_cow"
+      ],
+      "notes": "电影小牛，不能因唐牛同音而替换。",
+      "generation_ready": false
+    },
+    {
+      "id": "tangniu_unresolved",
+      "display_name": "唐牛",
+      "aliases": [],
+      "identity_status": "unresolved",
+      "source_ids": [],
+      "must_not_confuse_with": [
+        "niulai",
+        "shishen_tangniu",
+        "same_name_account"
+      ],
+      "notes": "未找到足以唯一确认奶蛙生态动画形象的主来源。",
+      "generation_ready": false
+    },
+    {
+      "id": "nailoong",
+      "display_name": "奶龙",
+      "aliases": [
+        "Nailoong"
+      ],
+      "identity_status": "official_identity_supported",
+      "source_ids": [
+        "eco-nailoong-official"
+      ],
+      "must_not_confuse_with": [
+        "naiwa"
+      ],
+      "notes": "第七印象原IP；奶龙数据集不是奶蛙数据集。",
+      "generation_ready": false
+    },
+    {
+      "id": "naibao",
+      "display_name": "奶包",
+      "aliases": [],
+      "identity_status": "model_metadata_verified_visual_unresolved",
+      "source_ids": [
+        "eco-moss-model-card"
+      ],
+      "must_not_confuse_with": [
+        "naifen_character",
+        "naidan",
+        "generic_bun"
+      ],
+      "notes": "Civitai MOSS官方API元数据已核实，权重未下载/未加载/未实测；实际视觉参考仍未锁定，不凭触发词造角色。",
+      "generation_ready": false
+    },
+    {
+      "id": "nai_whale",
+      "display_name": "奶鲸",
+      "aliases": [
+        "Nai_DS_whale"
+      ],
+      "identity_status": "catalog_identity_supported_visual_unreviewed",
+      "source_ids": [
+        "eco-naiwhale-catalog",
+        "eco-moss-model-card"
+      ],
+      "must_not_confuse_with": [
+        "generic_whale",
+        "blue_naiwa"
+      ],
+      "notes": "先取目录所指现成原图；MOSS模型卡已核实含Nai_DS_whale，但权重未下载/未加载，视觉身份仍待查看。",
+      "generation_ready": false
+    },
+    {
+      "id": "zhiren",
+      "display_name": "纸人",
+      "aliases": [],
+      "identity_status": "model_metadata_verified_visual_unresolved",
+      "source_ids": [
+        "eco-moss-model-card"
+      ],
+      "must_not_confuse_with": [
+        "generic_paper_figure"
+      ],
+      "notes": "Civitai MOSS官方API元数据已核实，权重未下载/未加载/未实测；实际视觉参考仍未锁定，不凭触发词造角色。",
+      "generation_ready": false
+    }
+  ],
+  "assets": [
+    {
+      "id": "eco-asset-lulu-community-v2-spritesheet-webp",
+      "character_id": "capylulu",
+      "source_id": "eco-lulu-community-v2",
+      "source_url": "https://github.com/czy666chen/lulu",
+      "commit": "390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6",
+      "upstream_path": "spritesheet.webp",
+      "download_url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/spritesheet.webp",
+      "suggested_filename": "lulu-community-v2-spritesheet.webp",
+      "git_blob_sha": "56d487b7c8d88b1222b04654169167bdf615c1b9",
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-lulu-community-v2-look-directions-png",
+      "character_id": "capylulu",
+      "source_id": "eco-lulu-community-v2",
+      "source_url": "https://github.com/czy666chen/lulu",
+      "commit": "390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6",
+      "upstream_path": "look-directions.png",
+      "download_url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/look-directions.png",
+      "suggested_filename": "lulu-community-v2-look-directions.png",
+      "git_blob_sha": "78f8416841cd5c7cdbeff608b31a13221d94ff97",
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-lulu-community-v2-pet-json",
+      "character_id": "capylulu",
+      "source_id": "eco-lulu-community-v2",
+      "source_url": "https://github.com/czy666chen/lulu",
+      "commit": "390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6",
+      "upstream_path": "pet.json",
+      "download_url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/pet.json",
+      "suggested_filename": "lulu-community-v2-pet.json",
+      "git_blob_sha": "edfcc0c003eb0882430fce750be93e3c1e4a9335",
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-feidudu-community-spritesheet-webp",
+      "character_id": "meituan_meme",
+      "source_id": "eco-feidudu-community",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "commit": "4398a97bb2212919f530b1e168ae2828c477b0eb",
+      "upstream_path": "pet/spritesheet.webp",
+      "download_url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/pet/spritesheet.webp",
+      "suggested_filename": "feidudu-community-spritesheet.webp",
+      "git_blob_sha": "6e64969a7f9809773a43fa248c0b7f08a294374d",
+      "license_status": "third_party_visual_rights_excluded",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-feidudu-community-look-directions-png",
+      "character_id": "meituan_meme",
+      "source_id": "eco-feidudu-community",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "commit": "4398a97bb2212919f530b1e168ae2828c477b0eb",
+      "upstream_path": "assets/look-directions.png",
+      "download_url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/assets/look-directions.png",
+      "suggested_filename": "feidudu-community-look-directions.png",
+      "git_blob_sha": "7b07fd2f76da854a56863c41b1e180867940774d",
+      "license_status": "third_party_visual_rights_excluded",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-feidudu-community-pet-json",
+      "character_id": "meituan_meme",
+      "source_id": "eco-feidudu-community",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "commit": "4398a97bb2212919f530b1e168ae2828c477b0eb",
+      "upstream_path": "pet/pet.json",
+      "download_url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/pet/pet.json",
+      "suggested_filename": "feidudu-community-pet.json",
+      "git_blob_sha": "c692107827b8648f5a18af6d34a0446b3fd2ed25",
+      "license_status": "third_party_visual_rights_excluded",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-feidudu-community-NOTICE-txt",
+      "character_id": "meituan_meme",
+      "source_id": "eco-feidudu-community",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "commit": "4398a97bb2212919f530b1e168ae2828c477b0eb",
+      "upstream_path": "NOTICE",
+      "download_url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/NOTICE",
+      "suggested_filename": "feidudu-community-NOTICE.txt",
+      "git_blob_sha": "df4425784f2d86077a292fef3def289b4e88f7a6",
+      "license_status": "third_party_visual_rights_excluded",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-feidudu-existing-reference-contact-sheet-jpg",
+      "character_id": "meituan_meme",
+      "source_id": "eco-feidudu-community",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "commit": "4398a97bb2212919f530b1e168ae2828c477b0eb",
+      "upstream_path": "references/source-images/reference-contact-sheet.jpg",
+      "download_url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/references/source-images/reference-contact-sheet.jpg",
+      "suggested_filename": "feidudu-existing-reference-contact-sheet.jpg",
+      "git_blob_sha": "12e22a5ceaed847d3c0d44936c6b48fc07ad6cef",
+      "license_status": "external_reference_rights_unverified",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-naidan-game-idle-png",
+      "character_id": "naidan",
+      "source_id": "eco-naidan-game",
+      "source_url": "https://github.com/busgm666-cloud/naidan-slingshot",
+      "commit": "d3c9fde55b2fd33060d76d167b55a2fc66c1fe5a",
+      "upstream_path": "assets/naidan_idle.png",
+      "download_url": "https://raw.githubusercontent.com/busgm666-cloud/naidan-slingshot/d3c9fde55b2fd33060d76d167b55a2fc66c1fe5a/assets/naidan_idle.png",
+      "suggested_filename": "naidan-game-idle.png",
+      "git_blob_sha": "5f704bd491b7e15929aa7a78955a32b4b9387e1e",
+      "license_status": "fan_media_constraints_unverified",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-naidan-game-back-png",
+      "character_id": "naidan",
+      "source_id": "eco-naidan-game",
+      "source_url": "https://github.com/busgm666-cloud/naidan-slingshot",
+      "commit": "d3c9fde55b2fd33060d76d167b55a2fc66c1fe5a",
+      "upstream_path": "assets/naidan_back.png",
+      "download_url": "https://raw.githubusercontent.com/busgm666-cloud/naidan-slingshot/d3c9fde55b2fd33060d76d167b55a2fc66c1fe5a/assets/naidan_back.png",
+      "suggested_filename": "naidan-game-back.png",
+      "git_blob_sha": "78f1109e94a88eb959d74d3afaf1f45be0a9e489",
+      "license_status": "fan_media_constraints_unverified",
+      "download_status": "not_downloaded_by_this_research_branch",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-naidan-existing-idle-png",
+      "character_id": "naidan",
+      "source_id": "eco-naidan-catalog",
+      "title": "奶蛋呆呆站立",
+      "source_url": "https://github.com/musemantic/NaiLoong/blob/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+      "commit": "ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9",
+      "upstream_path": "assets/memes/naiwa_0040.png",
+      "download_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+      "suggested_filename": "naidan-existing-idle.png",
+      "git_blob_sha": "7216cc56751a426bd81e9f2ec98c8f48298c5202",
+      "license_status": "community_media_unverified",
+      "download_status": "catalog_only",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    },
+    {
+      "id": "eco-asset-naidan-existing-angry-gif",
+      "character_id": "naidan",
+      "source_id": "eco-naidan-catalog",
+      "title": "生气叉腰的奶蛋",
+      "source_url": "https://github.com/musemantic/NaiLoong/blob/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0136.gif",
+      "commit": "a7b1122cbccbb16e5f47e3f49742cad3d59bd161",
+      "upstream_path": "assets/memes/naiwa_0136.gif",
+      "download_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0136.gif",
+      "suggested_filename": "naidan-existing-angry.gif",
+      "git_blob_sha": "ddb001ed82cf4f3db0796990b5604e8482279730",
+      "license_status": "community_media_unverified",
+      "download_status": "catalog_only",
+      "visual_review_status": "not_reviewed",
+      "identity_approval": "not_approved",
+      "redistribution_status": "not_cleared",
+      "local_reference_only": true
+    }
+  ],
+  "gaps": [
+    {
+      "id": "naifen-visual",
+      "character_id": "naifen_character",
+      "needed": "具体原片和可查看原图，以区分角色版本与粉丝称呼",
+      "status": "unresolved"
+    },
+    {
+      "id": "tangniu-identity",
+      "character_id": "tangniu_unresolved",
+      "needed": "能唯一识别奶蛙生态唐牛动画形象的主来源，不能改称牛来或食神真人",
+      "status": "unresolved"
+    },
+    {
+      "id": "doubao-variant",
+      "character_id": "doubao",
+      "needed": "用户所指的具体App/Logo/拟人二创视觉版本",
+      "status": "unresolved"
+    },
+    {
+      "id": "lora-model-cards",
+      "character_ids": [
+        "naibao",
+        "nai_whale",
+        "zhiren"
+      ],
+      "needed": "模型卡已核实；仍需取得并查看对应现成示例，核对具体视觉版本。若使用LoRA还需兼容底模、下载权限、下游许可与实际加载测试。",
+      "status": "metadata_verified_weights_and_visual_pending"
+    },
+    {
+      "id": "multi-character-rights",
+      "needed": "分别确认原角色、具体图片/动画和声音权利，不能由代码MIT/Apache或非商用推断全部素材许可",
+      "status": "not_cleared"
+    },
+    {
+      "id": "uniform-pack",
+      "needed": "本次未核实存在一个身份、声音、许可全齐的统一全角色包；目前是分散单角色资源",
+      "status": "not_verified"
+    }
+  ]
+}

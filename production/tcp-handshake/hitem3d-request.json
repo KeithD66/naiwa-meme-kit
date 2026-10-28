@@ -1,0 +1,12 @@
+{
+  "model": "hitem3d-2-0-251223",
+  "content": [
+    {"type": "text", "text": "--ff 2 --resolution 1536pro --request_type 3"},
+    {
+      "type": "image_url",
+      "image_url": {
+        "url": "https://raw.githubusercontent.com/LynnShaw/naiwa-pet/fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765/public/pets/naiwa/frames/frame_0000.webp"
+      }
+    }
+  ]
+}

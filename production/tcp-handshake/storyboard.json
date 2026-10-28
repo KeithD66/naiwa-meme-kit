@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "title": "奶蛙想上网：TCP三次握手",
+  "language": "zh-CN",
+  "duration_seconds": 26,
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "aspect_ratio": "9:16"
+  },
+  "production_mode": "existing_character_media_plus_code_drawn_diagram",
+  "ai_character_generation": false,
+  "intent": "用户已授权本条视频制作；本文件仅规划，实际渲染由主代理执行。沿用现成奶蛙，不声称已完成AI身份锁定。",
+  "technical_scope": {
+    "case": "basic active client/passive server three-way handshake",
+    "handshake_payload_bytes": 0,
+    "simultaneous_open": false,
+    "packet_loss_or_retransmission_shown": false,
+    "sequence_symbols": "x/y为各自选择的初始序号；公式省略32位模运算细节",
+    "not_tls_or_http_handshake": true
+  },
+  "layout": {
+    "background_color": "#101423",
+    "title_box": [
+      64,
+      70,
+      952,
+      160
+    ],
+    "endpoint_client_center_x": 180,
+    "endpoint_server_center_x": 900,
+    "endpoint_label_y": 335,
+    "state_label_y": 410,
+    "lifeline_start_y": 455,
+    "lifeline_end_y": 1085,
+    "arrow_start_left_x": 220,
+    "arrow_start_right_x": 860,
+    "diagram_box": [
+      64,
+      300,
+      952,
+      820
+    ],
+    "actor_card": [
+      328,
+      1170,
+      424,
+      565
+    ],
+    "caption_box": [
+      64,
+      1760,
+      952,
+      125
+    ],
+    "footer_y": 1890,
+    "font_policy": "使用本机可用中文字体，完整显示ASCII字段；包标签不能依赖字幕被裁剪",
+    "actor_policy": "现成720×960图/视频按比例缩放进白色角色卡，保留全身，不做新角色绘制或脸部重绘"
+  },
+  "assets": [
+    {
+      "id": "naiwa-frame-0000",
+      "path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+      "type": "image",
+      "role": "固定闭嘴捧肚角色",
+      "visual_review": "previously_viewed",
+      "usage": "local_only_no_license"
+    },
+    {
+      "id": "naiwa-frame-0200",
+      "path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0200.webp",
+      "type": "image",
+      "role": "笑态定位参考；若不能解码原片可定格替代，不生成新笑脸",
+      "visual_review": "previously_viewed",
+      "usage": "local_only_no_license"
+    },
+    {
+      "id": "naiwa-original-video",
+      "path": "assets/repos/naiwa-pet/naiwa.mp4",
+      "type": "video",
+      "duration_seconds": 14.6,
+      "width": 720,
+      "height": 960,
+      "fps": 30,
+      "role": "收尾现成大笑片段",
+      "usage": "local_only_rights_unresolved"
+    },
+    {
+      "id": "naiwa-original-audio",
+      "path": "assets/repos/naiwa-pet/public/pets/naiwa/audio.m4a",
+      "type": "audio",
+      "role": "与原片同源的现成音轨；收尾同步取段",
+      "audio_review": "not_auditioned",
+      "usage": "local_only_no_license"
+    },
+    {
+      "id": "nai-hub-dupu",
+      "path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+      "type": "audio",
+      "duration_seconds": 1.194467,
+      "role": "可选三包发出短点",
+      "audio_review": "not_auditioned",
+      "usage": "local_only_recording_rights_unresolved"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0.0,
+      "end": 2.0,
+      "headline": "奶蛙想上网",
+      "subtitle_lines": [
+        "先别齁！TCP要握三次"
+      ],
+      "actor": {
+        "asset_id": "naiwa-frame-0000",
+        "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+        "mode": "still_existing_frame",
+        "camera": "同一现成全身帧，从100%轻推到108%；不生成新表情"
+      },
+      "diagram": {
+        "visible": false,
+        "active_packet": null,
+        "reveal_packet_ids": []
+      },
+      "rhythm": "开场标题一次短促放大，0.12秒后稳定，不循环闪烁"
+    },
+    {
+      "id": "s02",
+      "start": 2.0,
+      "end": 4.0,
+      "headline": "TCP 三次握手",
+      "subtitle_lines": [
+        "客户端主动连，服务器在监听"
+      ],
+      "actor": {
+        "asset_id": "naiwa-frame-0000",
+        "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+        "mode": "still_existing_frame",
+        "camera": "还原全身；底部角色卡固定"
+      },
+      "diagram": {
+        "visible": true,
+        "active_packet": null,
+        "reveal_packet_ids": []
+      },
+      "rhythm": "端点与两条生命线进入；双方标签固定，方向始终左客户端→右服务器"
+    },
+    {
+      "id": "s03",
+      "start": 4.0,
+      "end": 8.0,
+      "headline": "① 先报到：SYN",
+      "subtitle_lines": [
+        "我的初始序号是 x"
+      ],
+      "actor": {
+        "asset_id": "naiwa-frame-0000",
+        "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+        "mode": "still_existing_frame",
+        "camera": "发送瞬间角色卡轻放大到104%，立即回位；只是后期缩放"
+      },
+      "diagram": {
+        "visible": true,
+        "active_packet": "p1",
+        "reveal_packet_ids": [
+          "p1"
+        ]
+      },
+      "rhythm": "4.5秒包从客户端发出，7.0秒到服务器；字段保持完整可读"
+    },
+    {
+      "id": "s04",
+      "start": 8.0,
+      "end": 13.0,
+      "headline": "② 收到，我也报到",
+      "subtitle_lines": [
+        "SYN + ACK：seq=y，ack=x+1"
+      ],
+      "actor": {
+        "asset_id": "naiwa-frame-0000",
+        "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+        "mode": "still_existing_frame",
+        "camera": "端点来回时脸部可一次切近景，再回全身；不重画脸"
+      },
+      "diagram": {
+        "visible": true,
+        "active_packet": "p2",
+        "reveal_packet_ids": [
+          "p1",
+          "p2"
+        ]
+      },
+      "rhythm": "8.5秒服务器发回SYN+ACK，13.0秒到客户端；x+1突出一次"
+    },
+    {
+      "id": "s05",
+      "start": 13.0,
+      "end": 18.0,
+      "headline": "③ 我也收到了：ACK",
+      "subtitle_lines": [
+        "seq=x+1，ack=y+1"
+      ],
+      "actor": {
+        "asset_id": "naiwa-frame-0000",
+        "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+        "mode": "still_existing_frame",
+        "camera": "角色保持原帧；第三包到达时快速推近一次，再回位"
+      },
+      "diagram": {
+        "visible": true,
+        "active_packet": "p3",
+        "reveal_packet_ids": [
+          "p1",
+          "p2",
+          "p3"
+        ]
+      },
+      "rhythm": "13.0秒客户端收到有效SYN+ACK已ESTABLISHED，13.3秒发ACK；16.5秒服务器收到后ESTABLISHED"
+    },
+    {
+      "id": "s06",
+      "start": 18.0,
+      "end": 23.0,
+      "headline": "双方收发确认，初始序号同步",
+      "subtitle_lines": [
+        "SYN占1个序号；纯ACK不占"
+      ],
+      "actor": {
+        "asset_id": "naiwa-frame-0000",
+        "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+        "mode": "still_existing_frame",
+        "camera": "保持全身，图解为主信息"
+      },
+      "diagram": {
+        "visible": true,
+        "active_packet": null,
+        "reveal_packet_ids": [
+          "p1",
+          "p2",
+          "p3"
+        ],
+        "note": "客户端、服务器状态均为ESTABLISHED；不画额外第四次握手"
+      },
+      "rhythm": "3条包路径一起保留，给观众复看字段；对勾只表示本示例握手完成"
+    },
+    {
+      "id": "s07",
+      "start": 23.0,
+      "end": 26.0,
+      "headline": "握完了，才轮到齁！",
+      "subtitle_lines": [
+        "SYN → SYN+ACK → ACK"
+      ],
+      "actor": {
+        "asset_id": "naiwa-original-video",
+        "local_path": "assets/repos/naiwa-pet/naiwa.mp4",
+        "mode": "existing_video_trim",
+        "source_start": 6.666666666666667,
+        "source_end": 9.666666666666666,
+        "mute_embedded_audio": true,
+        "camera": "使用现成6.6667–9.6667秒片段，开口大笑；只做后期轻推，保留现成身体"
+      },
+      "diagram": {
+        "visible": true,
+        "active_packet": null,
+        "reveal_packet_ids": [
+          "p1",
+          "p2",
+          "p3"
+        ],
+        "note": "收尾小字：TCP连接 ≠ 加密"
+      },
+      "rhythm": "23秒从闭嘴帧硬切现成大笑片段，末尾短停；不把口癖当科普旁白"
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "lines": [
+        "先别齁！TCP要握三次"
+      ]
+    },
+    {
+      "start": 2.0,
+      "end": 4.0,
+      "lines": [
+        "客户端主动连接",
+        "服务器先监听"
+      ]
+    },
+    {
+      "start": 4.0,
+      "end": 8.0,
+      "lines": [
+        "① SYN：seq=x",
+        "我的初始序号是 x"
+      ]
+    },
+    {
+      "start": 8.0,
+      "end": 13.0,
+      "lines": [
+        "② SYN+ACK：seq=y，ack=x+1",
+        "我收到了你的 SYN，也报上我的序号"
+      ]
+    },
+    {
+      "start": 13.0,
+      "end": 16.5,
+      "lines": [
+        "③ ACK：seq=x+1，ack=y+1",
+        "客户端此时已连接；确认也收到了你"
+      ]
+    },
+    {
+      "start": 16.5,
+      "end": 18.0,
+      "lines": [
+        "服务器收到第三次 ACK",
+        "两端都进入 ESTABLISHED"
+      ]
+    },
+    {
+      "start": 18.0,
+      "end": 20.5,
+      "lines": [
+        "双方都能发、也都能收",
+        "并同步了双方初始序号"
+      ]
+    },
+    {
+      "start": 20.5,
+      "end": 23.0,
+      "lines": [
+        "SYN 占1个序号",
+        "纯 ACK 不占序号"
+      ]
+    },
+    {
+      "start": 23.0,
+      "end": 26.0,
+      "lines": [
+        "SYN → SYN+ACK → ACK",
+        "TCP连接 ≠ 加密"
+      ]
+    }
+  ],
+  "packet_events": [
+    {
+      "id": "p1",
+      "order": 1,
+      "sender": "client",
+      "receiver": "server",
+      "flags": [
+        "SYN"
+      ],
+      "seq": "x",
+      "ack": null,
+      "ack_field_valid": false,
+      "payload_bytes": 0,
+      "send_time": 4.5,
+      "arrival_time": 7.0,
+      "row_y": 560,
+      "label": "SYN   seq=x",
+      "color": "#FFCA28",
+      "arrow": "left_to_right"
+    },
+    {
+      "id": "p2",
+      "order": 2,
+      "sender": "server",
+      "receiver": "client",
+      "flags": [
+        "SYN",
+        "ACK"
+      ],
+      "seq": "y",
+      "ack": "x+1",
+      "ack_field_valid": true,
+      "payload_bytes": 0,
+      "send_time": 8.5,
+      "arrival_time": 13.0,
+      "row_y": 760,
+      "label": "SYN+ACK   seq=y   ack=x+1",
+      "color": "#53D4FF",
+      "arrow": "right_to_left"
+    },
+    {
+      "id": "p3",
+      "order": 3,
+      "sender": "client",
+      "receiver": "server",
+      "flags": [
+        "ACK"
+      ],
+      "seq": "x+1",
+      "ack": "y+1",
+      "ack_field_valid": true,
+      "payload_bytes": 0,
+      "send_time": 13.3,
+      "arrival_time": 16.5,
+      "row_y": 960,
+      "label": "ACK   seq=x+1   ack=y+1",
+      "color": "#ABED59",
+      "arrow": "left_to_right"
+    }
+  ],
+  "state_intervals": [
+    {
+      "start": 0.0,
+      "end": 4.5,
+      "client": "CLOSED",
+      "server": "LISTEN"
+    },
+    {
+      "start": 4.5,
+      "end": 7.0,
+      "client": "SYN_SENT",
+      "server": "LISTEN"
+    },
+    {
+      "start": 7.0,
+      "end": 13.0,
+      "client": "SYN_SENT",
+      "server": "SYN_RECEIVED"
+    },
+    {
+      "start": 13.0,
+      "end": 16.5,
+      "client": "ESTABLISHED",
+      "server": "SYN_RECEIVED"
+    },
+    {
+      "start": 16.5,
+      "end": 26.0,
+      "client": "ESTABLISHED",
+      "server": "ESTABLISHED"
+    }
+  ],
+  "audio_clips": [
+    {
+      "id": "laugh-ending",
+      "asset_id": "naiwa-original-audio",
+      "path": "assets/repos/naiwa-pet/public/pets/naiwa/audio.m4a",
+      "source_start": 6.666666666666667,
+      "source_end": 9.666666666666666,
+      "timeline_start": 23.0,
+      "timeline_end": 26.0,
+      "gain_db": -5,
+      "fade_in_seconds": 0.04,
+      "fade_out_seconds": 0.12,
+      "default_enabled": true,
+      "status": "existing_recording_candidate_not_auditioned",
+      "note": "先本地试听确认内容与笑态相符；不称完全原版，不合成旁白。若含无关对白则关闭或换已核验现成笑声。"
+    },
+    {
+      "id": "packet-tick-1",
+      "asset_id": "nai-hub-dupu",
+      "path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+      "source_start": 0.0,
+      "source_end": 1.194467,
+      "timeline_start": 4.5,
+      "timeline_end": 5.6944669999999995,
+      "gain_db": -11,
+      "default_enabled": false,
+      "status": "optional_existing_cue_requires_audition",
+      "note": "只有试听适合该落点才启用，不把未核实音节当科普旁白或网络原版。"
+    },
+    {
+      "id": "packet-tick-2",
+      "asset_id": "nai-hub-dupu",
+      "path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+      "source_start": 0.0,
+      "source_end": 1.194467,
+      "timeline_start": 8.5,
+      "timeline_end": 9.694467,
+      "gain_db": -11,
+      "default_enabled": false,
+      "status": "optional_existing_cue_requires_audition",
+      "note": "只有试听适合该落点才启用，不把未核实音节当科普旁白或网络原版。"
+    },
+    {
+      "id": "packet-tick-3",
+      "asset_id": "nai-hub-dupu",
+      "path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+      "source_start": 0.0,
+      "source_end": 1.194467,
+      "timeline_start": 13.3,
+      "timeline_end": 14.494467,
+      "gain_db": -11,
+      "default_enabled": false,
+      "status": "optional_existing_cue_requires_audition",
+      "note": "只有试听适合该落点才启用，不把未核实音节当科普旁白或网络原版。"
+    }
+  ],
+  "audio_policy": {
+    "tts_or_voice_clone": false,
+    "synthesized_laugh": false,
+    "independent_bgm": null,
+    "note": "独立BGM未锁版本/权限，不为填满声音自动生成配乐。优先保证包字段字幕可读与反差，固定口癖只作现成素材点缀。"
+  },
+  "technical_checks": [
+    "只有三个握手包，方向client→server、server→client、client→server。",
+    "第一包SYN seq=x；第二包SYN+ACK seq=y ack=x+1；第三包ACK seq=x+1 ack=y+1。",
+    "客户端13.0秒收到有效SYN+ACK即转ESTABLISHED并形成ACK，13.3秒发第三包时它已ESTABLISHED；不能说要等第三包到服务器它才连接。",
+    "服务器16.5秒收到有效第三次ACK后才转ESTABLISHED。",
+    "SYN占一个序号，纯ACK不占；x+1/y+1不是数据长度或加密轮数。",
+    "双方确认收发是入门说法；本示例还同步初始序号，不声称可靠性只靠三次握手、TCP自动加密或这是HTTP/TLS握手。"
+  ],
+  "technical_sources": [
+    {
+      "title": "RFC9293 §3.5 Figure6 basic three-way handshake",
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.5",
+      "checked_date": "2026-10-29"
+    },
+    {
+      "title": "RFC9293 §3.10.7.3 SYN-SENT state processing",
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html#section-3.10.7.3",
+      "checked_date": "2026-10-29"
+    }
+  ],
+  "render_handoff_notes": [
+    "按26秒、30fps渲染；时间区间按start<=t<end处理以避免边界文字叠加。",
+    "本文件不要求AI图生视频；现成帧/原片剪辑保持已知形象，图解箭头/端点/文字是代码绘图，不是角色生成。",
+    "若未来改成AI动作生成，必须另满足合格三视图或模型参考前置条件；不能因本演示成片就宣称多角度锁定完成。",
+    "别将整张sprite图集直接当角色画面；源片内嵌音频默认静音，笑声只显式混入末段，避免双轨叠声。",
+    "成片为本地演示；使用无许可奶蛙原片/帧/音轨不代表获对外发布或再分发授权。"
+  ]
+}

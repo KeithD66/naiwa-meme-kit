@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T18:44:13.224331+00:00",
+  "model": "hyper3d-gen2-260112",
+  "stage": "request_prepared_not_submitted",
+  "scope": "Reusable offline image-bound Hyper3D request preparation, native topology verification and same-source comparison planning.",
+  "workflow": "skill/references/hyper3d.md",
+  "plan": "library/hyper3d-plan.json",
+  "official_evidence": "research/hyper3d-official.json",
+  "prepared_request": "assets/private/hyper3d/requests/hyper3d-naiwa-quad-v1/request.json",
+  "prepared_summary": "assets/private/hyper3d/requests/hyper3d-naiwa-quad-v1/summary.json",
+  "request_sha256": "eec2741ff6ba7390a9d4f8260d0d3eeb1711260f8fbe3f322b1ae3acddd99555",
+  "parameters": {
+    "mesh_mode": "Quad",
+    "material": "PBR",
+    "quality_override": 50000,
+    "hd_texture": true,
+    "addons": "HighPack",
+    "use_original_alpha": false,
+    "TAPose": false,
+    "fileformat": "obj"
+  },
+  "reference": {
+    "source_sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+    "submitted_sha256": "d31f793199e249d8e893d2f51e281fd1eaa5f64aaea36679006d2deb2a2fc516",
+    "submitted_format": "png",
+    "source_format": "webp",
+    "dimensions": [
+      720,
+      960
+    ],
+    "source_bytes": 17292,
+    "submitted_bytes": 198340,
+    "rgba_pixel_sha256": "c05dcdebc13b005060d28d849ed3c24476a54011a7aa276517d6c2b450131dc1",
+    "rgba_hash_basis": "big-endian uint32 width,height followed by decoded RGBA bytes",
+    "transform": "format_conversion_only",
+    "dimensions_unchanged": true,
+    "decoded_pixels_unchanged": true,
+    "submitted_png_sha256": "d31f793199e249d8e893d2f51e281fd1eaa5f64aaea36679006d2deb2a2fc516",
+    "source_asset_id": "naiwa-frame-0000",
+    "source_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+    "version_id": "naiwa-pet-network-3d",
+    "pose_id": "frame-0000-hands-on-belly",
+    "view_label": "three_quarter",
+    "origin": "existing_network_media",
+    "catalog_visual_review": "current_hash",
+    "catalog_license_status": "no_license_local_only",
+    "submitted_file": "inputs/reference-00.png"
+  },
+  "comparison_targets": [
+    {
+      "asset_id": "hitem3d-naiwa-glb",
+      "path": "assets/private/generated-reference/hitem3d-naiwa/model.glb",
+      "sha256": "d31adbf70d827bc8709d71093e65c48c2937480be91a87f671ab7322c6de9127",
+      "comparison_type": "same-source-image; normalization and render settings must be aligned before geometric/color ranking"
+    },
+    {
+      "asset_id": "seed3d-naiwa-v1-working-glb",
+      "path": "assets/private/seed3d/models/seed3d-naiwa-v1/package/character.glb",
+      "sha256": "b6aa933a3a6587707de70a5d08b7423f6413f224b2d27a5e056059944ae57576",
+      "comparison_type": "same-source-image; normalization and render settings must be aligned before geometric/color ranking"
+    }
+  ],
+  "execution": {
+    "inference_api_calls": 0,
+    "credential_reads": 0,
+    "generated_models": 0,
+    "reported_new_usage_tokens": 0,
+    "new_inference_cost_cny": 0,
+    "account_remaining_verified": false,
+    "push_or_publication_performed": false
+  },
+  "planned_trial_cost": {
+    "successful_task_tokens": 30000,
+    "successful_task_standard_payg_cny": 1.8,
+    "model_specific_free_balance": "unknown",
+    "seed3d_2m_allowance_applies": false,
+    "documented_initial_gift_not_account_balance": 150000,
+    "source_url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh"
+  },
+  "reusable_changes": [
+    "Offline prepare/dry-run validates reviewed existing references, file hashes, source version, pose and live review ledger.",
+    "Unsupported static WebP is re-encoded as equal-size, pixel-identical RGBA PNG; encoded and pixel hashes are recorded.",
+    "Request is idempotently stored in ignored private output; changed request or metadata requires a separate job version.",
+    "OBJ/GLB inspector now reports source_face_vertex_histogram and quad_face_fraction without changing native geometry.",
+    "Skill source, installed copy, README and generation-tool routing include the Hyper3D workflow."
+  ],
+  "verification": {
+    "automated_tests_passed": 93,
+    "hyper3d_specific_tests_passed": 11,
+    "native_polygon_regression_passed": true,
+    "skill_validator_passed": true,
+    "independent_dry_run_passed": true,
+    "prepared_body_and_source_hashes_verified": true,
+    "existing_baseline_models_unchanged": true,
+    "private_request_git_ignored": true,
+    "no_real_ark_credentials_in_integration_text": true,
+    "library_integrity_ok": true,
+    "library_schema_ok": true,
+    "library_asset_total_unchanged": 760
+  },
+  "limitations": [
+    "No Hyper3D inference or output inspection has been performed; quality improvements are hypotheses for the prepared trial.",
+    "Current plan has one real reference; verified same-pose genuine multi-angle sources are not yet available.",
+    "Ark accepts 1-5 image inputs but does not expose calibrated camera/MultiView semantics.",
+    "Native quad topology and returned PBR/texture bundle must be inspected; GLB and trimesh-derived OBJ are triangulated.",
+    "TAPose is static pose conditioning, without a rig, skinning or animation guarantee.",
+    "The offline budget fields do not implement submission reservations or account-level enforcement; ark-task.py remains a separate explicit submit operation.",
+    "Existing reference, generated-media rights and local-only distribution restrictions still apply."
+  ]
+}

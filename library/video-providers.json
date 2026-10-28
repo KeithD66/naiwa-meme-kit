@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "purpose": "Codex编排层通过VideoPipeline统一描述镜头，再按用户工作档位匹配供应商。",
+  "tier_basis": "user_workflow_preference_not_quality_or_price_ranking",
+  "tiers": {
+    "draft": [
+      "hailuo-lite",
+      "grok",
+      "veo-draft"
+    ],
+    "standard": [
+      "kling-720p",
+      "wan",
+      "jimeng"
+    ],
+    "polish": [
+      "seedance",
+      "veo-fast"
+    ]
+  },
+  "providers": [
+    {
+      "id": "hailuo-lite",
+      "display_name": "海螺 / Lite",
+      "kind": "video",
+      "family": "minimax-hailuo",
+      "tier": "draft",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {},
+      "official_source_ids": [
+        "minimax_hailuo"
+      ],
+      "notes": "海螺/Lite是本项目草稿路由名；具体官方模型、Lite含义及账户可用性需在适配器接入时确定。"
+    },
+    {
+      "id": "grok",
+      "display_name": "Grok",
+      "kind": "video",
+      "family": "xai",
+      "tier": "draft",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {},
+      "official_source_ids": [
+        "xai_grok"
+      ],
+      "notes": "具体Grok Imagine视频模型和图片参考接口按官方账户可用版本解析。"
+    },
+    {
+      "id": "veo-draft",
+      "display_name": "Veo · 草稿",
+      "kind": "video",
+      "family": "google-veo",
+      "tier": "draft",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {},
+      "official_source_ids": [
+        "google_veo"
+      ],
+      "notes": "草稿用途配置；不默认绑定某个已退役preview模型。"
+    },
+    {
+      "id": "kling-720p",
+      "display_name": "可灵 · 720p",
+      "kind": "video",
+      "family": "kling",
+      "tier": "standard",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {
+        "resolutions": [
+          "720p"
+        ]
+      },
+      "official_source_ids": [
+        "kling"
+      ],
+      "notes": "本项目主力档固定720p路由；供应商具体模型和版本须独立配置。"
+    },
+    {
+      "id": "wan",
+      "display_name": "Wan",
+      "kind": "video",
+      "family": "alibaba-wan",
+      "tier": "standard",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {},
+      "official_source_ids": [
+        "alibaba_wan"
+      ],
+      "notes": "选择实际可访问的官方Wan服务及图生视频模型，不将社区名称当成可调用模型ID。"
+    },
+    {
+      "id": "jimeng",
+      "display_name": "即梦",
+      "kind": "video",
+      "family": "jimeng",
+      "tier": "standard",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {},
+      "official_source_ids": [
+        "volcengine_jimeng"
+      ],
+      "notes": "即梦是产品入口名；Web工作流与方舟Seedance API的账号、参数和可用性分别核验。"
+    },
+    {
+      "id": "seedance",
+      "display_name": "Seedance",
+      "kind": "video",
+      "family": "volcengine-seedance",
+      "tier": "polish",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {},
+      "official_source_ids": [
+        "volcengine_seedance"
+      ],
+      "notes": "精修用途配置；方舟视频模型另接适配器，不将Seed3D/Hitem3D/Hyper3D算为视频。"
+    },
+    {
+      "id": "veo-fast",
+      "display_name": "Veo Fast · 精修",
+      "kind": "video",
+      "family": "google-veo",
+      "tier": "polish",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_id": null,
+      "model_id": null,
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": [],
+        "verification_status": "unverified"
+      },
+      "routing_constraints": {},
+      "official_source_ids": [
+        "google_veo"
+      ],
+      "notes": "按用户精修工作流分配；Fast不构成最高画质或最低价格承诺。"
+    }
+  ],
+  "execution_policy": {
+    "default": "offline_plan",
+    "automatic_paid_fallback": false,
+    "automatic_tier_escalation": false,
+    "reference_images_required": true,
+    "existing_audio_in_postproduction": true
+  },
+  "capability_semantics": "null或空列表是尚未核实，不等于支持全部规格；adapter实测或官方模型能力需另行确认。",
+  "source_registry": "research/video-provider-sources.json"
+}

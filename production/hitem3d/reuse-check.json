@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28T18:45:53.675905+00:00",
+  "model": "hitem3d-2-0-251223",
+  "user_example": {
+    "image_url": "https://cdn.phototourl.com/member/2026-04-10-6e2d87ab-6f45-46c5-bcac-d1046a387940.png",
+    "local_image": "assets/private/api-reference/user-supplied-current.png",
+    "sha256": "7a3aa86873802098d4edfb0694df6c1be62c93dca2c265e88b0b78dbdde04ab2",
+    "actual_visual_content": "Orange tabby cat in a military coat and bicorne riding a horse, with red cape; not Naiwa.",
+    "matches_previous_example_download": true,
+    "same_as_generated_naiwa_reference": false,
+    "generated_model_for_this_example": false
+  },
+  "existing_naiwa_result": {
+    "task_id": "cgt-20261029010628-j4qdj",
+    "status": "succeeded",
+    "source_asset_id": "naiwa-frame-0000",
+    "source_sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+    "actual_reference_url": "https://raw.githubusercontent.com/LynnShaw/naiwa-pet/fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765/public/pets/naiwa/frames/frame_0000.webp",
+    "model_path": "assets/private/generated-reference/hitem3d-naiwa/model.glb",
+    "model_hash_matches_record": true,
+    "usage_previously_reported_tokens": 163125,
+    "files": [
+      {
+        "path": "assets/private/generated-reference/hitem3d-naiwa/model.glb",
+        "exists": true,
+        "sha256": "d31adbf70d827bc8709d71093e65c48c2937480be91a87f671ab7322c6de9127"
+      },
+      {
+        "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-front.png",
+        "exists": true,
+        "sha256": "0c41149002fa48e65311dd9bce0f819cbef3e66c46f1876e53a14fc97bb8ccdf"
+      },
+      {
+        "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-side.png",
+        "exists": true,
+        "sha256": "12ca4537e9f138a699237cfffdd4c4a32c573c23105907d1d353afb19c4fa70f"
+      },
+      {
+        "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-back.png",
+        "exists": true,
+        "sha256": "c9c4fda67afa2e170393d551bf6999616a47f969458432bcfc2f5d7f10e4408a"
+      }
+    ],
+    "limitations": [
+      "single-image reconstructed candidate, inferred back",
+      "texture seams remain",
+      "no rigging or character animation",
+      "not the input supplied in the pasted example"
+    ]
+  },
+  "current_action": "Verified supplied sample content and existing Naiwa artifacts for reuse; no new inference request.",
+  "new_inference_api_calls": 0,
+  "new_credential_reads": 0,
+  "new_usage_tokens": 0
+}

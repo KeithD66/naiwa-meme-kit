@@ -1,0 +1,377 @@
+{
+  "schema_version": 3,
+  "state": "draft_only",
+  "mode": "existing-edit",
+  "project_root": "/Users/denglx/Desktop/video/naiwa-meme-kit",
+  "character_ids": [
+    "naiwa"
+  ],
+  "characters": [
+    {
+      "binding_id": "A",
+      "character_id": "naiwa",
+      "character": {
+        "id": "naiwa",
+        "aliases": [
+          "奶娃",
+          "大笑奶龙",
+          "变异奶龙"
+        ],
+        "identity_status": "reference_selection_required",
+        "source_ids": [
+          "eco-naiwa-frames",
+          "eco-naiwa-sprite"
+        ],
+        "must_not_confuse_with": [
+          "nailoong",
+          "generic_frog"
+        ],
+        "notes": "用户给定视觉标准；选同源现成帧锁定。",
+        "generation_ready": false,
+        "name": "奶蛙"
+      },
+      "screen_position": null,
+      "reference_asset_ids": [
+        "naiwa-frame-0000",
+        "naiwa-frame-0200"
+      ],
+      "audio_asset_ids": [
+        "nai-hub-nailong_laugh"
+      ],
+      "reference_assets": [
+        {
+          "id": "naiwa-frame-0000",
+          "title": "奶蛙现成原序列·闭嘴参照",
+          "kind": "image",
+          "character_ids": [
+            "naiwa"
+          ],
+          "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+          "source_url": "https://github.com/LynnShaw/naiwa-pet",
+          "source_commit": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+          "reference_role": "neutral",
+          "identity_bundle_id": "naiwa-pet-network-3d",
+          "identity_tier": "network_3d_candidate",
+          "license_status": "no_license_local_only",
+          "tags": [
+            "existing_frame",
+            "same_sequence",
+            "neutral"
+          ],
+          "notes": "现成网络版候选；非用户认证原始作者来源，也不是三视图。",
+          "usage_scope": "local_reference_only",
+          "availability": "local",
+          "bytes": 17292,
+          "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+          "source_identity_bundle_id": "naiwa-pet-network-3d",
+          "source_reference_role": "neutral",
+          "visual_review": "visual_checked",
+          "audio_review": "not_applicable",
+          "review_status": "current_hash",
+          "review_evidence": {
+            "asset_id": "naiwa-frame-0000",
+            "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+            "visual": {
+              "result": "visual_checked",
+              "note": "已实际看完整帧：金黄梨形无脖子、圆眼一字嘴、乳白大腹斑、褐色手脚；此帧为同源原序列的侧正面捧肚站姿，不是完整三视图。",
+              "reviewed_at": "2026-10-28T17:20:15.528676+00:00",
+              "identity_bundle_id": "naiwa-pet-network-3d",
+              "reference_role": "neutral"
+            }
+          }
+        },
+        {
+          "id": "naiwa-frame-0200",
+          "title": "奶蛙现成原序列·捧腹笑参照",
+          "kind": "image",
+          "character_ids": [
+            "naiwa"
+          ],
+          "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0200.webp",
+          "source_url": "https://github.com/LynnShaw/naiwa-pet",
+          "source_commit": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+          "reference_role": "laugh",
+          "identity_bundle_id": "naiwa-pet-network-3d",
+          "identity_tier": "network_3d_candidate",
+          "license_status": "no_license_local_only",
+          "tags": [
+            "existing_frame",
+            "same_sequence",
+            "laugh"
+          ],
+          "notes": "现成网络版候选；非用户认证原始作者来源，也不是三视图。",
+          "usage_scope": "local_reference_only",
+          "availability": "local",
+          "bytes": 18758,
+          "sha256": "36118d59ec8ae570fa31e017012a0628503e1cf38bc06cb00642438be6695b28",
+          "source_identity_bundle_id": "naiwa-pet-network-3d",
+          "source_reference_role": "laugh",
+          "visual_review": "visual_checked",
+          "audio_review": "not_applicable",
+          "review_status": "current_hash",
+          "review_evidence": {
+            "asset_id": "naiwa-frame-0200",
+            "sha256": "36118d59ec8ae570fa31e017012a0628503e1cf38bc06cb00642438be6695b28",
+            "visual": {
+              "result": "visual_checked",
+              "note": "已实际查看同源笑态帧；可用于原片动作参照，不能把闭眼开口表情当默认静态五官或三视图。",
+              "reviewed_at": "2026-10-28T17:20:15.571754+00:00",
+              "identity_bundle_id": "naiwa-pet-network-3d",
+              "reference_role": "laugh"
+            }
+          }
+        }
+      ],
+      "audio_assets": [
+        {
+          "id": "nai-hub-nailong_laugh",
+          "title": "咳哈哈哈哈~",
+          "kind": "audio",
+          "character_ids": [
+            "naiwa"
+          ],
+          "local_path": "assets/repos/NaiLoong/assets/audio/nailong_laugh.mp3",
+          "source_url": "https://github.com/lin-alg/NaiLoong",
+          "source_commit": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+          "cue_ids": [],
+          "license_status": "recording_rights_unresolved",
+          "tags": [
+            "nailong_laugh",
+            "naiwa"
+          ],
+          "notes": "归属来自上游voice.json；目录文字不是试听结论。",
+          "usage_scope": "local_reference_only",
+          "identity_tier": "unconfirmed",
+          "availability": "local",
+          "bytes": 125804,
+          "sha256": "716c2d58d02c6543057a7adf6637b8224886f6f0d7c06ffa34bfdf18dde72c33",
+          "media": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "48000",
+                "channels": 1
+              }
+            ],
+            "format": {
+              "duration": "15.650000"
+            }
+          },
+          "source_identity_bundle_id": null,
+          "source_reference_role": null,
+          "visual_review": "not_reviewed",
+          "audio_review": "not_auditioned",
+          "review_status": "not_recorded",
+          "research_asset_ids": [
+            "nailoong_nailong_laugh"
+          ],
+          "fetch_policy": "local_only"
+        }
+      ],
+      "multiview_ready": false,
+      "blockers": [
+        "声音尚未试听匹配: nai-hub-nailong_laugh"
+      ]
+    }
+  ],
+  "reference_assets": [
+    {
+      "id": "naiwa-frame-0000",
+      "title": "奶蛙现成原序列·闭嘴参照",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+      "source_url": "https://github.com/LynnShaw/naiwa-pet",
+      "source_commit": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "reference_role": "neutral",
+      "identity_bundle_id": "naiwa-pet-network-3d",
+      "identity_tier": "network_3d_candidate",
+      "license_status": "no_license_local_only",
+      "tags": [
+        "existing_frame",
+        "same_sequence",
+        "neutral"
+      ],
+      "notes": "现成网络版候选；非用户认证原始作者来源，也不是三视图。",
+      "usage_scope": "local_reference_only",
+      "availability": "local",
+      "bytes": 17292,
+      "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "source_identity_bundle_id": "naiwa-pet-network-3d",
+      "source_reference_role": "neutral",
+      "visual_review": "visual_checked",
+      "audio_review": "not_applicable",
+      "review_status": "current_hash",
+      "review_evidence": {
+        "asset_id": "naiwa-frame-0000",
+        "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+        "visual": {
+          "result": "visual_checked",
+          "note": "已实际看完整帧：金黄梨形无脖子、圆眼一字嘴、乳白大腹斑、褐色手脚；此帧为同源原序列的侧正面捧肚站姿，不是完整三视图。",
+          "reviewed_at": "2026-10-28T17:20:15.528676+00:00",
+          "identity_bundle_id": "naiwa-pet-network-3d",
+          "reference_role": "neutral"
+        }
+      }
+    },
+    {
+      "id": "naiwa-frame-0200",
+      "title": "奶蛙现成原序列·捧腹笑参照",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0200.webp",
+      "source_url": "https://github.com/LynnShaw/naiwa-pet",
+      "source_commit": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "reference_role": "laugh",
+      "identity_bundle_id": "naiwa-pet-network-3d",
+      "identity_tier": "network_3d_candidate",
+      "license_status": "no_license_local_only",
+      "tags": [
+        "existing_frame",
+        "same_sequence",
+        "laugh"
+      ],
+      "notes": "现成网络版候选；非用户认证原始作者来源，也不是三视图。",
+      "usage_scope": "local_reference_only",
+      "availability": "local",
+      "bytes": 18758,
+      "sha256": "36118d59ec8ae570fa31e017012a0628503e1cf38bc06cb00642438be6695b28",
+      "source_identity_bundle_id": "naiwa-pet-network-3d",
+      "source_reference_role": "laugh",
+      "visual_review": "visual_checked",
+      "audio_review": "not_applicable",
+      "review_status": "current_hash",
+      "review_evidence": {
+        "asset_id": "naiwa-frame-0200",
+        "sha256": "36118d59ec8ae570fa31e017012a0628503e1cf38bc06cb00642438be6695b28",
+        "visual": {
+          "result": "visual_checked",
+          "note": "已实际查看同源笑态帧；可用于原片动作参照，不能把闭眼开口表情当默认静态五官或三视图。",
+          "reviewed_at": "2026-10-28T17:20:15.571754+00:00",
+          "identity_bundle_id": "naiwa-pet-network-3d",
+          "reference_role": "laugh"
+        }
+      }
+    }
+  ],
+  "audio_assets": [
+    {
+      "id": "nai-hub-nailong_laugh",
+      "title": "咳哈哈哈哈~",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/repos/NaiLoong/assets/audio/nailong_laugh.mp3",
+      "source_url": "https://github.com/lin-alg/NaiLoong",
+      "source_commit": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "cue_ids": [],
+      "license_status": "recording_rights_unresolved",
+      "tags": [
+        "nailong_laugh",
+        "naiwa"
+      ],
+      "notes": "归属来自上游voice.json；目录文字不是试听结论。",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed",
+      "availability": "local",
+      "bytes": 125804,
+      "sha256": "716c2d58d02c6543057a7adf6637b8224886f6f0d7c06ffa34bfdf18dde72c33",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "15.650000"
+        }
+      },
+      "source_identity_bundle_id": null,
+      "source_reference_role": null,
+      "visual_review": "not_reviewed",
+      "audio_review": "not_auditioned",
+      "review_status": "not_recorded",
+      "research_asset_ids": [
+        "nailoong_nailong_laugh"
+      ],
+      "fetch_policy": "local_only"
+    }
+  ],
+  "unassigned_assets": [],
+  "recipe": {
+    "id": "existing-loop-remix",
+    "name": "只剪现成原片的雷霆循环",
+    "duration_seconds": [
+      8,
+      15
+    ],
+    "mode": "existing-edit",
+    "beats": [
+      {
+        "phase": "recognize",
+        "visual": "原片闭嘴/待机动作，先展示网传形象"
+      },
+      {
+        "phase": "cut",
+        "visual": "短促正反打、同源原片定格、裁切变焦",
+        "sound": "只剪已取得的口癖/笑声"
+      },
+      {
+        "phase": "laugh",
+        "visual": "保留原片连续捧腹笑，不靠AI补动作",
+        "cue_ids": [
+          "naiwa.laugh"
+        ]
+      },
+      {
+        "phase": "loop",
+        "visual": "按原动作回环衔接，必要时缩短片长"
+      }
+    ],
+    "notes": "没有合格多角度参考时可策划此路线；素材仍受本地使用/发布许可限制。它不是已生成的AI舞步。"
+  },
+  "generation_allowed": false,
+  "publishing_allowed": false,
+  "blockers": [
+    "声音尚未试听匹配: nai-hub-nailong_laugh"
+  ],
+  "rules": [
+    "读取并实际查看每个characters条目自己的reference_assets，不用文字另造形象。",
+    "每个角色只使用其绑定的身份、动作与录音；不串脸、串色，不把奶蛋andi交给奶蛙。",
+    "screen_position未指定时先确定位置；工具须逐角色接收真实附件，不凭多个名字融合形象。",
+    "仅使用audio_assets中的既有录音，不合成原作语音，不自动生成缺失BGM。",
+    "所有文件路径相对project_root，传给视频工具时必须上传真实文件。",
+    "本文件是交接草案，不代表素材有公开分发许可；不执行生成、剪辑或发布。"
+  ],
+  "character": {
+    "id": "naiwa",
+    "aliases": [
+      "奶娃",
+      "大笑奶龙",
+      "变异奶龙"
+    ],
+    "identity_status": "reference_selection_required",
+    "source_ids": [
+      "eco-naiwa-frames",
+      "eco-naiwa-sprite"
+    ],
+    "must_not_confuse_with": [
+      "nailoong",
+      "generic_frog"
+    ],
+    "notes": "用户给定视觉标准；选同源现成帧锁定。",
+    "generation_ready": false,
+    "name": "奶蛙"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "character_ids": [
+        "capylulu"
+      ],
+      "version_id": "capylulu-community-seed3d-v1-outer-rod-removal-v1",
+      "identity_bundle_id": "capylulu-community-seed3d-v1-outer-rod-removal-v1",
+      "identity_tier": "reviewed_local_cleanup_candidate",
+      "reference_role": "candidate",
+      "source_url": "https://docs.volcengine.com/docs/ark/create-3d-generation-task-api?lang=zh",
+      "derived_from_asset_id": "seed3d-lulu-community-v1-native-0",
+      "source_model_sha256": "1357bfd6b244d21b03b4e26ba45c69b12a47e33b5b90ce3050d60575d3b50e6f",
+      "license_status": "source_and_character_rights_unresolved_local_only",
+      "usage_scope": "local_reference_only",
+      "default_identity": false,
+      "notes": "保守删除外伸错误杆件的独立修订；仍有短残根与86条开放切口，无补洞/重建/绑定，不替换原始API产物。",
+      "repair_report_path": "assets/private/seed3d/models/seed3d-lulu-community-v1/repairs/lulu-rod-outer-v1/repair-report.json",
+      "tags": [
+        "seed3d",
+        "local_cleanup",
+        "not_fully_repaired"
+      ],
+      "id": "seed3d-lulu-outer-rod-cleanup-v1",
+      "title": "噜噜外伸杆局部删除候选",
+      "kind": "model",
+      "local_path": "assets/private/seed3d/models/seed3d-lulu-community-v1/repairs/lulu-rod-outer-v1/cleaned.glb",
+      "expected_sha256": "217699a8722252130b7a23598bed35c97ee67e65535c7f5313ff175121624f73",
+      "repair_complete": false,
+      "watertight": false,
+      "open_boundary_edges": 86,
+      "rigged": false,
+      "animation_ready": false
+    },
+    {
+      "character_ids": [
+        "capylulu"
+      ],
+      "version_id": "capylulu-community-seed3d-v1-outer-rod-removal-v1",
+      "identity_bundle_id": "capylulu-community-seed3d-v1-outer-rod-removal-v1",
+      "identity_tier": "reviewed_local_cleanup_candidate",
+      "reference_role": "candidate",
+      "source_url": "https://docs.volcengine.com/docs/ark/create-3d-generation-task-api?lang=zh",
+      "derived_from_asset_id": "seed3d-lulu-community-v1-native-0",
+      "source_model_sha256": "1357bfd6b244d21b03b4e26ba45c69b12a47e33b5b90ce3050d60575d3b50e6f",
+      "license_status": "source_and_character_rights_unresolved_local_only",
+      "usage_scope": "local_reference_only",
+      "default_identity": false,
+      "notes": "保守删除外伸错误杆件的独立修订；仍有短残根与86条开放切口，无补洞/重建/绑定，不替换原始API产物。",
+      "repair_report_path": "assets/private/seed3d/models/seed3d-lulu-community-v1/repairs/lulu-rod-outer-v1/repair-report.json",
+      "tags": [
+        "seed3d",
+        "local_cleanup",
+        "not_fully_repaired"
+      ],
+      "id": "seed3d-lulu-outer-rod-cleanup-side",
+      "title": "噜噜局部删除侧面检查",
+      "kind": "image",
+      "local_path": "assets/private/seed3d/models/seed3d-lulu-community-v1/repairs/lulu-rod-outer-v1/repair-side-preview.png",
+      "expected_sha256": "db80a263130194c7903ee0bb4222346c736fef3269fbe4b87b1557c9fd793583",
+      "repair_complete": false,
+      "watertight": false,
+      "open_boundary_edges": 86,
+      "rigged": false,
+      "animation_ready": false
+    }
+  ]
+}

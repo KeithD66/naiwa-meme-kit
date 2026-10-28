@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "purpose": "Determine whether a stronger existing frontal source justifies the reserved fifth Seed3D job.",
+  "method": "Actual view_image inspection of 11 local emotes and 3 small hash-recorded downloads from existing NaiLoong catalog. No API calls or additional repository/model downloads.",
+  "initial_seed3d_observation": {
+    "local_path": "assets/private/seed3d/models/seed3d-naiwa-v1/raw-front.png",
+    "sha256": "2d7a249261ab5c1b19a9fd874653b23c7a1aa593f81012ea81f35efc0250c8e9",
+    "actual_visual_review": "看到了圆眼、梨形、腹斑和深色手足保持，但正面嘴有轻微V/浅弧，不应覆盖网传一字嘴基准。"
+  },
+  "conclusion": {
+    "status": "no_qualifying_new_frontal_reference",
+    "recommend_reserved_fifth_job": false,
+    "reason": "现成正面全身图片是幼态/生成变体或奶龙；经典长腿版候选仍为侧正面、表情姿态不符或半身，未新增足以纠正正面嘴型的同版本证据。",
+    "best_additional_existing_reference": "nai-hub-image-17fe4ed565a9",
+    "best_additional_reference_use": "仅作为经典侧正面高分辨率原图补充；不得冒称正面或用其作为盲目重试的理由。",
+    "future_trigger": "出现清楚同版全身正面一字嘴现成图，或从可信同版模型获得真实正面渲图后，再考虑新主网格；不能用AI补正面来伪造来源。"
+  },
+  "new_download_count": 3,
+  "reviewed_assets": [
+    {
+      "asset_id": "wallpaper-55d55b2372a8",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-悠闲站立.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E6%82%A0%E9%97%B2%E7%AB%99%E7%AB%8B.png",
+      "sha256": "f2f73bd67ac46e173d21a060407c6016c7eea51d09866653a71feffbe8ca1487",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "正面全身但为幼态衍生版：短黄脚、圆短手、无经典乳白腹斑、嘴为浅笑弧，不是本次网传长腿深色手脚奶蛙。来源旁注指向TarelX/Milk-Frog的assets/generated/young/idle.png。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-50f323c68b9c",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-侧立.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E4%BE%A7%E7%AB%8B.png",
+      "sha256": "bbf85a1aae448b2017271d26b8caa3851ec2413a0f611ba88a1ac8cd21b9b1a9",
+      "dimensions": [
+        320,
+        302
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "同经典侧正面捧腹，但只有320×302上半身，双足腿部缺失，不比完整frame0000强。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-701b1952ff91",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-立正的小奶蛙.jpg",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E7%AB%8B%E6%AD%A3%E7%9A%84%E5%B0%8F%E5%A5%B6%E8%9B%99.jpg",
+      "sha256": "634a961dc366e8df61b8e0c0a8272122d2f74992d6464fad348b663090df2d6b",
+      "dimensions": [
+        422,
+        484
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "正面全身幼态版：短脚、无经典腹斑、浅弧嘴，422×484，不能混入长腿经典主模型。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-315226313c06",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-自信叉腰.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E8%87%AA%E4%BF%A1%E5%8F%89%E8%85%B0.png",
+      "sha256": "e8837b787a7e701951621a66f3c8b923e412c425df8cf02b02956df53f0371d4",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "与悠闲站立相同幼态衍生版、浅弧嘴、无明显经典腹斑、短黄脚；姿态并非中性，来源assets/generated/young/confident.png。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-192e625be427",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-姿态-露肚.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E5%A7%BF%E6%80%81-%E9%9C%B2%E8%82%9A.png",
+      "sha256": "b5076012c2d903e769c1ed149347d527eb96cf639e8fb6078b20c4ad2607cef0",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "经典腹斑、深色脚但深蹲宽腿、双手藏后、吐舌开口，不能改善闭嘴正面中性形象。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-3e618884ed28",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-微愠.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E5%BE%AE%E6%84%A0.png",
+      "sha256": "136d53a2c2a53de63afd3042bce275d8b480f01f88347fab5bc8183764aa5140",
+      "dimensions": [
+        342,
+        224
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "342×224半身床上图，半闭眼、腮红、下弧怒嘴，无完整身体。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-9baffc3efc59",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-疑惑.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E7%96%91%E6%83%91.png",
+      "sha256": "9ae8b9df1a031b5afcf68901ccaa262c6789cadaab59b63565bb5977c24518d0",
+      "dimensions": [
+        824,
+        864
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "侧正面捧腹上半身、半闭眼、问号框叠图，头顶和足被裁；不是新正面中性证据。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-97a1943b0a6e",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-姿态-挥手.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E5%A7%BF%E6%80%81-%E6%8C%A5%E6%89%8B.png",
+      "sha256": "55b2d7d0fc13a5007ef51d18544fc4fdfb6ccef708e3300ab82634bbc2b47cae",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "1024×1024完整经典派形象，但3/4侧正面、深蹲、举臂且嘴稍笑弧；可作动作实验，不是本批所需正面中性一字嘴提升。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-d8aa3ceae1f2",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-立绘-雀跃.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E7%AB%8B%E7%BB%98-%E9%9B%80%E8%B7%83.png",
+      "sha256": "8e29690d0fd32e48cdb3081cedf1fdeb1cc6b71ecba4c346ce25ad66a397e7dd",
+      "dimensions": [
+        1000,
+        1000
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "实际是奶龙：独立圆头和脖颈结构、粉掌爪、白眼绿瞳、开口笑；文件名误导，拒绝用于奶蛙。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-b016cccad54f",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-气鼓鼓.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E6%B0%94%E9%BC%93%E9%BC%93.png",
+      "sha256": "d4febbb7fcea534ec54469d027f0fb16e12816ad84e92b65e46078ad2c8348bb",
+      "dimensions": [
+        690,
+        610
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "正面全身短脚幼态版，明显怒眉怒嘴，无经典腹斑和深色足，不是中性长腿版。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "wallpaper-493cfab1c247",
+      "local_path": "assets/repos/wallpaper/emotes/奶蛙-表情-13.png",
+      "fixed_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/7af109857e4225f2a8c48904acc07fb94643c99e/emotes/%E5%A5%B6%E8%9B%99-%E8%A1%A8%E6%83%85-13.png",
+      "sha256": "5baa58c48bf32fb361b209a1af4b45e5d0fae9bb983f653d0815da0d26e228b3",
+      "dimensions": [
+        504,
+        453
+      ],
+      "visual_review": "view_image_actual_local_file",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "举奶家人旗的幼态短脚版；有道具、弧嘴、无经典腹斑，与目标版本不同。",
+      "source_license_status": "per_asset_notice_required",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "nai-hub-image-d597f9901989",
+      "title": "奶蛙摸肚子",
+      "local_path": "assets/private/seed3d/frontal-candidates/nai-hub-image-d597f9901989.jpg",
+      "fixed_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0029.jpg",
+      "sha256": "421c903782bf92cde1cdd4b588bcca14ae9ecd92e1d5bebb4a193fffc27c208a",
+      "bytes": 140776,
+      "dimensions": [
+        638,
+        648
+      ],
+      "visual_review": "view_image_actual_downloaded_image",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "实际看图为浅笑弧嘴、摸肚子半身、人物右侧/下身裁切并含大字文字；不是完整正面中性输入。",
+      "source_license_status": "community_media_rights_unresolved",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "nai-hub-image-bd86f22a1629",
+      "title": "奶蛙切换平静模式",
+      "local_path": "assets/private/seed3d/frontal-candidates/nai-hub-image-bd86f22a1629.jpg",
+      "fixed_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/76c07e04a8b217117b39a3b647751618c55bff0c/assets/memes/naiwa_0060.jpg",
+      "sha256": "35ee2c96264a175fb02af3f307576ed52f9c7c80b9615c101b9872fd9950c334",
+      "bytes": 396897,
+      "dimensions": [
+        1216,
+        1224
+      ],
+      "visual_review": "view_image_actual_downloaded_image",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "实际看图为蓝色异色变体、侧正面半身、嘴为笑弧并有切换平静模式大字幕；不混入金黄经典版。",
+      "source_license_status": "community_media_rights_unresolved",
+      "usage_scope": "local_reference_only"
+    },
+    {
+      "asset_id": "nai-hub-image-17fe4ed565a9",
+      "title": "奶蛙挺着肚子斜眼看你",
+      "local_path": "assets/private/seed3d/frontal-candidates/nai-hub-image-17fe4ed565a9.jpg",
+      "fixed_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/7f4b87fbb04b7cb8494b626f51a0808754dcf38e/assets/memes/naiwa_0075.jpg",
+      "sha256": "73d6c23ec83b64cacdf243259f419b2f936b62d9f3958573748d89fd3df56b25",
+      "bytes": 76745,
+      "dimensions": [
+        1440,
+        2405
+      ],
+      "visual_review": "view_image_actual_downloaded_image",
+      "qualifies_as_new_frontal_input": false,
+      "reason": "完整经典金黄梨形、乳白腹斑、深色长腿手足、一字嘴；原图1440×2405可留作现成高分辨率参考，但仍是与frame0000几乎相同的侧正面捧腹姿，远眼/远手/背面不可见，不构成新的正面输入依据。",
+      "source_license_status": "community_media_rights_unresolved",
+      "usage_scope": "local_reference_only"
+    }
+  ],
+  "changes_not_made": [
+    "No modification of plan, inputs, preparation tool, catalog, or review approval ledger.",
+    "No API task submitted and no secret accessed."
+  ]
+}

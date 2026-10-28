@@ -1,71 +1,67 @@
-# 形象 Prompt 速查卡
+# 奶蛙参考绑定与动作 Prompt
 
-> 以下英文特征描述摘自开源 LoRA（Civitai #3006514 `Nai-Animals MOSS 多角色`）的 trigger 描述，
-> 可直接脱离 LoRA 喂给任意图像模型复现形象。出处见 `SOURCES.md`。
+这张卡让模型沿用已经取得的角色。不能只喂下面的文字，就期待模型知道网络流传的那个奶蛙。
+先读 `skill/references/identity-lock.md`，用 `scripts/library.py` 定位实际文件、看图并绑定参考。
 
-## 奶蛙 naiwa（主角）
+## 身份校验词，不是新形象配方
 
-```
-naiwa, a golden-yellow pear-shaped 3D mascot with a seamless neckless head,
-pale grey-green circular eyes, black pupils, a thin horizontal mouth,
-a large cream-colored belly patch, olive-brown four-fingered hands,
-and broad three-toed feet
-```
+用户标准：金黄梨形3D身体、头身一体无脖子、灰绿色圆眼黑瞳，静态一字横嘴，乳白大肚皮、
+橄榄褐四指手、三趾脚。大笑按同一身份的现成笑态，可以闭眼张嘴露齿；不能要求笑时仍横嘴。
 
-**中文要点**：金黄梨形 3D 吉祥物、头身一体无脖子、灰绿色圆眼黑瞳、一字横嘴、乳白色大肚皮、橄榄褐四指手、三趾大脚。
+校验关键词：`golden-yellow pear-shaped body; seamless neckless head and torso;
+pale grey-green eye rings with black pupils; thin horizontal resting mouth;
+large cream belly patch; olive-brown hands and feet`。
 
-**动作提示**：`laughing hysterically`（捧腹大笑）、`blank stare`（看透一切的呆滞）、`holding belly`。
+所选现成图若不符合用户标准，换合适的现成参考，不让模型一边“复制”一边按文字重造五官。
 
-## 奶龙 nailoong
+## 模板1：单角色图生视频
 
-```
-nailoong, a plump yellow 3D cartoon mascot with a large rounded head,
-glossy green eyes, a small mouth, a cream-colored belly, short chubby limbs,
-three small brown claws on each hand and foot, and pink palm pads
-```
+替换方括号并附上实际文件。没有附件、工具不能读附件、三视图/模型参考未合格时，先报告缺项。
 
-## 奶包 naibao
+```text
+任务：让附件中的同一个网络流传版奶蛙做动作，不重新设计角色。
+身份参考：[asset_id + 实际图片附件；记录路径与SHA-256]
+多角度基准：[已核验的现成三视图 / 获许可模型的参考渲染附件]
+笑态参考：[同版本现成笑态图/帧；本镜头不笑则省略]
+动作参考：[已有视频附件；仅提供运动，不复制舞者身份、衣服或身体]
 
-```
-naibao, a yellow 3D mascot with a human-like face, short side-parted
-dark brown bob hair, large dark brown eyes, eyelashes and arched eyebrows,
-a plump yellow body, a cream belly patch,
-and dark grey-brown hoof-like hands and feet
-```
-
-## 奶鲸 Nai_DS_whale
-
-```
-Nai_DS_whale, a plump blue anthropomorphic whale mascot with a large white
-chest and belly, curved white facial markings with small white dots,
-a wide mouth, dark grey four-fingered hands, a dorsal fin,
-and an upright whale tail
+只做运动：[一个明确短动作，例如短幅侧步并抖肩]
+镜头：[固定正面/已有微侧视角，全身入画]
+保持同一个体型、眼圈和瞳孔、静态嘴形、腹部边界、手脚颜色与结构。
+保持既有肢体，不新增脖子、耳朵、服饰、帽子、眉睫、手指、腿或其它角色；
+不变成奶龙、绿色青蛙、真实两栖动物、像素重绘、人形或另一只黄色吉祥物。
+声音后期用库内现成素材；不自动配旁白，不生成仿原作“齁齁齁”或其它梗语音。
+先核对参考再执行；输出后检查首帧、动作极值、遮挡后重现与尾帧。
+若身份改变，降低动作或换同版本合适角度的现成参考，不另造一只奶蛙补救。
 ```
 
-## 纸人 zhiren
+## 模板2：联动角色，不串脸
 
-```
-zhiren, a faceted papercraft humanoid with a peach-colored paper face,
-pupil-less white eyes, thick black eyebrows, red lips, black paper hair
-and a gold headband, wearing a royal blue traditional Chinese paper jacket
-and trousers with circular gold medallions, gold frog-button closures,
-and black shoes with white soles
-```
-
-## 通用质量后缀
-
-```
-3D render, soft studio lighting, smooth plastic surface, clean background,
-high detail, character turnaround / single subject
+```text
+角色A（奶蛙）：仅用附件A1/A2的身份；位置[左/中/右]；动作[具体动作]。
+角色B（已核实角色名）：仅用附件B1/B2的身份；位置[左/中/右]；动作[具体动作]。
+两套身份不能混合，不能共用一个黄色身体再替换名字。
+B没有明确身份参考就停止并列出待取得的现成素材，不凭名字猜造型。
+动作参考只提供节奏和运动，不提供脸、衣服、眼睛、腹部或手脚。
+镜头[固定/小幅变化]；除指定动作外不换装、不变形、不增员。
 ```
 
-## 生成参数建议
+## 模板3：身份漂移后的重试
 
-- LoRA 用 Civitai #2802348 时触发词 `NAIWA`；与其他 LoRA 叠加建议拉高强度。
-- 需要多角度一致：**先用三视图或 `.obj` 渲参考帧**，再做图生视频，避免"转身就崩"。
+```text
+本段未通过身份检查：[列实际差异与时间点，如1.6秒变奶龙大头、2秒腹部消失]。
+重新绑定原始身份附件，不把已漂移的输出当新标准。
+动作减少为[一个小动作]，取消[旋转/同时动作/快速运镜]。
+若仍不能保持，退回现成动作剪辑方案，不重新创作形象。
+```
 
----
+## LoRA 触发词仅是兼容推理的元数据
 
-## ⚠️ 未建档
+| 资源 | 触发词/底模 | 注意 |
+|---|---|---|
+| Civitai #2802348 V2，version3249650 | `NAIWA` / Krea2 | 只有兼容且实际加载才生效；写词不等于加载 |
+| Civitai #3006514 v1.0，version3411275 | `naiwa`、`nailoong`、`naibao`、`Nai_DS_whale`、`zhiren` / MOSS Image | 作者仍报告串特征；角色分别绑定参考 |
 
-**唐牛**：形象尚未确认，暂无 prompt。确认形象后补在此处。
+权重来源与状态见 `skill/references/ip-assets.md` 和 `research/identity-resources.json`。
+水豚噜噜、美团袋鼠、奶粉、奶蛋、唐牛等按 `characters.md` / `ecosystem.md` 消歧和取材，
+不为未知名字写一个“差不多”的外形 prompt。文字只辅助检查，身份来自实际绑定的现成素材。

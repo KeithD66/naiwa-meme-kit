@@ -1,0 +1,230 @@
+{
+  "schema_version": 2,
+  "authority": "role routing, not a claim of IP ownership",
+  "characters": [
+    {
+      "id": "naiwa",
+      "aliases": [
+        "奶娃",
+        "大笑奶龙",
+        "变异奶龙"
+      ],
+      "identity_status": "reference_selection_required",
+      "source_ids": [
+        "eco-naiwa-frames",
+        "eco-naiwa-sprite"
+      ],
+      "must_not_confuse_with": [
+        "nailoong",
+        "generic_frog"
+      ],
+      "notes": "用户给定视觉标准；选同源现成帧锁定。",
+      "generation_ready": false,
+      "name": "奶蛙"
+    },
+    {
+      "id": "naidan",
+      "aliases": [],
+      "identity_status": "catalog_identity_supported",
+      "source_ids": [
+        "eco-naidan-catalog",
+        "eco-naidan-game"
+      ],
+      "must_not_confuse_with": [
+        "naiwa",
+        "naibao",
+        "generic_egg"
+      ],
+      "notes": "andi.mp3由专属语音表指向奶蛋。",
+      "generation_ready": false,
+      "name": "奶蛋"
+    },
+    {
+      "id": "naifen_character",
+      "aliases": [
+        "奶粉",
+        "naifen"
+      ],
+      "identity_status": "character_context_supported_visual_unresolved",
+      "source_ids": [
+        "eco-naifen-creator-example",
+        "eco-naifen-choice-example"
+      ],
+      "must_not_confuse_with": [
+        "naifen_fandom",
+        "naibao",
+        "pink_naiwa"
+      ],
+      "notes": "仅标题支持角色语境；未从原片锁定造型。",
+      "generation_ready": false,
+      "name": "奶粉（角色）"
+    },
+    {
+      "id": "naifen_fandom",
+      "aliases": [
+        "奶粉们",
+        "十年奶粉",
+        "奶粉"
+      ],
+      "identity_status": "textual_fandom_branch",
+      "source_ids": [],
+      "must_not_confuse_with": [
+        "naifen_character"
+      ],
+      "notes": "不作为可生成角色。",
+      "generation_ready": false,
+      "name": "奶粉（粉丝称呼）"
+    },
+    {
+      "id": "capylulu",
+      "aliases": [
+        "噜噜",
+        "Capylulu",
+        "lulu",
+        "水屯噜噜"
+      ],
+      "identity_status": "official_identity_supported_reference_selection_required",
+      "source_ids": [
+        "eco-lulu-official-directory",
+        "eco-lulu-community-v2",
+        "eco-lulu-community-alternative"
+      ],
+      "must_not_confuse_with": [
+        "generic_capybara",
+        "generic_hippo"
+      ],
+      "notes": "权利方目录为铁罐（北京）文化传媒有限公司；社区转制包需与所选原版比较。",
+      "generation_ready": false,
+      "name": "水豚噜噜"
+    },
+    {
+      "id": "meituan_meme",
+      "aliases": [
+        "美团老鼠",
+        "肥嘟嘟",
+        "meituan_kangaroo"
+      ],
+      "identity_status": "variant_selection_required",
+      "source_ids": [
+        "eco-meituan-brand-rules",
+        "eco-feidudu-community"
+      ],
+      "must_not_confuse_with": [
+        "naishu",
+        "generic_mouse",
+        "generic_kangaroo"
+      ],
+      "notes": "品牌版、胖版二创与奶鼠分别处理。",
+      "generation_ready": false,
+      "name": "美团袋鼠胖版"
+    },
+    {
+      "id": "doubao",
+      "aliases": [],
+      "identity_status": "product_identity_supported_visual_unresolved",
+      "source_ids": [
+        "eco-doubao-official"
+      ],
+      "must_not_confuse_with": [
+        "dounai",
+        "generic_robot"
+      ],
+      "notes": "官方Logo/App头像/二创拟人版不自动等价。",
+      "generation_ready": false,
+      "name": "豆包"
+    },
+    {
+      "id": "niulai",
+      "aliases": [],
+      "identity_status": "film_identity_supported_reference_selection_required",
+      "source_ids": [
+        "eco-niulai-film-directory"
+      ],
+      "must_not_confuse_with": [
+        "tangniu_unresolved",
+        "generic_cow"
+      ],
+      "notes": "电影小牛，不能因唐牛同音而替换。",
+      "generation_ready": false,
+      "name": "牛来"
+    },
+    {
+      "id": "tangniu_unresolved",
+      "aliases": [
+        "tangniu",
+        "唐牛"
+      ],
+      "identity_status": "unresolved",
+      "source_ids": [],
+      "must_not_confuse_with": [
+        "niulai",
+        "shishen_tangniu",
+        "same_name_account"
+      ],
+      "notes": "未找到足以唯一确认奶蛙生态动画形象的主来源。",
+      "generation_ready": false,
+      "name": "唐牛"
+    },
+    {
+      "id": "nailoong",
+      "aliases": [
+        "Nailoong"
+      ],
+      "identity_status": "official_identity_supported",
+      "source_ids": [
+        "eco-nailoong-official"
+      ],
+      "must_not_confuse_with": [
+        "naiwa"
+      ],
+      "notes": "第七印象原IP；奶龙数据集不是奶蛙数据集。",
+      "generation_ready": false,
+      "name": "奶龙"
+    },
+    {
+      "id": "naibao",
+      "aliases": [],
+      "identity_status": "model_metadata_verified_visual_unresolved",
+      "source_ids": [],
+      "must_not_confuse_with": [
+        "naifen_character",
+        "naidan",
+        "generic_bun"
+      ],
+      "notes": "MOSS官方模型API元数据已核验；权重未下载/加载，视觉参考仍未锁定。",
+      "generation_ready": false,
+      "name": "奶包"
+    },
+    {
+      "id": "nai_whale",
+      "aliases": [
+        "Nai_DS_whale",
+        "naiwhale",
+        "奶鲸"
+      ],
+      "identity_status": "catalog_identity_supported_visual_unreviewed",
+      "source_ids": [
+        "eco-naiwhale-catalog"
+      ],
+      "must_not_confuse_with": [
+        "generic_whale",
+        "blue_naiwa"
+      ],
+      "notes": "先取目录所指现成原图；旧LoRA触发词未复核。",
+      "generation_ready": false,
+      "name": "奶鲸"
+    },
+    {
+      "id": "zhiren",
+      "aliases": [],
+      "identity_status": "model_metadata_verified_visual_unresolved",
+      "source_ids": [],
+      "must_not_confuse_with": [
+        "generic_paper_figure"
+      ],
+      "notes": "MOSS官方模型API元数据已核验；权重未下载/加载，视觉参考仍未锁定。",
+      "generation_ready": false,
+      "name": "纸人"
+    }
+  ]
+}

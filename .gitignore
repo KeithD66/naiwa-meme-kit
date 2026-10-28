@@ -15,3 +15,14 @@ Thumbs.db
 # 缓存
 __pycache__/
 *.pyc
+
+# 本地进程锁与凭据配置
+production/**/*.lock
+.env
+.env.*
+!.env.example
+
+# 本地成片、渲染中间文件与依赖环境（不再分发第三方素材）
+outputs/
+.venv/
+.venv-*/

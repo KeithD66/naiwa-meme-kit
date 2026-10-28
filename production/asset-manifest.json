@@ -1,0 +1,265 @@
+{
+  "checked_date": "2026-10-29",
+  "project_commit": "e02ea43b23e0b402e8c5229237888e7710d71f34",
+  "download_command": "./scripts/fetch-assets.sh",
+  "transport": "首次直连慢；最终以进程临时 URL insteadOf 使用 ghfast.top 公共代理，未修改仓库远程地址或持久 Git 配置；逐项与 GitHub API HEAD 校验。",
+  "fetch_result": {
+    "success": 6,
+    "failed": 0
+  },
+  "repositories": [
+    {
+      "name": "NaiLong-Universe",
+      "origin": "https://github.com/Nailong-Studio/NaiLong-Universe.git",
+      "commit": "8bf30f66695982a195e7a1610403d5598a6b432c",
+      "official_github_head": "8bf30f66695982a195e7a1610403d5598a6b432c",
+      "matches_official_github_head": true,
+      "git_fsck_ok": true,
+      "git_fsck_messages": "",
+      "worktree_clean": true,
+      "tracked_files": 690,
+      "tracked_bytes": 48693048,
+      "extensions": {
+        "(none)": 5,
+        ".astro": 18,
+        ".css": 2,
+        ".gif": 8,
+        ".html": 1,
+        ".itermcolors": 1,
+        ".jpg": 18,
+        ".js": 1,
+        ".json": 16,
+        ".md": 17,
+        ".mjs": 6,
+        ".mp3": 1,
+        ".mp4": 4,
+        ".png": 6,
+        ".py": 5,
+        ".svg": 1,
+        ".theme": 1,
+        ".ts": 6,
+        ".webmanifest": 1,
+        ".webp": 568,
+        ".yml": 4
+      },
+      "root_license_files": [
+        "LICENSE"
+      ],
+      "license_notes": "仓库有 MIT；README 另写明不做商业用途。完整原图/素材索引另引 Nailong-Studio/wallpaper，未随本脚本额外克隆，逐项核对来源与许可。"
+    },
+    {
+      "name": "NaiLoong",
+      "origin": "https://github.com/lin-alg/NaiLoong.git",
+      "commit": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "official_github_head": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "matches_official_github_head": true,
+      "git_fsck_ok": true,
+      "git_fsck_messages": "",
+      "worktree_clean": true,
+      "tracked_files": 101,
+      "tracked_bytes": 14416228,
+      "extensions": {
+        "(none)": 2,
+        ".css": 4,
+        ".gif": 4,
+        ".html": 4,
+        ".jpg": 2,
+        ".js": 17,
+        ".json": 17,
+        ".md": 8,
+        ".mp3": 6,
+        ".png": 13,
+        ".py": 10,
+        ".svg": 1,
+        ".txt": 2,
+        ".webp": 6,
+        ".yml": 5
+      },
+      "root_license_files": [
+        "LICENSE"
+      ],
+      "license_notes": "代码 MIT；社区引用图片商用须原作者同意。桌宠 sprite 源于 codex-pet-naiwa，继承第三方许可未知问题；音频未见逐文件授权。naiwa 表情目录121静态+71动图为远程索引，不是对应原图已落地。",
+      "naiwa_remote_catalog_counts": {
+        "static": 121,
+        "animated": 71
+      }
+    },
+    {
+      "name": "awesome_pets",
+      "origin": "https://github.com/Nitrogen216/awesome_pets.git",
+      "commit": "3aebf5e7cdc5979bec06afe57194b60b3edf7cdd",
+      "official_github_head": "3aebf5e7cdc5979bec06afe57194b60b3edf7cdd",
+      "matches_official_github_head": true,
+      "git_fsck_ok": true,
+      "git_fsck_messages": "",
+      "worktree_clean": true,
+      "tracked_files": 4,
+      "tracked_bytes": 1577484,
+      "extensions": {
+        ".json": 1,
+        ".md": 2,
+        ".webp": 1
+      },
+      "root_license_files": [],
+      "license_notes": "未发现 LICENSE；README 明确所有权利保留；仅本地使用，不再分发。"
+    },
+    {
+      "name": "codex-pet-naiwa",
+      "origin": "https://github.com/timerring/codex-pet-naiwa.git",
+      "commit": "3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50",
+      "official_github_head": "3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50",
+      "matches_official_github_head": true,
+      "git_fsck_ok": true,
+      "git_fsck_messages": "",
+      "worktree_clean": true,
+      "tracked_files": 17,
+      "tracked_bytes": 5338627,
+      "extensions": {
+        "(none)": 1,
+        ".json": 1,
+        ".md": 2,
+        ".png": 12,
+        ".webp": 1
+      },
+      "root_license_files": [
+        "LICENSE"
+      ],
+      "license_notes": "仅原创内容 MIT；README 明确排除 Credits 第三方素材，精灵表/预览须追溯第三方许可。"
+    },
+    {
+      "name": "nailong-classification",
+      "origin": "https://github.com/ZreXoc/nailong-classification.git",
+      "commit": "f94a1d7bfbad266b67154575f52acd27ff2d198c",
+      "official_github_head": "f94a1d7bfbad266b67154575f52acd27ff2d198c",
+      "matches_official_github_head": true,
+      "git_fsck_ok": true,
+      "git_fsck_messages": "",
+      "worktree_clean": true,
+      "tracked_files": 12,
+      "tracked_bytes": 99951667,
+      "extensions": {
+        "(none)": 1,
+        ".md": 1,
+        ".png": 6,
+        ".pt": 1,
+        ".py": 2,
+        ".sh": 1
+      },
+      "root_license_files": [],
+      "license_notes": "未发现 LICENSE；README 限学习交流；模型/数据另行核对，非本条奶蛙形象默认来源。 完整数据集是外链，未随本脚本下载。"
+    },
+    {
+      "name": "naiwa-pet",
+      "origin": "https://github.com/LynnShaw/naiwa-pet.git",
+      "commit": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "official_github_head": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "matches_official_github_head": true,
+      "git_fsck_ok": true,
+      "git_fsck_messages": "",
+      "worktree_clean": true,
+      "tracked_files": 516,
+      "tracked_bytes": 23564190,
+      "extensions": {
+        "(none)": 1,
+        ".css": 1,
+        ".html": 1,
+        ".icns": 1,
+        ".ico": 1,
+        ".json": 10,
+        ".lock": 1,
+        ".m4a": 1,
+        ".md": 1,
+        ".mjs": 1,
+        ".mp4": 1,
+        ".png": 48,
+        ".rs": 3,
+        ".toml": 1,
+        ".ts": 2,
+        ".webp": 439,
+        ".xml": 2,
+        ".yml": 1
+      },
+      "root_license_files": [],
+      "license_notes": "未发现 LICENSE；仅本地使用，不再分发。",
+      "actual_frame_files": 438,
+      "frame_manifest": {
+        "id": "naiwa",
+        "name": "Naiwa",
+        "width": 720,
+        "height": 960,
+        "fps": 30,
+        "frameCount": 438,
+        "idleFrame": "frames/frame_0000.webp",
+        "framePattern": "frames/frame_{index}.webp",
+        "audio": "audio.m4a"
+      }
+    }
+  ],
+  "private_reference_candidates": [
+    {
+      "path": "assets/private/references/neta-mature-official-front-side-back.webp",
+      "bytes": 25740,
+      "sha256": "a97782dfcdb7935a7032a16749a76d40e8ad733fd64f0239471c42c3fe98930d",
+      "source_url": "https://works.cohub.live/w/0d0f026e-322c-4d1b-bd87-3d67c2ba7454/milk-frog-wiki/5358b90f9c06/content/archive/mature-official-front-side-back.webp",
+      "usage": "本地核验候选；正侧标签对调，眼色/嘴形与用户标准有差异，不作为默认生成基准；未核实下游授权。"
+    },
+    {
+      "path": "assets/private/references/neta-mature-supplemental-turnaround.webp",
+      "bytes": 28578,
+      "sha256": "2d36d82dab07ebc572b5b86faa7a92d8256b50f95488d8741e68c4c6f90dc8db",
+      "source_url": "https://works.cohub.live/w/0d0f026e-322c-4d1b-bd87-3d67c2ba7454/milk-frog-wiki/5358b90f9c06/content/archive/mature-supplemental-turnaround.webp",
+      "usage": "本地核验候选；正侧标签对调，眼色/嘴形与用户标准有差异，不作为默认生成基准；未核实下游授权。"
+    }
+  ],
+  "production_state": "脚本待用户确认；未生成图像/视频、未剪辑、未发布。",
+  "local_nailoong_audio": [
+    {
+      "path": "assets/repos/NaiLoong/assets/audio/andi.mp3",
+      "bytes": 13112,
+      "sha256": "99a144f7d0fdc5a747c4dc326272c6185b7bd095ed1688aba3cccb7900434858",
+      "duration_seconds": 1.609375
+    },
+    {
+      "path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+      "bytes": 10596,
+      "sha256": "38d353ef56b7ad8b9b38c1ade0ffb51d298fd34b622c77fe8c14eaaa7eef4dab",
+      "duration_seconds": 1.194467
+    },
+    {
+      "path": "assets/repos/NaiLoong/assets/audio/gagadilashui.mp3",
+      "bytes": 12403,
+      "sha256": "e4266f466e352659e3bb705383a0a73cd1740ac679849a037be5219457103d9e",
+      "duration_seconds": 1.297914
+    },
+    {
+      "path": "assets/repos/NaiLoong/assets/audio/gajiaosai.mp3",
+      "bytes": 10265,
+      "sha256": "e227e71610d8525f4c0706cb08ef50a18b1d3757374e47a17ed33cd1836e1162",
+      "duration_seconds": 1.109751
+    },
+    {
+      "path": "assets/repos/NaiLoong/assets/audio/hola_ganbadie.mp3",
+      "bytes": 27600,
+      "sha256": "45a94b77be6302d0f271461028f3ba48158e7662db585349aa21767a11525c6a",
+      "duration_seconds": 1.806604
+    },
+    {
+      "path": "assets/repos/NaiLoong/assets/audio/nailong_laugh.mp3",
+      "bytes": 125804,
+      "sha256": "716c2d58d02c6543057a7adf6637b8224886f6f0d7c06ffa34bfdf18dde72c33",
+      "duration_seconds": 15.65
+    }
+  ],
+  "laugh_candidate": {
+    "path": "assets/repos/NaiLoong/assets/audio/nailong_laugh.mp3",
+    "catalog_label": "咳哈哈哈哈~",
+    "auditioned": false,
+    "use": "仅为现成笑声候选；需试听确认是否符合目标齁齁齁，并核对录音授权。"
+  },
+  "missing_or_unapproved_inputs": [
+    "BGM 的准确版本、现成音源及使用条件",
+    "具体雷霆舞步参考片段",
+    "与用户标准一致并核验许可的三视图或模型参考帧",
+    "招牌笑声的试听匹配及原始录音授权"
+  ]
+}

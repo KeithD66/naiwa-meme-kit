@@ -1,0 +1,393 @@
+{
+  "schema_version": 3,
+  "state": "draft_only",
+  "mode": "existing-edit",
+  "project_root": "/Users/denglx/Desktop/video/naiwa-meme-kit",
+  "character_ids": [
+    "naiwa",
+    "naidan"
+  ],
+  "characters": [
+    {
+      "binding_id": "A",
+      "character_id": "naiwa",
+      "character": {
+        "id": "naiwa",
+        "aliases": [
+          "奶娃",
+          "大笑奶龙",
+          "变异奶龙"
+        ],
+        "identity_status": "reference_selection_required",
+        "source_ids": [
+          "eco-naiwa-frames",
+          "eco-naiwa-sprite"
+        ],
+        "must_not_confuse_with": [
+          "nailoong",
+          "generic_frog"
+        ],
+        "notes": "用户给定视觉标准；选同源现成帧锁定。",
+        "generation_ready": false,
+        "name": "奶蛙"
+      },
+      "screen_position": "left",
+      "reference_asset_ids": [
+        "naiwa-frame-0000"
+      ],
+      "audio_asset_ids": [],
+      "reference_assets": [
+        {
+          "id": "naiwa-frame-0000",
+          "title": "奶蛙现成原序列·闭嘴参照",
+          "kind": "image",
+          "character_ids": [
+            "naiwa"
+          ],
+          "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+          "source_url": "https://github.com/LynnShaw/naiwa-pet",
+          "source_commit": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+          "reference_role": "neutral",
+          "identity_bundle_id": "naiwa-pet-network-3d",
+          "identity_tier": "network_3d_candidate",
+          "license_status": "no_license_local_only",
+          "tags": [
+            "existing_frame",
+            "same_sequence",
+            "neutral"
+          ],
+          "notes": "现成网络版候选；非用户认证原始作者来源，也不是三视图。",
+          "usage_scope": "local_reference_only",
+          "availability": "local",
+          "bytes": 17292,
+          "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+          "source_identity_bundle_id": "naiwa-pet-network-3d",
+          "source_reference_role": "neutral",
+          "visual_review": "visual_checked",
+          "audio_review": "not_applicable",
+          "review_status": "current_hash",
+          "review_evidence": {
+            "asset_id": "naiwa-frame-0000",
+            "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+            "visual": {
+              "result": "visual_checked",
+              "note": "已实际看完整帧：金黄梨形无脖子、圆眼一字嘴、乳白大腹斑、褐色手脚；此帧为同源原序列的侧正面捧肚站姿，不是完整三视图。",
+              "reviewed_at": "2026-10-28T17:20:15.528676+00:00",
+              "identity_bundle_id": "naiwa-pet-network-3d",
+              "reference_role": "neutral"
+            }
+          }
+        }
+      ],
+      "audio_assets": [],
+      "multiview_ready": false,
+      "blockers": []
+    },
+    {
+      "binding_id": "B",
+      "character_id": "naidan",
+      "character": {
+        "id": "naidan",
+        "aliases": [],
+        "identity_status": "catalog_identity_supported",
+        "source_ids": [
+          "eco-naidan-catalog",
+          "eco-naidan-game"
+        ],
+        "must_not_confuse_with": [
+          "naiwa",
+          "naibao",
+          "generic_egg"
+        ],
+        "notes": "andi.mp3由专属语音表指向奶蛋。",
+        "generation_ready": false,
+        "name": "奶蛋"
+      },
+      "screen_position": "right",
+      "reference_asset_ids": [
+        "eco-asset-naidan-existing-idle-png"
+      ],
+      "audio_asset_ids": [
+        "nai-hub-andi"
+      ],
+      "reference_assets": [
+        {
+          "id": "eco-asset-naidan-existing-idle-png",
+          "title": "奶蛋呆呆站立",
+          "kind": "image",
+          "character_ids": [
+            "naidan"
+          ],
+          "local_path": "assets/private/curated/ecosystem/naidan/naidan-existing-idle.png",
+          "source_url": "https://github.com/musemantic/NaiLoong/blob/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+          "download_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+          "git_blob_sha1": "7216cc56751a426bd81e9f2ec98c8f48298c5202",
+          "license_status": "community_media_unverified",
+          "tags": [
+            "ecosystem",
+            "existing_resource",
+            "local_reference_only",
+            "identity_not_approved",
+            "eco-naidan-catalog"
+          ],
+          "cue_ids": [],
+          "identity_tier": "unconfirmed",
+          "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+          "usage_scope": "local_reference_only",
+          "availability": "local",
+          "bytes": 606206,
+          "sha256": "a22425b8fa3267440c12efb1218f6eeb1c66598fc0a38858e3a5495e4384e481",
+          "source_identity_bundle_id": null,
+          "source_reference_role": null,
+          "visual_review": "not_reviewed",
+          "audio_review": "not_applicable",
+          "review_status": "not_recorded"
+        }
+      ],
+      "audio_assets": [
+        {
+          "id": "nai-hub-andi",
+          "title": "安~迪~",
+          "kind": "audio",
+          "character_ids": [
+            "naidan"
+          ],
+          "local_path": "assets/repos/NaiLoong/assets/audio/andi.mp3",
+          "source_url": "https://github.com/lin-alg/NaiLoong",
+          "source_commit": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+          "cue_ids": [
+            "naidan.andi"
+          ],
+          "license_status": "recording_rights_unresolved",
+          "tags": [
+            "andi",
+            "naidan"
+          ],
+          "notes": "归属来自上游voice.json；目录文字不是试听结论。",
+          "usage_scope": "local_reference_only",
+          "identity_tier": "unconfirmed",
+          "availability": "local",
+          "bytes": 13112,
+          "sha256": "99a144f7d0fdc5a747c4dc326272c6185b7bd095ed1688aba3cccb7900434858",
+          "media": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mp3",
+                "sample_rate": "22050",
+                "channels": 2
+              }
+            ],
+            "format": {
+              "duration": "1.609375"
+            }
+          },
+          "source_identity_bundle_id": null,
+          "source_reference_role": null,
+          "visual_review": "not_reviewed",
+          "audio_review": "not_auditioned",
+          "review_status": "not_recorded",
+          "research_asset_ids": [
+            "nailoong_andi"
+          ],
+          "fetch_policy": "local_only",
+          "forbid_default_for": [
+            "naiwa"
+          ],
+          "role_assignment": "naidan_voice_catalog_confirmed"
+        }
+      ],
+      "multiview_ready": false,
+      "blockers": [
+        "参考尚未通过视觉核验: eco-asset-naidan-existing-idle-png",
+        "声音尚未试听匹配: nai-hub-andi"
+      ]
+    }
+  ],
+  "reference_assets": [
+    {
+      "id": "naiwa-frame-0000",
+      "title": "奶蛙现成原序列·闭嘴参照",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+      "source_url": "https://github.com/LynnShaw/naiwa-pet",
+      "source_commit": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "reference_role": "neutral",
+      "identity_bundle_id": "naiwa-pet-network-3d",
+      "identity_tier": "network_3d_candidate",
+      "license_status": "no_license_local_only",
+      "tags": [
+        "existing_frame",
+        "same_sequence",
+        "neutral"
+      ],
+      "notes": "现成网络版候选；非用户认证原始作者来源，也不是三视图。",
+      "usage_scope": "local_reference_only",
+      "availability": "local",
+      "bytes": 17292,
+      "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "source_identity_bundle_id": "naiwa-pet-network-3d",
+      "source_reference_role": "neutral",
+      "visual_review": "visual_checked",
+      "audio_review": "not_applicable",
+      "review_status": "current_hash",
+      "review_evidence": {
+        "asset_id": "naiwa-frame-0000",
+        "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+        "visual": {
+          "result": "visual_checked",
+          "note": "已实际看完整帧：金黄梨形无脖子、圆眼一字嘴、乳白大腹斑、褐色手脚；此帧为同源原序列的侧正面捧肚站姿，不是完整三视图。",
+          "reviewed_at": "2026-10-28T17:20:15.528676+00:00",
+          "identity_bundle_id": "naiwa-pet-network-3d",
+          "reference_role": "neutral"
+        }
+      }
+    },
+    {
+      "id": "eco-asset-naidan-existing-idle-png",
+      "title": "奶蛋呆呆站立",
+      "kind": "image",
+      "character_ids": [
+        "naidan"
+      ],
+      "local_path": "assets/private/curated/ecosystem/naidan/naidan-existing-idle.png",
+      "source_url": "https://github.com/musemantic/NaiLoong/blob/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+      "download_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+      "git_blob_sha1": "7216cc56751a426bd81e9f2ec98c8f48298c5202",
+      "license_status": "community_media_unverified",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-naidan-catalog"
+      ],
+      "cue_ids": [],
+      "identity_tier": "unconfirmed",
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "usage_scope": "local_reference_only",
+      "availability": "local",
+      "bytes": 606206,
+      "sha256": "a22425b8fa3267440c12efb1218f6eeb1c66598fc0a38858e3a5495e4384e481",
+      "source_identity_bundle_id": null,
+      "source_reference_role": null,
+      "visual_review": "not_reviewed",
+      "audio_review": "not_applicable",
+      "review_status": "not_recorded"
+    }
+  ],
+  "audio_assets": [
+    {
+      "id": "nai-hub-andi",
+      "title": "安~迪~",
+      "kind": "audio",
+      "character_ids": [
+        "naidan"
+      ],
+      "local_path": "assets/repos/NaiLoong/assets/audio/andi.mp3",
+      "source_url": "https://github.com/lin-alg/NaiLoong",
+      "source_commit": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "cue_ids": [
+        "naidan.andi"
+      ],
+      "license_status": "recording_rights_unresolved",
+      "tags": [
+        "andi",
+        "naidan"
+      ],
+      "notes": "归属来自上游voice.json；目录文字不是试听结论。",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed",
+      "availability": "local",
+      "bytes": 13112,
+      "sha256": "99a144f7d0fdc5a747c4dc326272c6185b7bd095ed1688aba3cccb7900434858",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "22050",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "1.609375"
+        }
+      },
+      "source_identity_bundle_id": null,
+      "source_reference_role": null,
+      "visual_review": "not_reviewed",
+      "audio_review": "not_auditioned",
+      "review_status": "not_recorded",
+      "research_asset_ids": [
+        "nailoong_andi"
+      ],
+      "fetch_policy": "local_only",
+      "forbid_default_for": [
+        "naiwa"
+      ],
+      "role_assignment": "naidan_voice_catalog_confirmed"
+    }
+  ],
+  "unassigned_assets": [],
+  "recipe": {
+    "id": "call-response-duo",
+    "name": "角色口癖接力 → 奶蛙反应",
+    "duration_seconds": [
+      12,
+      18
+    ],
+    "beats": [
+      {
+        "phase": "identify",
+        "visual": "配角先单独出镜，使用其自己的现成参考与口癖",
+        "cue_ids": [
+          "niulai.mama",
+          "niulai.name",
+          "naidan.andi"
+        ]
+      },
+      {
+        "phase": "reaction",
+        "visual": "硬切奶蛙闭嘴脸，不把配角眼睛/肚皮带进来",
+        "sound": "留半拍再接奶蛙短句"
+      },
+      {
+        "phase": "repeat",
+        "visual": "同一镜头重复一次，只改节奏或镜头距离，不变角色身份"
+      },
+      {
+        "phase": "payoff",
+        "visual": "奶蛙捧腹笑，配角保持自己的形象",
+        "cue_ids": [
+          "naiwa.laugh"
+        ]
+      }
+    ],
+    "requires": [
+      "每个角色独立素材ID",
+      "配角身份已消歧",
+      "每条口癖已试听"
+    ],
+    "notes": "牛来不替代唐牛；奶蛋andi不默认归奶蛙。配角只选已落地的，不用猜测形象凑齐。"
+  },
+  "generation_allowed": false,
+  "publishing_allowed": false,
+  "blockers": [
+    "[奶蛋/naidan] 参考尚未通过视觉核验: eco-asset-naidan-existing-idle-png",
+    "[奶蛋/naidan] 声音尚未试听匹配: nai-hub-andi"
+  ],
+  "rules": [
+    "读取并实际查看每个characters条目自己的reference_assets，不用文字另造形象。",
+    "每个角色只使用其绑定的身份、动作与录音；不串脸、串色，不把奶蛋andi交给奶蛙。",
+    "screen_position未指定时先确定位置；工具须逐角色接收真实附件，不凭多个名字融合形象。",
+    "仅使用audio_assets中的既有录音，不合成原作语音，不自动生成缺失BGM。",
+    "所有文件路径相对project_root，传给视频工具时必须上传真实文件。",
+    "本文件是交接草案，不代表素材有公开分发许可；不执行生成、剪辑或发布。"
+  ]
+}

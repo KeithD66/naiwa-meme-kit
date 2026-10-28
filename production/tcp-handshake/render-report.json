@@ -1,0 +1,57 @@
+{
+  "output": "outputs/tcp-handshake/naiwa-tcp-handshake.mp4",
+  "duration_seconds": 26,
+  "resolution": [
+    720,
+    1280
+  ],
+  "fps": 30,
+  "sha256": "3d22efcc81951499c7ea8b596cd468063bc3e4fc4c86010efe36c41e74f08810",
+  "character_pixels": "existing frame_0000 and source frames_0200 through 0289; no generated character pixels",
+  "audio_clips": [
+    {
+      "asset_id": "nai-hub-hola_ganbadie",
+      "path": "assets/repos/NaiLoong/assets/audio/hola_ganbadie.mp3",
+      "source_start": 0,
+      "duration": 1.806604,
+      "timeline_start": 0.1,
+      "gain_db": -8
+    },
+    {
+      "asset_id": "nai-hub-dupu",
+      "path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+      "source_start": 0,
+      "duration": 1.194467,
+      "timeline_start": 4.5,
+      "gain_db": -8
+    },
+    {
+      "asset_id": "nai-hub-dupu",
+      "path": "assets/repos/NaiLoong/assets/audio/dupu.mp3",
+      "source_start": 0,
+      "duration": 1.194467,
+      "timeline_start": 8.5,
+      "gain_db": -8
+    },
+    {
+      "asset_id": "nai-hub-gajiaosai",
+      "path": "assets/repos/NaiLoong/assets/audio/gajiaosai.mp3",
+      "source_start": 0,
+      "duration": 1.109751,
+      "timeline_start": 13.3,
+      "gain_db": -8
+    },
+    {
+      "asset_id": "naiwa-original-audio",
+      "path": "assets/repos/naiwa-pet/public/pets/naiwa/audio.m4a",
+      "source_start": 6.666667,
+      "duration": 3.0,
+      "timeline_start": 23.0,
+      "gain_db": -5
+    }
+  ],
+  "audio_selection_status": "local_audition_preview; source labels known, semantic/version match not claimed auditioned",
+  "synthesized_voice_or_bgm": false,
+  "usage": "local demonstration only; source media rights unresolved",
+  "hitem3d_result_used_in_video": false
+}

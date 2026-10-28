@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "purpose": "让后续模型检索真实现成身份与动作参考，禁止凭文字另造形象。",
+  "sources": [
+    {
+      "id": "visual-naiwa-pet-neutral",
+      "title": "网络版捧肚闭嘴帧",
+      "url": "https://github.com/LynnShaw/naiwa-pet/blob/fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765/public/pets/naiwa/frames/frame_0000.webp",
+      "resource_type": "identity_anchor",
+      "evidence_status": "local_visual_checked",
+      "license_status": "local_only_media_rights_unresolved",
+      "notes": "已查看：全身微侧、捧肚闭嘴、圆眼、浅腹部、深色手脚；不声称为最早原始出处或完整三视图。",
+      "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+      "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "bytes": 17292,
+      "visual_checked": true
+    },
+    {
+      "id": "visual-naiwa-pet-laugh",
+      "title": "同一序列大笑帧",
+      "url": "https://github.com/LynnShaw/naiwa-pet/blob/fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765/public/pets/naiwa/frames/frame_0200.webp",
+      "resource_type": "expression_anchor",
+      "evidence_status": "local_visual_checked",
+      "license_status": "local_only_media_rights_unresolved",
+      "notes": "已查看：闭眼仰头张嘴露齿、捧腹大笑；静态横嘴条件不应禁止该状态。",
+      "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0200.webp",
+      "sha256": "36118d59ec8ae570fa31e017012a0628503e1cf38bc06cb00642438be6695b28",
+      "bytes": 18758,
+      "visual_checked": true
+    },
+    {
+      "id": "visual-naiwa-pet-video",
+      "title": "奶蛙源序列视频",
+      "url": "https://github.com/LynnShaw/naiwa-pet/blob/fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765/naiwa.mp4",
+      "resource_type": "motion_reference",
+      "evidence_status": "local_file_present",
+      "license_status": "local_only_media_rights_unresolved",
+      "notes": "本地文件存在，本次未逐帧观看全片；438帧衍生样本不等于完整三视图。",
+      "local_path": "assets/repos/naiwa-pet/naiwa.mp4",
+      "sha256": "08f732bb019dfb8c5684c4572414e91c1f152cce9c9647e2de13589ba9cc778a",
+      "bytes": 925076,
+      "visual_checked": false
+    },
+    {
+      "id": "visual-codex-sprite",
+      "title": "奶蛙Codex动作图集",
+      "url": "https://github.com/timerring/codex-pet-naiwa/blob/3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50/naifrog/spritesheet.webp",
+      "resource_type": "sprite_atlas",
+      "evidence_status": "local_file_present",
+      "license_status": "local_only_media_rights_unresolved",
+      "notes": "README原创MIT明确排除Credits第三方媒体；不能包装成媒体MIT，未在本次查看整张图集。",
+      "local_path": "assets/repos/codex-pet-naiwa/naifrog/spritesheet.webp",
+      "sha256": "e86e8b61584df7897ef7a60c3ba6a8dd92a798b3a5bdba5080351a896927f588",
+      "bytes": 1600282,
+      "visual_checked": false
+    },
+    {
+      "id": "visual-codex-look-preview",
+      "title": "16注视方向预览",
+      "url": "https://github.com/timerring/codex-pet-naiwa/blob/3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50/naifrog/previews/look-directions.png",
+      "resource_type": "gaze_preview",
+      "evidence_status": "local_visual_checked",
+      "license_status": "local_only_media_rights_unresolved",
+      "notes": "本次查看了预览首帧，不等于查看所有动画方向；注视方向不是角色三视图。",
+      "local_path": "assets/repos/codex-pet-naiwa/naifrog/previews/look-directions.png",
+      "sha256": "a06bd0538653fe8a1ec26dfe7bb441c1b3703732677e3614d23a09cb0f7a8bb8",
+      "bytes": 378053,
+      "visual_checked": true
+    },
+    {
+      "id": "visual-nai-hub-catalog",
+      "title": "NaiLoong奶蛙表情远程目录",
+      "url": "https://github.com/lin-alg/NaiLoong/tree/ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0/data/naiwa",
+      "resource_type": "remote_image_catalog",
+      "evidence_status": "local_index_read",
+      "license_status": "community_media_rights_unresolved",
+      "notes": "本次本地读到static121项/animated71项；条目为固定commit远程URL片段，目录不等于原图已下载。",
+      "static_entries": 121,
+      "animated_entries": 71,
+      "local_index_paths": [
+        "assets/repos/NaiLoong/data/naiwa/static.json",
+        "assets/repos/NaiLoong/data/naiwa/animated.json"
+      ]
+    },
+    {
+      "id": "visual-wallpaper-index",
+      "title": "奶蛙艺术圣殿素材机器清单",
+      "url": "https://github.com/Nailong-Studio/wallpaper/blob/main/assets.json",
+      "resource_type": "asset_catalog",
+      "evidence_status": "primary_index_read",
+      "license_status": "per_file_review_required",
+      "notes": "本次读取版本2.7.0、generated2026-10-26、total263；含多种造型，逐件查实际图片与同名.txt及SOURCES。索引尺寸与叙事高清尺寸有时不同，不当作实际媒体分辨率。",
+      "download_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/main/assets.json",
+      "observed_total": 263
+    },
+    {
+      "id": "visual-wallpaper-standing",
+      "title": "现成站立全身图候选",
+      "url": "https://github.com/Nailong-Studio/wallpaper/blob/main/emotes/%E5%A5%B6%E8%9B%99-%E7%AB%8B%E7%BB%98-%E7%AB%99%E7%AB%8B.png",
+      "resource_type": "identity_candidate",
+      "evidence_status": "primary_index_and_notice_read",
+      "license_status": "third_party_media_unresolved",
+      "notes": "上游叙事称黑底全身站姿、来源百度图片；没有本次查看原图，不能视为已选择身份或已获得媒体授权。",
+      "download_url": "https://nailong-wallpaper.pages.dev/emotes/%E5%A5%B6%E8%9B%99-%E7%AB%8B%E7%BB%98-%E7%AB%99%E7%AB%8B.png",
+      "upstream_bytes": 661746,
+      "visual_checked": false,
+      "notice_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/main/emotes/%E5%A5%B6%E8%9B%99-%E7%AB%8B%E7%BB%98-%E7%AB%99%E7%AB%8B.png.txt"
+    },
+    {
+      "id": "visual-wallpaper-laugh-video",
+      "title": "连续大笑现成视频候选",
+      "url": "https://github.com/Nailong-Studio/wallpaper/blob/main/videos/%E5%A5%B6%E8%9B%99-%E5%A4%A7%E7%AC%91.mp4",
+      "resource_type": "motion_reference",
+      "evidence_status": "primary_index_and_notice_read",
+      "license_status": "per_file_review_required",
+      "notes": "上游清单称15.4秒、1080x1474/30fps、含原声；本次未逐帧观看该原片，媒体的原始权利链仍需核对。",
+      "download_url": "https://nailong-wallpaper.pages.dev/videos/%E5%A5%B6%E8%9B%99-%E5%A4%A7%E7%AC%91.mp4",
+      "upstream_bytes": 5568570,
+      "visual_checked": false,
+      "notice_url": "https://raw.githubusercontent.com/Nailong-Studio/wallpaper/main/videos/%E5%A5%B6%E8%9B%99-%E5%A4%A7%E7%AC%91.mp4.txt"
+    },
+    {
+      "id": "visual-neta-official",
+      "title": "Neta三视图候选（不默认采用）",
+      "url": "https://neta.art/app/milk-frog-wiki",
+      "resource_type": "turnaround_candidate",
+      "evidence_status": "local_visual_checked",
+      "license_status": "downstream_media_license_unverified",
+      "notes": "先前主代理已看图：正侧标签对调、眼色嘴形略偏；本次沿用已记录核验。Neta自称官方不是权利人背书，不能仅靠名称采用。",
+      "local_path": "assets/private/references/neta-mature-official-front-side-back.webp",
+      "download_url": "https://works.cohub.live/w/0d0f026e-322c-4d1b-bd87-3d67c2ba7454/milk-frog-wiki/5358b90f9c06/content/archive/mature-official-front-side-back.webp",
+      "sha256": "a97782dfcdb7935a7032a16749a76d40e8ad733fd64f0239471c42c3fe98930d",
+      "visual_checked": true,
+      "identity_accepted": false
+    },
+    {
+      "id": "visual-neta-supplemental",
+      "title": "Neta三视图候选（不默认采用）",
+      "url": "https://neta.art/app/milk-frog-wiki",
+      "resource_type": "turnaround_candidate",
+      "evidence_status": "local_visual_checked",
+      "license_status": "downstream_media_license_unverified",
+      "notes": "先前主代理已看图：正侧标签对调、眼色嘴形略偏；本次沿用已记录核验。Neta自称官方不是权利人背书，不能仅靠名称采用。",
+      "local_path": "assets/private/references/neta-mature-supplemental-turnaround.webp",
+      "download_url": "https://works.cohub.live/w/0d0f026e-322c-4d1b-bd87-3d67c2ba7454/milk-frog-wiki/5358b90f9c06/content/archive/mature-supplemental-turnaround.webp",
+      "sha256": "2d36d82dab07ebc572b5b86faa7a92d8256b50f95488d8741e68c4c6f90dc8db",
+      "visual_checked": true,
+      "identity_accepted": false
+    },
+    {
+      "id": "visual-civitai-krea2",
+      "title": "Krea2 奶娃奶龙 Naiwanailong V2",
+      "url": "https://civitai.com/models/2802348",
+      "resource_type": "lora",
+      "evidence_status": "primary_api_verified",
+      "license_status": "model_terms_and_character_rights_separate",
+      "notes": "API元数据可访问；权重未下载/未加载/未实测。许可标志由上传者提供，不等于网络原型或视频BGM版权。必须兼容Krea2并实际加载，触发词不能替代参考图。",
+      "api_url": "https://civitai.com/api/v1/models/2802348",
+      "creator": "Ay1in",
+      "model_id": 2802348,
+      "model_version_id": 3249650,
+      "base_model": "Krea 2",
+      "trigger_words": [
+        "NAIWA"
+      ],
+      "file_name": "Krea2_NAIWA_V2_000002250.safetensors",
+      "size_kib": 223230.203125,
+      "download_url": "https://civitai.com/api/download/models/3249650?fileId=3132615",
+      "expected_sha256": "7baba38fb0daa8d71c3d269655ceb3f5f8e3f795fa3fb264d1218790f12a246e",
+      "download_status": "not_downloaded",
+      "download_access_tested": false
+    },
+    {
+      "id": "visual-civitai-moss",
+      "title": "Nai-Animals MOSS五角色v1.0",
+      "url": "https://civitai.com/models/3006514",
+      "resource_type": "lora",
+      "evidence_status": "primary_api_verified",
+      "license_status": "model_terms_and_character_rights_separate",
+      "notes": "作者明确报告比例变化、多黄色角色串特征、多人位置交换；不能写一个LoRA保证全家稳定同框。权重未下载/未加载/未实测。",
+      "api_url": "https://civitai.com/api/v1/models/3006514",
+      "creator": "egdarin",
+      "model_id": 3006514,
+      "model_version_id": 3411275,
+      "base_model": "MOSS Image",
+      "trigger_words": [
+        "naiwa",
+        "nailoong",
+        "naibao",
+        "Nai_DS_whale",
+        "zhiren"
+      ],
+      "file_name": "Nai-Animals-768-r16_e12.safetensors",
+      "size_kib": 72630.6796875,
+      "download_url": "https://civitai.com/api/download/models/3411275?fileId=3303418",
+      "expected_sha256": "5cd10fb9165bf3337c9cf3445eab355e4d95f228e0e271546ecadc27444a1699",
+      "download_status": "not_downloaded",
+      "download_access_tested": false
+    },
+    {
+      "id": "visual-jlc-model",
+      "title": "嘉立创奶蛙模型既有线索",
+      "url": "https://model.jlc-3dp.cn/modelDetail/037262f117974eacb739974e67344c53.html",
+      "resource_type": "model_3d_candidate",
+      "evidence_status": "page_shell_only",
+      "license_status": "unresolved_contact_or_login_may_be_required",
+      "notes": "原站请求HTTP200但未返回奶蛙标题、OBJ列表、downloadUrl；只有通用壳/登录入口和联系客服获取许可提示。此前记载的五种.obj文件名未独立确认，不假称模型已取得。",
+      "download_status": "not_downloaded",
+      "model_files_verified": false
+    },
+    {
+      "id": "visual-liaosongjie-assets",
+      "title": "原作者声明MIT的奶蛙桌宠动画",
+      "url": "https://github.com/liaosongjie/Codex-Voice-Input/blob/main/assets/pet/ASSET-NOTICE.md",
+      "resource_type": "authored_animation_source",
+      "evidence_status": "primary_notice_read",
+      "license_status": "MIT_claim_for_authored_media",
+      "notes": "原作者称源视频/动画/笑声自制，派生PNG与sounds/laugh.wav MIT；本次直接读原作者声明，未下载或看完该动画，造型需另核对。",
+      "notice_url": "https://raw.githubusercontent.com/liaosongjie/Codex-Voice-Input/main/assets/pet/ASSET-NOTICE.md",
+      "download_status": "not_downloaded_by_identity_research"
+    },
+    {
+      "id": "visual-maple-pixel",
+      "title": "Maple奶蛙像素动画",
+      "url": "https://github.com/Maple498/nai-wa-codex-pet/blob/main/ASSET-LICENSE.md",
+      "resource_type": "authored_animation_source",
+      "evidence_status": "primary_notice_read",
+      "license_status": "CC-BY-4.0_for_authored_pixel_assets",
+      "notes": "直接读到对自制像素图集/预览的CC BY4声明，同时明确不对网络原型第三方权利作保证；需署名、像素再绘不替代网传3D。",
+      "notice_url": "https://raw.githubusercontent.com/Maple498/nai-wa-codex-pet/main/ASSET-LICENSE.md",
+      "download_status": "not_downloaded_by_identity_research"
+    },
+    {
+      "id": "visual-tarelx-assets",
+      "title": "TarelX奶蛙设计与动作",
+      "url": "https://github.com/TarelX/Milk-Frog/blob/main/NOTICE.md",
+      "resource_type": "authored_animation_source",
+      "evidence_status": "primary_notice_read",
+      "license_status": "MIT_claim_for_authored_media",
+      "notes": "NOTICE将自身角色设计、图标、连续帧、道具与文档统一MIT；本次未看实际角色图，不能因同名自动选为网络版。",
+      "notice_url": "https://raw.githubusercontent.com/TarelX/Milk-Frog/main/NOTICE.md",
+      "download_status": "not_downloaded_by_identity_research"
+    },
+    {
+      "id": "visual-sandy-pixel",
+      "title": "sandytruant奶蛙像素桌宠",
+      "url": "https://github.com/sandytruant/codex-pet-naiwa/blob/main/README.md",
+      "resource_type": "authored_animation_source",
+      "evidence_status": "primary_notice_read",
+      "license_status": "MIT_claim_for_code_and_pet_assets",
+      "notes": "README明确代码和宠物素材MIT；是像素再绘，按风格分组，不替代网传3D。",
+      "notice_url": "https://raw.githubusercontent.com/sandytruant/codex-pet-naiwa/main/README.md",
+      "download_status": "not_downloaded_by_identity_research"
+    },
+    {
+      "id": "visual-hf-naiwa-query",
+      "title": "Hugging Face naiwa官方搜索",
+      "url": "https://huggingface.co/models?search=naiwa",
+      "resource_type": "discovery_query",
+      "evidence_status": "official_api_query_empty",
+      "license_status": "not_applicable",
+      "notes": "2026-10-29 官方API模型与数据集search=naiwa结果均空；只代表该查询。含Nailong的翻译/分类/机器人模型不是奶蛙生成模型，XiC1奶龙数据也不自动适合奶蛙。",
+      "api_urls": [
+        "https://huggingface.co/api/models?search=naiwa&limit=50",
+        "https://huggingface.co/api/datasets?search=naiwa&limit=50"
+      ],
+      "observed_models": 0,
+      "observed_datasets": 0
+    },
+    {
+      "id": "visual-nai-hub-classic-laugh",
+      "title": "经典奶蛙捧腹大笑目录候选",
+      "url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0137.jpg",
+      "resource_type": "identity_candidate",
+      "evidence_status": "local_catalog_remote_head_and_git_tree_verified",
+      "license_status": "community_media_rights_unresolved",
+      "notes": "NaiLoong奶蛙静态目录中的固定提交条目；本次原站HEAD200 image/jpeg，未下载/看图，不把目录标题当作已通过身份验收。",
+      "download_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0137.jpg",
+      "upstream_bytes": 169507,
+      "source_commit": "a7b1122cbccbb16e5f47e3f49742cad3d59bd161",
+      "visual_checked": false,
+      "git_blob_sha": "e6b3e2e8702145f80a16e89f97070b54c1a1df89",
+      "blob_sha_evidence": "git fetch --filter=blob:none --depth=1 fixed_commit; git ls-tree (without -l to avoid lazy blob download)",
+      "bytes_evidence": "Original raw.githubusercontent.com HEAD Content-Length, 2026-10-29"
+    },
+    {
+      "id": "visual-nai-hub-confident-standing",
+      "title": "奶蛙抱胸自信站立目录候选",
+      "url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0138.jpg",
+      "resource_type": "identity_candidate",
+      "evidence_status": "local_catalog_remote_head_and_git_tree_verified",
+      "license_status": "community_media_rights_unresolved",
+      "notes": "NaiLoong奶蛙静态目录中的固定提交条目；本次原站HEAD200 image/jpeg，未下载/看图，不把目录标题当作已通过身份验收。",
+      "download_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0138.jpg",
+      "upstream_bytes": 271031,
+      "source_commit": "a7b1122cbccbb16e5f47e3f49742cad3d59bd161",
+      "visual_checked": false,
+      "git_blob_sha": "1efebac1405f8d8175f3432c5ec5f2ea05d53c32",
+      "blob_sha_evidence": "git fetch --filter=blob:none --depth=1 fixed_commit; git ls-tree (without -l to avoid lazy blob download)",
+      "bytes_evidence": "Original raw.githubusercontent.com HEAD Content-Length, 2026-10-29"
+    }
+  ],
+  "reference_roles": [
+    {
+      "role": "identity_anchor",
+      "asset_ids": [
+        "naiwa-frame-0000"
+      ],
+      "source_ids": [
+        "visual-naiwa-pet-neutral"
+      ],
+      "status": "sampled_visual_checked_local_only",
+      "notes": "当前闭嘴捧肚版本的本地比对入口，不代表完整多角度或对外媒体许可。"
+    },
+    {
+      "role": "expression_laugh",
+      "asset_ids": [
+        "naiwa-frame-0200"
+      ],
+      "source_ids": [
+        "visual-naiwa-pet-laugh"
+      ],
+      "status": "sampled_visual_checked_local_only"
+    },
+    {
+      "role": "multiview",
+      "source_ids": [
+        "visual-neta-official",
+        "visual-neta-supplemental",
+        "visual-jlc-model"
+      ],
+      "status": "not_ready",
+      "notes": "现成Neta候选未接受，JLC文件未取得；不得把连帧或注视方向当作合格三视图。"
+    },
+    {
+      "role": "motion_reference",
+      "asset_ids": [
+        "naiwa-original-video"
+      ],
+      "source_ids": [
+        "visual-naiwa-pet-video",
+        "visual-wallpaper-laugh-video"
+      ],
+      "status": "local_or_remote_candidates",
+      "notes": "仅提供动作；不让动作视频覆盖已选身份。"
+    }
+  ],
+  "gaps": [
+    "尚无核验通过且与用户标准一致的完整三视图或可渲染已授权OBJ。",
+    "具体雷霆舞步原发动作片段仍需与音效研究联动取证。",
+    "LoRA仅验证元数据，未下载/加载/实测，不能宣称已部署身份模型。",
+    "现成图库大量二创与再绘，实际使用时逐件看图分版本，不接受同名即同脸。"
+  ],
+  "guardrails": [
+    "No text-only character invention.",
+    "Bind real image files and record path + SHA256 before generation.",
+    "Do not substitute Nailoong, a real milk frog, a pixel redraw, or a yellow generic mascot.",
+    "Do not set multiview_ready without inspecting matching front/side/back or valid model renders.",
+    "One character identity per reference group; motion references do not override identity.",
+    "Current work is library enrichment, not rendering or publishing."
+  ]
+}

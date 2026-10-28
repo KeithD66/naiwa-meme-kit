@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-28T18:38:32.740338+00:00",
+  "model": "hyper3d-gen2-260112",
+  "scope": "只读公开官方文档研究；未读取用户凭据、未查询账号、未提交任何推理、未安装厂商连接器。仅新增本研究JSON，不生成素材索引。",
+  "sources": [
+    {
+      "id": "shadoweye-create-3d-generation-task-api",
+      "url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+      "title": "创建3D生成任务",
+      "updated_at": "2026-10-23T06:13:41Z",
+      "sha256": "6056246071de15bf57d61c754c258d2a3bd9b0d9abc749d5228ca08f3d075716",
+      "md_length": 5139,
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "shadoweye-get-3d-generation-task-api",
+      "url": "https://docs.volcengine.com/docs/ark/shadoweye-get-3d-generation-task-api?lang=zh",
+      "title": "查询3D生成任务",
+      "updated_at": "2026-09-29T06:48:36Z",
+      "sha256": "4b4c085de9d49d11e356bf641d6e1cb5454341a18d9beba940014ec117e6a2ce",
+      "md_length": 2354,
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "shadoweye-get-3d-generation-task-list-api",
+      "url": "https://docs.volcengine.com/docs/ark/shadoweye-get-3d-generation-task-list-api?lang=zh",
+      "title": "查询3D生成任务列表",
+      "updated_at": "2026-09-29T06:48:36Z",
+      "sha256": "ec60914c491934bd7cff69216c62ad801ec9b9d19c79e803351b37204b9f24a5",
+      "md_length": 3309,
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "model-pricing",
+      "url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+      "title": "模型价格",
+      "updated_at": "2026-10-24T11:43:57Z",
+      "sha256": "0a2ff99a3275b02fe39fe083909b1aa96e9ad9e35a63fad444c24fec4ec3883b",
+      "md_length": 19373,
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "model-list",
+      "url": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+      "title": "模型列表",
+      "updated_at": "2026-10-24T11:43:57Z",
+      "sha256": "717ad6c5bc6d5c8573b2343164f560671edb60950c4922b23987ce7a9bd10712",
+      "md_length": 52452,
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "free-inference-quota",
+      "url": "https://docs.volcengine.com/docs/ark/free-inference-quota?lang=zh",
+      "title": "免费推理额度",
+      "updated_at": "2026-08-24T13:58:51Z",
+      "sha256": "4008b9aee5e849897dfb5e84abbecb51c0fcb0d68f62beeaaac2c055ba6aebfd",
+      "md_length": 2196,
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "get-model-activation-api",
+      "url": "https://docs.volcengine.com/docs/ark/get-model-activation-api?lang=zh",
+      "title": "查询模型开通详情",
+      "updated_at": "2026-09-04T12:24:13Z",
+      "sha256": "e0acc495f94c9cd257222a09e6682e86711102bc7d92eee257241d4c2d98b5cd",
+      "md_length": 4320,
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "delete",
+      "url": "https://docs.volcengine.com/docs/ark/shadoweye-delete-3d-api?lang=zh",
+      "equivalent_numeric_url": "https://docs.volcengine.com/docs/82379/2310463?lang=zh",
+      "title": "取消或删除3D生成任务",
+      "updated_at": "2026-09-07T17:21:16Z",
+      "sha256": "14009babbeb4249f7de8b747bb6b3a68b79c035e01ce375ab15b3d0ac92c0c76",
+      "authority": "Volcano Ark official public documentation",
+      "extraction": "public HTML window._ROUTER_DATA loaderData curDoc.MDContent; no account/API credential"
+    },
+    {
+      "id": "native-rodin-gen2",
+      "url": "https://docs.hyper3d.ai/en/api-specification/rodin-gen2",
+      "authority": "Hyper3D vendor official; native service context only, not evidence of Ark feature availability",
+      "extraction": "official public documentation inspected via web, with Markdown supplementary page at same URL + .md"
+    },
+    {
+      "id": "native-rigging",
+      "url": "https://docs.hyper3d.ai/en/api-specification/rigging",
+      "markdown_url": "https://docs.hyper3d.ai/en/api-specification/rigging.md",
+      "authority": "Hyper3D vendor official; separate native rigging service",
+      "md_sha256": "5a4051d219d2b31909f26c80120d39e1239631e7765503f4fa151658e8f255fc"
+    },
+    {
+      "id": "native-introduction",
+      "url": "https://docs.hyper3d.ai/en",
+      "authority": "Hyper3D vendor official; protocol distinction only"
+    }
+  ],
+  "input": {
+    "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+    "modes": [
+      "text-to-3D",
+      "image-to-3D",
+      "image plus optional text guidance"
+    ],
+    "image_field": "content[].image_url.url",
+    "image_count_min": 1,
+    "image_count_max": 5,
+    "encoding": [
+      "publicly accessible URL",
+      "data:image/<lowercase-format>;base64,<data>"
+    ],
+    "formats": [
+      "jpg",
+      "jpeg",
+      "png"
+    ],
+    "webp_supported_by_documented_schema": false,
+    "per_image_size_limit": "不超过30 MB；官方未说明MB是十进制或MiB，实现宜保守使用30,000,000字节",
+    "per_image_total_pixels_exclusive_max": 16777216,
+    "pixel_limit_formula": "total pixels < 4096 * 4096; not documented as an independent 4096px cap on each edge",
+    "minimum_side_px": null,
+    "maximum_side_px": null,
+    "aspect_ratio_range": null,
+    "request_body_size_limit": null,
+    "unknowns": "此创建页没有列最小边、独立每边限制、宽高比范围或总正文上限；不能移用Seed3D的300–6000/0.4–2.5/64MB条件。",
+    "project_reference_conversion": {
+      "source": "naiwa-frame-0000 / frame_0000.webp",
+      "operation": "lossless re-encode decoded RGBA pixels as PNG, no resize/padding/synthesis",
+      "provenance": [
+        "original encoded source SHA-256",
+        "decoded dimensions",
+        "decoded RGBA pixel hash",
+        "output PNG SHA-256",
+        "reopened PNG decoded RGBA exact equality"
+      ],
+      "reason": "WebP is not among documented Ark Hyper3D inputs; same pixels preserve the Seed3D/Hitem input comparison."
+    },
+    "text": {
+      "language": "English only",
+      "max_characters": 400,
+      "over_limit": "truncated",
+      "field": "content[].text",
+      "flags_transport": "append --<parameter> <value> in content text",
+      "image_text_constraints": "Ark允许图+可选英文文本，未进一步承诺文字不会改变身份。项目首试宜只传规格flags，避免描述另造角色。"
+    },
+    "seed": {
+      "transport": "top-level JSON integer field seed; not --seed text flag",
+      "inclusive_range": [
+        0,
+        65535
+      ],
+      "reproducibility": "same request and seed produce similar, not guaranteed identical, results"
+    },
+    "callback_url": "optional top-level callback_url; no callback needed for local poll/download workflow"
+  },
+  "multiple_images_vs_multiview": {
+    "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+    "documented": "1–5 image inputs in one task are supported.",
+    "not_exposed_in_ark_schema": [
+      "condition_mode",
+      "MultiView",
+      "camera intrinsics/extrinsics",
+      "per-image front/side/back role",
+      "view order semantics",
+      "same subject versus different subject fusion rule"
+    ],
+    "claim_boundary": "多张输入已支持；无法仅凭该字段宣称具有相机校准、多视角融合或photogrammetry级别的身份/几何保证。厂商旧版condition_mode、concat等参数不可直接搬入Ark。",
+    "project_selection": "若将来试多图，先挑同角色同版本且经过实看的真实不同角度；连续表情帧不是多视角；Seed3D推断背面的渲染仍是派生假设，多次喂入不使其变为网络原型证据。"
+  },
+  "geometry": {
+    "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+    "mesh_mode": {
+      "default": "Quad",
+      "values": {
+        "Raw": "triangle faces",
+        "Quad": "quadrilateral faces"
+      }
+    },
+    "quality_override": {
+      "type": "number in Ark table; prefer integral face count locally",
+      "Raw_inclusive_range": [
+        500,
+        1000000
+      ],
+      "Raw_default": 500000,
+      "Quad_inclusive_range": [
+        1000,
+        200000
+      ],
+      "Quad_default": 18000,
+      "precedence": "quality_override overrides subdivisionlevel"
+    },
+    "subdivisionlevel": {
+      "alias": "sl",
+      "Raw": {
+        "high": 500000,
+        "medium": 150000,
+        "low": 20000,
+        "default": "high"
+      },
+      "Quad": {
+        "high": 50000,
+        "medium": 18000,
+        "low": 8000,
+        "default": "medium"
+      }
+    },
+    "recommendation_annotation": "官方另写建议quality_override>=150000；这是建议而非请求下限，与Quad默认18000并存。对编辑底模实验可明确选择18k或50k，不应为此盲目堆面。",
+    "project_trial_target": {
+      "recommended": 50000,
+      "rationale": "官方Quad high档，较18k更有机会保留眼嘴/轮廓细节，较现有高面Seed3D更轻；参数不改变官方固定每任务价格。18k适合更轻的编辑实验但并不省API费。",
+      "is_quality_guarantee": false
+    },
+    "TAPose": {
+      "default": false,
+      "true": "对类人模型强制生成T-Pose或A-Pose，由模型选择T还是A。",
+      "false": "Ark仅说不强制，由模型自行决定。",
+      "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+      "returns_skeleton_or_skinning_guaranteed": false,
+      "reason": "当前Ark接口没有bone_template、skeleton、skinning或animation参数，也没有保证输出bones/joints/weights。标准静态姿态只是后续绑定准备，不是已绑定。",
+      "project_first_trial": false,
+      "identity_caveat": "奶蛙短肢/无颈形象不一定适合通用类人重摆姿；首试保持同源输入，避免姿态条件改变体型。"
+    },
+    "bbox_condition": {
+      "type": "integer array",
+      "meaning": "width, height, length bounds",
+      "units": "not specified in Ark page",
+      "default_recommendation": "omit unless necessary, let model infer bounds",
+      "project_caveat": "示例[100,100,100]不是角色真实尺寸，不宜照搬为角色正方体比例要求。"
+    },
+    "editing_readiness": "Quad不自动意味着合理的关节edge loops、分离四肢、无自交、可绑定或变形可靠；必须检查原始拓扑和肢体连接。"
+  },
+  "materials_and_textures": {
+    "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+    "material": {
+      "default": "PBR",
+      "values": {
+        "PBR": [
+          "base color",
+          "metallicness",
+          "normal",
+          "roughness"
+        ],
+        "Shaded": [
+          "base color with baked lighting"
+        ],
+        "All": [
+          "PBR and Shaded"
+        ],
+        "None": [
+          "untextured white mesh"
+        ]
+      }
+    },
+    "addons": {
+      "type": "text flag string",
+      "documented_value": "HighPack",
+      "no_addon_resolution": "2K",
+      "HighPack_resolution": "4K",
+      "ark_claims_only": "增强纹理贴图分辨率；未承诺额外高模、多模型格式、骨骼、额外动作或其它附件。",
+      "actual_channel_packing_or_files": "not specified; inspect archive and texture dimensions"
+    },
+    "hd_texture": {
+      "type": "boolean",
+      "default": false,
+      "ark_documented_effect": "enable/disable HD texture; no exact resolution or algorithm specified",
+      "not_a_documented_replacement_for_HighPack": true
+    },
+    "native_vendor_context": {
+      "url": "https://docs.hyper3d.ai/en/api-specification/rodin-gen2",
+      "Gen2_HighPack": "Vendor says 2K to 4K pack textures only, no geometry change or extra high-poly model.",
+      "hd_texture": "Vendor describes additional texture super-resolution/enhancement with possible artifacts, not final 2K/4K selection.",
+      "applicability": "Descriptive native context only; Ark actual files/behavior still need a real controlled trial."
+    }
+  },
+  "output": {
+    "create_source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+    "query_source_url": "https://docs.volcengine.com/docs/ark/shadoweye-get-3d-generation-task-api?lang=zh",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "create": "POST /contents/generations/tasks",
+    "query": "GET /contents/generations/tasks/{id}",
+    "fileformat": {
+      "alias": "ff",
+      "default": "glb",
+      "values": [
+        "glb",
+        "obj",
+        "usdz",
+        "fbx",
+        "stl"
+      ]
+    },
+    "download_field": "content.file_url",
+    "download_container": "zip",
+    "inside_zip": "selected model file format, with associated files as actually returned; exact layout not specified",
+    "combination_matrix": "Ark lists Quad/Raw, PBR/Shaded/All/None and formats independently; it provides no explicit compatibility matrix or guarantee of native quad persistence for each Quad+PBR+format combination. Verify real archive.",
+    "native_quad_preservation": {
+      "preferred_master": "untouched provider OBJ/MTL/textures and original ZIP",
+      "verification": "Count vertex references per original OBJ f-line, record face-size histogram and n==4 fraction before using trimesh or any triangulating importer. Inspect UVs/material references, non-manifold edges, separate parts and source hashes.",
+      "GLB_role": "useful PBR rendering/interchange; do not label it proof of retained native quadrilateral topology",
+      "existing_project_limit": "package-character.py/trimesh processing triangulates representation; its exported character.obj is a triangle diffuse exchange, not the provider-native Quad OBJ. Keep native_quad source separate, never overwrite it."
+    },
+    "usage": [
+      "usage.completion_tokens",
+      "usage.total_tokens"
+    ],
+    "input_tokens": 0,
+    "total_equals_completion": true,
+    "states": [
+      "queued",
+      "running",
+      "cancelled",
+      "succeeded",
+      "failed"
+    ],
+    "generated_files_ttl_hours": 24,
+    "task_metadata_ttl_days": 7,
+    "safe_handling": "Save raw signed responses privately, download promptly, retain original ZIP/hashes, validate ZIP paths/symlinks/model external dependencies before import."
+  },
+  "cancellation": {
+    "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-delete-3d-api?lang=zh",
+    "method": "DELETE /contents/generations/tasks/{id}",
+    "queued": "cancel -> cancelled",
+    "running": "not supported",
+    "succeeded_or_failed": "delete task record only; later queries unavailable",
+    "cancelled": "no DELETE; automatic deletion after 24h",
+    "budget_consequence": "Cannot use DELETE as a running-job budget brake; deleting a successful record does not undo its usage."
+  },
+  "billing_and_quota": {
+    "create_billing_source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+    "pricing_source_url": "https://docs.volcengine.com/docs/ark/model-pricing?lang=zh",
+    "free_quota_source_url": "https://docs.volcengine.com/docs/ark/model-list?lang=zh",
+    "sharing_source_url": "https://docs.volcengine.com/docs/ark/free-inference-quota?lang=zh",
+    "per_successful_model_tokens": 30000,
+    "yuan_per_thousand_tokens": 0.06,
+    "yuan_per_successful_model": 1.8,
+    "billing_basis": "successful output 3D files; preserve actual usage and bill for reconciliation",
+    "parameter_surcharges_in_ark": "Current creation page states fixed 30000 tokens/model, price table lists one Hyper3D Gen2 row for all material modes. No separate surcharge is listed for Quad/Raw, quality_override, HD texture or HighPack; do not import vendor credit add-on pricing into Ark.",
+    "failed_without_successful_output": "not charged under successful-output rule; preserve terminal error/usage instead of assuming every timeout is a failure",
+    "documented_initial_free_tokens": 150000,
+    "theoretical_successes_if_complete_unused_gift": 5,
+    "quota_owner": "per-model allowance shared under main account and subaccounts; not per API key",
+    "separate_from_Seed3D_2M": true,
+    "account_free_remaining_verified": false,
+    "current_user_Hyper3D_free_allowance_confirmed": false,
+    "instruction_for_this_research": "Do not start inference merely because official catalog lists initial gift; root is awaiting user/account-specific allowance clarification.",
+    "quota_query": {
+      "source_url": "https://docs.volcengine.com/docs/ark/get-model-activation-api?lang=zh",
+      "endpoint": "POST https://ark.cn-beijing.volcengineapi.com/?Action=GetModelActivation&Version=2024-01-01",
+      "auth": "Access Key signed request only; not Ark Bearer inference key",
+      "request_field": "WithFreeUsage",
+      "response": "Item.FreeResourcePackItems Total/Consumed/SyncTime and Item.InitialInferenceFreeUsage Total/Consumed",
+      "constraint": "No authenticated account query performed; do not ask for broad AK merely to finish local planning."
+    },
+    "minimum_meaningful_trial": {
+      "jobs": 1,
+      "expected_tokens": 30000,
+      "standard_yuan_if_no_free_credit": 1.8,
+      "purpose": "same reviewed existing naiwa image, Quad 50k + PBR + native OBJ; isolate topology and identity trade-off against existing Seed3D model",
+      "free_or_paid_status": "unknown until account-specific allowance is confirmed",
+      "not_executed": true,
+      "next_trials": "Only after inspecting identity/native quad histogram/materials should an optional T/A-pose or real multiple-image experiment be considered; each extra successful task is another 30000 tokens."
+    }
+  },
+  "ark_versus_native_rodin": {
+    "ark": {
+      "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+      "host": "ark.cn-beijing.volces.com",
+      "request": "JSON model + content[] + text flags, optional top-level seed",
+      "model": "hyper3d-gen2-260112",
+      "task_identifier": "id",
+      "billing": "Ark output tokens / RMB / model-specific allowance",
+      "documented_prompt_limit": 400,
+      "documented_Quad_minimum": 1000,
+      "documented_material_values": [
+        "PBR",
+        "Shaded",
+        "All",
+        "None"
+      ]
+    },
+    "native": {
+      "source_urls": [
+        "https://docs.hyper3d.ai/en",
+        "https://docs.hyper3d.ai/en/api-specification/rodin-gen2",
+        "https://docs.hyper3d.ai/en/api-specification/rigging"
+      ],
+      "host": "api.hyper3d.com",
+      "generation_path": "/api/v2/rodin",
+      "request": "multipart/form-data; images files, prompt, tier=Gen-2, quality, geometry_file_format, addons array etc.",
+      "credentials": "separate RODIN_API_KEY, not provided Ark key",
+      "identifiers": "top-level uuid for asset/download and jobs.subscription_key for status",
+      "billing": "native credits, not Ark tokens/free resource packs",
+      "documented_prompt_limit": 1024,
+      "documented_Quad_minimum_difference": "native generic quality_override min500 and Quad max200000; use Ark min1000 for Ark requests",
+      "native_extra_fields_not_ark": [
+        "tier",
+        "geometry_file_format",
+        "quality",
+        "Hybrid material",
+        "quad_normal",
+        "is_symmetric",
+        "detail_level",
+        "soft"
+      ],
+      "rigging": "Separate native /api/v2/rigging supports bone_template and skeleton/skinning/animation workflows; Ark generation schema does not expose or confer this service."
+    },
+    "do_not_transplant": [
+      "native endpoints or credential",
+      "native credit/add-on charges or retention rules",
+      "multipart field names into Ark JSON",
+      "native rigging endpoint into TAPose flag",
+      "Gen2.5/10M/12K/Agentic/BANG/texture-only functions into Ark hyper3d-gen2 model",
+      "old condition_mode/MultiView labels not listed by current Ark schema"
+    ]
+  },
+  "value_for_existing_Seed3D_library": [
+    {
+      "capability": "lighter editable native Quad model",
+      "value": "Introduce a second geometry representation aimed at inspection, editing and later manual rigging, while retaining existing Seed3D PBR identity/reference masters.",
+      "limit": "native quads and useful deformation loops must be verified; a converted triangle OBJ does not satisfy it."
+    },
+    {
+      "capability": "up to 5 image inputs",
+      "value": "Potential future joint use of real same-version views, unlike Seed3D single-image production API.",
+      "limit": "Ark does not document calibrated MultiView semantics; inferred render angles remain inferred."
+    },
+    {
+      "capability": "T/A rest-pose conditioning",
+      "value": "Potential optional static neutral-base experiment for suitable humanoid character references.",
+      "limit": "not automatic rigging; may alter short-limbed mascot identity, so do not enable by default."
+    },
+    {
+      "capability": "PBR/Shaded/All plus 4K option",
+      "value": "Compare material look and close-up texture delivery without rebuilding every shot; preserve raw outputs.",
+      "limit": "PBR preservation in native OBJ/MTL and HighPack artifacts must be checked."
+    }
+  ],
+  "notes": [
+    "The user-provided quadrupedal mech pure-text example demonstrates service syntax, not an authorized project character design reference. Project characters continue to require actual existing image attachments.",
+    "Reference-bound character rebuilding is a local candidate workflow; no official character canon, media rights, animation readiness or publication permission follows from API success.",
+    "No inference was performed by this task; JSON records documentation and a proposed bounded trial, not generated assets or measured account balance."
+  ]
+}

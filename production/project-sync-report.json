@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T18:33:21.879912+00:00",
+  "scope": "Pull main project and synchronize all seven local upstream asset checkouts, fixed curated downloads, indexes, galleries and installed skill copy.",
+  "main": {
+    "branch": "main",
+    "head": "e02ea43b23e0b402e8c5229237888e7710d71f34",
+    "origin_main": "e02ea43b23e0b402e8c5229237888e7710d71f34",
+    "pull_result": "Already up to date.",
+    "local_uncommitted_changes_preserved": true,
+    "push_performed": false
+  },
+  "upstreams": [
+    {
+      "repository": "NaiLong-Universe",
+      "before": "8bf30f66695982a195e7a1610403d5598a6b432c",
+      "after": "eff42e2d01f5f4d545d4d65ed85feb0ebefe81e7",
+      "fetched_upstream": "eff42e2d01f5f4d545d4d65ed85feb0ebefe81e7",
+      "updated": true,
+      "matches_fetched_upstream": true,
+      "worktree_clean": true
+    },
+    {
+      "repository": "NaiLoong",
+      "before": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "after": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "fetched_upstream": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+      "updated": false,
+      "matches_fetched_upstream": true,
+      "worktree_clean": true
+    },
+    {
+      "repository": "awesome_pets",
+      "before": "3aebf5e7cdc5979bec06afe57194b60b3edf7cdd",
+      "after": "3aebf5e7cdc5979bec06afe57194b60b3edf7cdd",
+      "fetched_upstream": "3aebf5e7cdc5979bec06afe57194b60b3edf7cdd",
+      "updated": false,
+      "matches_fetched_upstream": true,
+      "worktree_clean": true
+    },
+    {
+      "repository": "codex-pet-naiwa",
+      "before": "3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50",
+      "after": "3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50",
+      "fetched_upstream": "3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50",
+      "updated": false,
+      "matches_fetched_upstream": true,
+      "worktree_clean": true
+    },
+    {
+      "repository": "nailong-classification",
+      "before": "f94a1d7bfbad266b67154575f52acd27ff2d198c",
+      "after": "f94a1d7bfbad266b67154575f52acd27ff2d198c",
+      "fetched_upstream": "f94a1d7bfbad266b67154575f52acd27ff2d198c",
+      "updated": false,
+      "matches_fetched_upstream": true,
+      "worktree_clean": true
+    },
+    {
+      "repository": "naiwa-pet",
+      "before": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "after": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "fetched_upstream": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+      "updated": false,
+      "matches_fetched_upstream": true,
+      "worktree_clean": true
+    },
+    {
+      "repository": "wallpaper",
+      "before": "7af109857e4225f2a8c48904acc07fb94643c99e",
+      "after": "84a06de2012db2c0aaa258e87a74851411e053a5",
+      "fetched_upstream": "84a06de2012db2c0aaa258e87a74851411e053a5",
+      "updated": true,
+      "matches_fetched_upstream": true,
+      "worktree_clean": true
+    }
+  ],
+  "curated_assets": {
+    "verified": 25,
+    "failed": 0,
+    "fixed_versions_preserved": true
+  },
+  "catalog": {
+    "summary": {
+      "total": 760,
+      "availability": {
+        "local": 546,
+        "remote_index": 214
+      },
+      "kind": {
+        "image": 496,
+        "video": 11,
+        "audio": 23,
+        "sprite": 3,
+        "animation": 98,
+        "metadata": 3,
+        "model": 14,
+        "document": 12,
+        "texture": 4,
+        "mask": 96
+      }
+    },
+    "removed_asset_ids": [],
+    "added_asset_ids": [],
+    "changed_media_hashes": [],
+    "changed_local_paths": [],
+    "integrity_ok": true,
+    "schema_ok": true,
+    "readiness_gaps": 24,
+    "existing_readiness_gaps_resolved": false
+  },
+  "skill_copy_identical": true,
+  "diff_check_ok": true,
+  "local_catalog_preview": "assets/private/catalog/index.html",
+  "seed3d_gallery": "assets/private/seed3d/index.html",
+  "local_pre_sync_metadata_backup": "assets/private/project-sync/20261028T183239Z",
+  "generation_api_calls": 0,
+  "notes": [
+    "Upstream branding and CDN URL changes were indexed without renaming character/audio identifiers.",
+    "Historical generation and download reports were preserved; current repository heads are in this report and library/catalog.json.",
+    "No source models, generated media, visual-review hashes or audio review conclusions were replaced."
+  ]
+}

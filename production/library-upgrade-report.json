@@ -1,0 +1,37 @@
+{
+  "checked_date": "2026-10-29",
+  "upstream_repositories": 7,
+  "curated_downloads": 25,
+  "curated_failures": 0,
+  "catalog_summary": {
+    "total": 522,
+    "availability": {
+      "local": 308,
+      "remote_index": 214
+    },
+    "kind": {
+      "image": 387,
+      "video": 7,
+      "audio": 23,
+      "sprite": 3,
+      "animation": 98,
+      "metadata": 3,
+      "model": 1
+    }
+  },
+  "local_audio_files": 20,
+  "unique_local_audio_sha256": 20,
+  "characters_or_name_routes": 13,
+  "audio_cues": 19,
+  "editorial_recipes": 5,
+  "behavior_tests_passed": 13,
+  "tcp_preview": "outputs/tcp-handshake/naiwa-tcp-handshake.mp4",
+  "credential_policy": "No key in project; temporary credential removed.",
+  "publishing_state": "local_only_no_publish_or_git_push",
+  "review_ledger": "library/reviews.json",
+  "ai_reconstruction_report": "production/tcp-handshake/hitem3d-result.json",
+  "integrity_ok": true,
+  "schema_ok": true,
+  "readiness_gaps_count": 24,
+  "review_records": 8
+}

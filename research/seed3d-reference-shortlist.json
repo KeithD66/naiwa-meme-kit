@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "scope": "Read-only local visual shortlist for reusable Seed3D reconstruction candidates; no API request made by this research task.",
+  "selection_rule": "One main mesh per named character/version. Source image is identity evidence; single-view output back/occlusion is inferred, not official original geometry.",
+  "recommendation": "先以frame_0000做一次受控Seed3D/Hitem3D比较，再做独立光滑奶蛋；3/4位只是可裁图后试验的明确社区版，不能提升为canonical默认。若前两件已足以打通管线，不为耗额度强做3/4。",
+  "candidates": [
+    {
+      "rank": 1,
+      "asset_id": "naiwa-frame-0000",
+      "character_id": "naiwa",
+      "local_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+      "fixed_source_url": "https://raw.githubusercontent.com/LynnShaw/naiwa-pet/fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765/public/pets/naiwa/frames/frame_0000.webp",
+      "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "version": "naiwa-pet-network-3d",
+      "recommendation_status": "pilot_comparison_candidate",
+      "review_method": "Actual local image viewed through view_image; source file hash recomputed.",
+      "rights_status": "no_license_local_only",
+      "usage_scope": "authorized_local_reconstruction_experiment_only_not_redistribution",
+      "default_identity_approved": false,
+      "dimensions": [
+        720,
+        960
+      ],
+      "input_ready": true,
+      "visual_observation": "完整单角色3/4侧正面站姿，睁眼闭嘴，双手捧腹；金黄无颈梨形、灰绿眼圈黑瞳、乳白腹斑、褐手脚。并非正面中性T姿态。",
+      "limitations": [
+        "背面不可见，远眼及远侧手脚部分遮挡，重建必须推断。",
+        "双手贴腹易造成手腹粘连，不可把静态捧腹网格直接宣称可完整骨骼驱动。",
+        "边缘有原分帧压缩/透明轮廓噪点。"
+      ],
+      "purpose": "仅做一次与现有Hitem3D同输入的受控对照：比眼睛/横嘴、指掌、腹斑边界、背面接缝、拓扑和材质可编辑性；新模型有明确收益才晋升主候选。",
+      "comparison_model_id": "hitem3d-naiwa-glb",
+      "comparison_model_sha256": "d31adbf70d827bc8709d71093e65c48c2937480be91a87f671ab7322c6de9127",
+      "no_duplicate_pose_meshes": true
+    },
+    {
+      "rank": 2,
+      "asset_id": "eco-asset-naidan-existing-idle-png",
+      "character_id": "naidan",
+      "local_path": "assets/private/curated/ecosystem/naidan/naidan-existing-idle.png",
+      "fixed_source_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+      "sha256": "a22425b8fa3267440c12efb1218f6eeb1c66598fc0a38858e3a5495e4384e481",
+      "version": "naidan-network-smooth-egg",
+      "recommendation_status": "distinct_character_pilot_candidate",
+      "review_method": "Actual local image viewed through view_image; source file hash recomputed.",
+      "rights_status": "community_media_unverified",
+      "usage_scope": "authorized_local_reconstruction_experiment_only_not_redistribution",
+      "default_identity_approved": false,
+      "dimensions": [
+        1179,
+        1152
+      ],
+      "input_ready": true,
+      "visual_observation": "光滑黄橙蛋形单体，正面灰绿圆眼黑瞳和浅横弧嘴，白浅背景；不是毛绒睡帽抱枕游戏版。",
+      "limitations": [
+        "头顶和底缘几乎贴图边，轮廓是否完整需谨慎；可无生成地加白色边距后再试。",
+        "无侧/背面实拍，厚度、背部与底面均为推断。",
+        "此图没有外显四肢，不能让模型从文字补出手脚再当标准设定。"
+      ],
+      "purpose": "新增一个明确不同角色的光滑奶蛋主候选模型，保留同源angry.gif仅作表情参考，不另建不兼容动作网格。",
+      "companion_reference_asset_id": "eco-asset-naidan-existing-angry-gif",
+      "no_duplicate_pose_meshes": true
+    },
+    {
+      "rank": 3,
+      "asset_id": "eco-asset-lulu-community-v2-look-directions-png",
+      "character_id": "capylulu",
+      "local_path": "assets/private/curated/ecosystem/capylulu/lulu-community-v2-look-directions.png",
+      "fixed_source_url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/look-directions.png",
+      "sha256": "17b7100496c379344c31aaeb7b771ebdd9e4672d0109a67f2e8ab68902378fb1",
+      "version": "capylulu-czy666chen-community-v2",
+      "recommendation_status": "experimental_community_version_only",
+      "review_method": "Actual local image viewed through view_image; source file hash recomputed.",
+      "rights_status": "repository_mit_underlying_character_rights_unverified",
+      "usage_scope": "authorized_local_reconstruction_experiment_only_not_redistribution",
+      "default_identity_approved": false,
+      "dimensions": [
+        1536,
+        1170
+      ],
+      "input_ready": false,
+      "visual_observation": "社区黄色噜噜：橘子头饰、橙裤、凸圆口鼻、短圆耳、蓝黑眼；明确是该桌宠社区版，未经官方同版比对。",
+      "required_preparation": "只裁顶部neutral单角色格并去掉neutral文字；建议像素框[0,26,192,234]，裁后实际看图复核、加白边、记录派生hash。不得把整页多角色图直接上传。",
+      "limitations": [
+        "可用单格仅约192×208；放大不补细节。",
+        "16注视方向不是转身三视图，图中不存在真正背面。",
+        "与官方IP具体比例/五官同版关系未核验，不能作为官方群传版默认。"
+      ],
+      "alternative_source_asset_id": "eco-asset-lulu-community-v2-spritesheet-webp",
+      "alternative_source_fixed_url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/spritesheet.webp",
+      "alternative_source_sha256": "7bc4ab969278ced7775d5d60f83ce1ef71ffc9fc6890d95622e3dd75c8dd7a72",
+      "purpose": "当奶蛙/奶蛋流程通过且预算充分时，可试制有明确版本ID的社区噜噜，验证小分辨率sprite能否重建可用轮廓。",
+      "no_duplicate_pose_meshes": true
+    },
+    {
+      "rank": 4,
+      "asset_id": "eco-asset-feidudu-community-look-directions-png",
+      "character_id": "meituan_meme",
+      "local_path": "assets/private/curated/ecosystem/meituan_meme/feidudu-community-look-directions.png",
+      "fixed_source_url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/assets/look-directions.png",
+      "sha256": "59dc110dc409a09aed0cab3325ecf682456105058d7f1260661220fd8c6e3d49",
+      "version": "feidudu-peibingchen-community-v2",
+      "recommendation_status": "experimental_community_version_only",
+      "review_method": "Actual local image viewed through view_image; source file hash recomputed.",
+      "rights_status": "third_party_visual_rights_excluded",
+      "usage_scope": "authorized_local_reconstruction_experiment_only_not_redistribution",
+      "default_identity_approved": false,
+      "dimensions": [
+        1536,
+        714
+      ],
+      "input_ready": false,
+      "visual_observation": "社区肥嘟嘟：亮黄长耳、棕色大椭圆鼻、乳黄圆腹、短肢和长尾；neutral格清楚，但并非官方版认证。",
+      "required_preparation": "只裁顶部neutral单角色格，去掉文字，建议像素框[0,27,192,235]；裁后实际看图复核、加白边、记录派生hash。不要输入整张注视方向拼图或九宫格design study。",
+      "limitations": [
+        "单格分辨率仅约192×208，长耳/尾巴易失真。",
+        "注视方向图没有真实背面，尾根和背部形状须推断。",
+        "reference-contact-sheet多张外部design study不是正交视图，表情/姿态不统一。",
+        "spritesheet透明区域隐藏彩色RGB块，直接转RGB可能把块带入背景；优先使用干净RGB neutral格，若裁sprite必须按alpha合成白底。"
+      ],
+      "companion_reference_asset_id": "eco-asset-feidudu-existing-reference-contact-sheet-jpg",
+      "purpose": "后置的明确社区版实验，检验尾巴和长耳结构保真；不可把通用黄袋鼠或美团品牌替代图视作默认。",
+      "no_duplicate_pose_meshes": true
+    }
+  ],
+  "excluded_or_deferred": [
+    {
+      "asset_id": "visual-nai-hub-classic-laugh",
+      "reason": "实际看图：闭眼大开嘴捧腹笑、膝下/足缺失，适合作笑态和神态比对，不作首个全身静态主网格。"
+    },
+    {
+      "asset_id": "visual-nai-hub-confident-standing",
+      "reason": "实际看图：抱胸半身裁图，腿脚缺失、腹部被双臂遮挡；保留平台水印，不补画全身。"
+    },
+    {
+      "asset_id": "eco-asset-naidan-game-idle-png",
+      "reason": "实际看图：毛绒睡帽抱枕版，和光滑网传奶蛋版本不同，排除本次标准候选。"
+    },
+    {
+      "asset_id": "eco-asset-naidan-game-back-png",
+      "reason": "已有哈希绑定rejected记录：紫色正面毛绒＋循环箭头，不是背面；本次未重复当背面采纳。"
+    },
+    {
+      "asset_id": "wallpaper-emote-奶蛙-立绘-站立",
+      "reason": "既有目视结论是奶龙；仅文件名命中奶蛙不采纳。"
+    },
+    {
+      "character_id": "naifen_character",
+      "reason": "角色/粉丝歧义与标准视觉未消歧，不凭名造形象。"
+    },
+    {
+      "character_id": "tangniu_unresolved",
+      "reason": "未锁定可靠现成视觉，不用牛来替代。"
+    }
+  ],
+  "do_not_claim": [
+    "图片公开可访问不等于媒体授权。",
+    "本次实际看图不等于官方身份认证。",
+    "两个候选试制不等于绑定、骨骼、表情blendshape已就绪。",
+    "社区sprite含许多动作不代表每帧应该生成不同主模型。"
+  ]
+}

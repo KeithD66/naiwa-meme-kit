@@ -1,0 +1,2 @@
+# The basic library CLI uses only Python stdlib; the local TCP renderer needs Pillow.
+Pillow>=10.4,<14

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "model": "doubao-seed3d-2-0-260328",
+  "budget": {
+    "declared_free_tokens": 2000000,
+    "batch_limit_tokens": 150000,
+    "per_success_tokens": 30000,
+    "account_remaining_verified": false
+  },
+  "jobs": [
+    {
+      "id": "seed3d-naiwa-v1",
+      "character_id": "naiwa",
+      "source_asset_id": "naiwa-frame-0000",
+      "reference_path": "assets/repos/naiwa-pet/public/pets/naiwa/frames/frame_0000.webp",
+      "reference_sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "subdivision_level": "high",
+      "file_format": "glb",
+      "version": "naiwa-pet-network-3d-seed3d-v1",
+      "license_status": "source_no_license_authorized_local_reconstruction_only",
+      "notes": "Same source as Hitem3D baseline; static reusable mesh candidate, not a new character design."
+    },
+    {
+      "id": "seed3d-naidan-v1",
+      "character_id": "naidan",
+      "source_asset_id": "eco-asset-naidan-existing-idle-png",
+      "reference_path": "assets/private/seed3d/references/naidan.png",
+      "reference_sha256": "6c60a340e80b7fb72e8239b4a09ea3c2630229b650739ee97de4ff4a3dd749b2",
+      "subdivision_level": "high",
+      "file_format": "glb",
+      "version": "naidan-network-smooth-egg-seed3d-v1",
+      "license_status": "community_media_unverified",
+      "notes": "Authorized local static reconstruction; source pixels only. Back/hidden geometry inferred, no rig or animation claimed."
+    },
+    {
+      "id": "seed3d-lulu-community-v1",
+      "character_id": "capylulu",
+      "source_asset_id": "eco-asset-lulu-community-v2-spritesheet-webp",
+      "reference_path": "assets/private/seed3d/references/lulu-community.png",
+      "reference_sha256": "ea5e5b79e1e396cbc63f71c7574ee2cab3a3190ea10694033b2e14836d8464f4",
+      "subdivision_level": "high",
+      "file_format": "glb",
+      "version": "capylulu-czy666chen-community-v2-seed3d-v1",
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "notes": "Authorized local static reconstruction; source pixels only. Back/hidden geometry inferred, no rig or animation claimed."
+    },
+    {
+      "id": "seed3d-feidudu-community-v1",
+      "character_id": "meituan_meme",
+      "source_asset_id": "eco-asset-feidudu-community-spritesheet-webp",
+      "reference_path": "assets/private/seed3d/references/feidudu-community.png",
+      "reference_sha256": "a981ed3b96d50a8ae0c15a5e8d0dfedfd7dc3b6837b44739bf7fa524f095f39c",
+      "subdivision_level": "high",
+      "file_format": "glb",
+      "version": "feidudu-peibingchen-community-v2-seed3d-v1",
+      "license_status": "third_party_visual_rights_excluded",
+      "notes": "Authorized local static reconstruction; source pixels only. Back/hidden geometry inferred, no rig or animation claimed."
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "schema_version": 2,
+  "audition_policy": "本次未试听，标签来自目录/文件名/原仓说明；未宣称目标版本匹配。",
+  "completeness": "未找到涵盖全生态且逐文件明确授权的万能整包；使用cue与多来源版本逐步补齐。",
+  "asset_aliases": {
+    "nailoong_andi": "nai-hub-andi",
+    "nailoong_dupu": "nai-hub-dupu",
+    "nailoong_gagadilashui": "nai-hub-gagadilashui",
+    "nailoong_gajiaosai": "nai-hub-gajiaosai",
+    "nailoong_hola_ganbadie": "nai-hub-hola_ganbadie",
+    "nailoong_nailong_laugh": "nai-hub-nailong_laugh",
+    "naiwa_pet_audio": "naiwa-original-audio",
+    "yugh6_original_laugh": "yugh6_original_laugh",
+    "diyeego_andi": "diyeego_andi",
+    "diyeego_gagadilaxia": "diyeego_gagadilaxia",
+    "diyeego_gajiaosei": "diyeego_gajiaosei",
+    "diyeego_ganbadie": "diyeego_ganbadie",
+    "diyeego_laugh_short": "diyeego_laugh_short",
+    "diyeego_laugh_track": "diyeego_laugh_track",
+    "wallpaper_laugh_short": "wallpaper-a15e4bb44cce",
+    "wallpaper_laugh_original": "wallpaper-7ddea9ed7bdd",
+    "wencue_laugh": "wallpaper-7ddea9ed7bdd",
+    "wencue_mermaid_tears": "wencue_mermaid_tears",
+    "codex_voice_laugh": "wallpaper-a15e4bb44cce",
+    "niulai_mama_mp3": "niulai_mama_mp3",
+    "niulai_name_mp3": "niulai_name_mp3",
+    "niulai_mama_wav": "niulai_mama_wav",
+    "niulai_name_wav": "niulai_name_wav",
+    "dsh_theme_laugh": "dsh_theme_laugh",
+    "dsh_theme_crawl": "dsh_theme_crawl"
+  },
+  "cues": [
+    {
+      "id": "naiwa.laugh",
+      "aliases": [
+        "齁齁齁",
+        "哟齁齁齁",
+        "捧腹大笑",
+        "咳哈哈哈哈"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "signature_laugh",
+      "asset_ids": [
+        "nai-hub-nailong_laugh",
+        "naiwa-original-audio",
+        "yugh6_original_laugh",
+        "diyeego_laugh_short",
+        "diyeego_laugh_track",
+        "wallpaper-7ddea9ed7bdd",
+        "dsh_theme_laugh"
+      ],
+      "planning_function": "反转破功、捧腹动作、结尾回扣；先锁网络目标音色，不能用生成笑声替代。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naiwa.hola_ganbadie",
+      "aliases": [
+        "Hola",
+        "嘎巴跌",
+        "ganbadie"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nai-hub-hola_ganbadie",
+        "diyeego_ganbadie"
+      ],
+      "planning_function": "出场识别、突然接话；核对是否含Hola前缀及变调版本。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naiwa.gajiaosai",
+      "aliases": [
+        "嘎脚塞",
+        "卡脚塞",
+        "gajiaosei"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nai-hub-gajiaosai",
+        "diyeego_gajiaosei"
+      ],
+      "planning_function": "动作卡点、短促反应；空耳别名不是官方译文。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naiwa.gagadilashui",
+      "aliases": [
+        "嘎嘎滴啦水",
+        "嘎嘎滴辣虾",
+        "gagadilaxia"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nai-hub-gagadilashui",
+        "diyeego_gagadilaxia"
+      ],
+      "planning_function": "口癖连击、转场反应；不同录音单独保存版本。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naiwa.dupu",
+      "aliases": [
+        "嘟噗",
+        "dupu"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nai-hub-dupu"
+      ],
+      "planning_function": "停顿后短点、动作句号。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naidan.andi",
+      "aliases": [
+        "andi",
+        "安迪",
+        "安~迪~",
+        "奶蛋安迪"
+      ],
+      "character_ids": [
+        "naidan"
+      ],
+      "layer": "short_voice",
+      "asset_ids": [
+        "nai-hub-andi"
+      ],
+      "planning_function": "奶蛋口癖目录映射已由naidan/voice.json与manifest确认；本地andi.mp3默认仅关联奶蛋。其他来源先试听，不加入奶蛙默认音轨。",
+      "verification_status": "role_catalog_confirmed_audio_version_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [
+        "diyeego_andi"
+      ],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naiwa.crawl",
+      "aliases": [
+        "爬行音",
+        "crawl"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "action_sound",
+      "asset_ids": [
+        "dsh_theme_crawl"
+      ],
+      "planning_function": "小幅爬行、启动动作的声音候选，需核对音画匹配。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naiwa.community_laugh",
+      "aliases": [
+        "社区桌宠短笑声"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "community_variant",
+      "asset_ids": [
+        "wallpaper-a15e4bb44cce"
+      ],
+      "planning_function": "作者原创社区版本；即使有素材MIT声明，也不能冒充目标经典原声。",
+      "verification_status": "community_variant_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "niulai.mama",
+      "aliases": [
+        "妈妈",
+        "牛喊妈妈"
+      ],
+      "character_ids": [
+        "niulai"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [
+        "niulai_mama_mp3",
+        "niulai_mama_wav"
+      ],
+      "planning_function": "呼唤、蓄势；可被下一条牛来打断形成反差。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "niulai.name",
+      "aliases": [
+        "牛来"
+      ],
+      "character_ids": [
+        "niulai"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [
+        "niulai_name_mp3",
+        "niulai_name_wav"
+      ],
+      "planning_function": "呼应、揭晓、突然接话。",
+      "verification_status": "candidate_unreviewed",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "meituan.feidudu",
+      "aliases": [
+        "胆子肥嘟嘟",
+        "你的胆子真是肥嘟嘟的"
+      ],
+      "character_ids": [
+        "meituan_meme"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "只留字幕或等待原片，不让模型仿造品牌口吻。",
+      "verification_status": "source_page_only",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "mai.remix",
+      "aliases": [
+        "不知火舞变调",
+        "嘎嘎滴辣虾",
+        "嘎脚塞"
+      ],
+      "character_ids": [],
+      "layer": "voice_family_reference",
+      "asset_ids": [],
+      "planning_function": "先核对核心短文件是否是所需既有变调版本；不补造日本语台词或仿配。",
+      "verification_status": "version_mapping_pending",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": [
+        "mai_shiranui"
+      ]
+    },
+    {
+      "id": "bgm.montagem_alquimia",
+      "aliases": [
+        "唐嘉琦小曲",
+        "嘉琦舞",
+        "雷霆小曲",
+        "MONTAGEM ALQUIMIA"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "bgm",
+      "asset_ids": [],
+      "planning_function": "锁定现成版本后按第一个明确重拍起舞，未取得音源前不编造BPM或精确切点。",
+      "verification_status": "release_confirmed_version_pending",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "bgm.dagou",
+      "aliases": [
+        "大狗大狗",
+        "大狗衍生曲"
+      ],
+      "character_ids": [],
+      "layer": "bgm",
+      "asset_ids": [],
+      "planning_function": "一个衍生曲族；逐曲锁原曲、二创作者与录音版本。",
+      "verification_status": "family_only",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": [
+        "dagou"
+      ]
+    },
+    {
+      "id": "bgm.tea_shake",
+      "aliases": [
+        "来杯好茶摇一摇",
+        "茶百道星穹铁道联名"
+      ],
+      "character_ids": [],
+      "layer": "bgm",
+      "asset_ids": [],
+      "planning_function": "先核对品牌原片与平台曲库使用条件。",
+      "verification_status": "brand_post_reference_only",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "lulu.voice",
+      "aliases": [
+        "水豚噜噜原声"
+      ],
+      "character_ids": [
+        "capylulu"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "角色身份和具体原片确认前保持无声/字幕，不造口癖。",
+      "verification_status": "missing",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "naifen.voice",
+      "aliases": [
+        "奶粉原声"
+      ],
+      "character_ids": [
+        "naifen_character"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "角色身份和具体原片确认前保持无声/字幕，不造口癖。",
+      "verification_status": "missing",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "tangniu.voice",
+      "aliases": [
+        "唐牛原声"
+      ],
+      "character_ids": [
+        "tangniu_unresolved"
+      ],
+      "layer": "character_voice",
+      "asset_ids": [],
+      "planning_function": "角色身份和具体原片确认前保持无声/字幕，不造口癖。",
+      "verification_status": "missing",
+      "selection_rule": "先试听目标版本，再记录实际文件哈希与入出点；发布许可另核对。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    },
+    {
+      "id": "bgm.mermaid_tears",
+      "aliases": [
+        "人鱼的眼泪"
+      ],
+      "character_ids": [
+        "naiwa"
+      ],
+      "layer": "bgm",
+      "asset_ids": [
+        "wencue_mermaid_tears"
+      ],
+      "planning_function": "只保留文件名来源；完成词曲/录音版本与使用许可核验前不作为配乐。",
+      "verification_status": "filename_only_rights_pending",
+      "selection_rule": "manual_rights_review；不自动下载或生成替代。",
+      "candidate_asset_ids": [],
+      "external_sound_source_ids": []
+    }
+  ],
+  "gaps": [
+    {
+      "id": "classic_voice_version_review",
+      "detail": "核心口癖与笑声需逐条试听确认目标变调版本；奶蛋andi的目录归属已确认，跨来源版本仍待试听。"
+    },
+    {
+      "id": "xinongbinouji",
+      "detail": "戏弄壁诺机有商店目录文字线索，尚无确认的现成独立文件及许可。"
+    },
+    {
+      "id": "feidudu_original",
+      "detail": "肥嘟嘟原始发言/官方与二创录音版本未认证，缺干净音轨与许可。"
+    },
+    {
+      "id": "montagem_version",
+      "detail": "曲名已核对，目标舞步具体原速/Slowed版本与平台使用条件未定。"
+    },
+    {
+      "id": "ecology_voices",
+      "detail": "噜噜/奶粉/唐牛原声映射待角色与原片确认；奶蛋安迪已有目录映射，不再列作身份缺失。"
+    }
+  ]
+}

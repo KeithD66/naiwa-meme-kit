@@ -1,0 +1,641 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-29",
+  "scope": "固定提交、内容哈希锁定的现成小媒体与元数据；仅落地到被Git忽略的assets/private/curated，本清单不授予原素材发布/再分发许可。",
+  "assets": [
+    {
+      "id": "yugh6_original_laugh",
+      "path": "audio/yugh6_original_laugh.wav",
+      "url": "https://raw.githubusercontent.com/yugh6/Naiwa/72c763fe1349fb08a06f976e1709f4f5f80e09c7/%E5%8E%9F%E7%89%88%E7%AC%91%E5%A3%B0.wav",
+      "git_blob_sha1": "649cf76c5619fc2aa28707e6032d85f9dfe7add7",
+      "title": "原版笑声候选",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.laugh"
+      ],
+      "license_status": "polyform_noncommercial_scope_review",
+      "source_url": "https://github.com/yugh6/Naiwa",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "yugh6_original"
+      ],
+      "notes": "README称从原视频提取。仓库LICENCE为PolyForm Noncommercial 1.0.0；不可仅凭文件名断言录音完全匹配或所有第三方权利已清。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 622482
+    },
+    {
+      "id": "diyeego_andi",
+      "path": "audio/diyeego_andi.mp3",
+      "url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/andi%20%281%29.mp3",
+      "git_blob_sha1": "3741ff510eb1d866780dfce9a0d7ddfcfe7098ba",
+      "title": "安迪跨版本候选（待试听归属，不凭naiwa目录名判为奶蛙）",
+      "kind": "audio",
+      "character_ids": [],
+      "cue_ids": [],
+      "license_status": "no_license_noncommercial_notice",
+      "source_url": "https://github.com/Diyeego/naiwa-pet",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "diyeego_voices"
+      ],
+      "notes": "未见LICENSE；README要求学习交流勿商用。只取奶蛙短声音，不下载大狗/歌曲合集，不运行程序。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。 角色未确认；仅作奶蛋安迪跨版本待试听候选，禁止作为奶蛙默认声音。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 31764,
+      "candidate_character_ids": [
+        "naidan"
+      ]
+    },
+    {
+      "id": "diyeego_gagadilaxia",
+      "path": "audio/diyeego_gagadilaxia.mp3",
+      "url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/gagadilaxia.mp3",
+      "git_blob_sha1": "add9f825d853411d10154bc4c0ff539344a04550",
+      "title": "嘎嘎滴辣虾另一版本",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.gagadilashui"
+      ],
+      "license_status": "no_license_noncommercial_notice",
+      "source_url": "https://github.com/Diyeego/naiwa-pet",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "diyeego_voices"
+      ],
+      "notes": "未见LICENSE；README要求学习交流勿商用。只取奶蛙短声音，不下载大狗/歌曲合集，不运行程序。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 30929
+    },
+    {
+      "id": "diyeego_gajiaosei",
+      "path": "audio/diyeego_gajiaosei.mp3",
+      "url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/gajiaosei.mp3",
+      "git_blob_sha1": "3282ec13d026d825b5dbecf6c368a5bda85c3fff",
+      "title": "嘎脚塞另一版本",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.gajiaosai"
+      ],
+      "license_status": "no_license_noncommercial_notice",
+      "source_url": "https://github.com/Diyeego/naiwa-pet",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "diyeego_voices"
+      ],
+      "notes": "未见LICENSE；README要求学习交流勿商用。只取奶蛙短声音，不下载大狗/歌曲合集，不运行程序。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 28839
+    },
+    {
+      "id": "diyeego_ganbadie",
+      "path": "audio/diyeego_ganbadie.mp3",
+      "url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/ganbadie.mp3",
+      "git_blob_sha1": "5b0f882c130f8888bcb14d5068f96cf2cc85a552",
+      "title": "嘎巴跌另一版本",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.hola_ganbadie"
+      ],
+      "license_status": "no_license_noncommercial_notice",
+      "source_url": "https://github.com/Diyeego/naiwa-pet",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "diyeego_voices"
+      ],
+      "notes": "未见LICENSE；README要求学习交流勿商用。只取奶蛙短声音，不下载大狗/歌曲合集，不运行程序。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 30511
+    },
+    {
+      "id": "diyeego_laugh_short",
+      "path": "audio/diyeego_laugh_short.mp3",
+      "url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/voice/laugh.mp3",
+      "git_blob_sha1": "a86821895d9dd1ce9702f8eb7b948e35822cf698",
+      "title": "短笑声版本",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.laugh"
+      ],
+      "license_status": "no_license_noncommercial_notice",
+      "source_url": "https://github.com/Diyeego/naiwa-pet",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "diyeego_voices"
+      ],
+      "notes": "未见LICENSE；README要求学习交流勿商用。只取奶蛙短声音，不下载大狗/歌曲合集，不运行程序。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 55588
+    },
+    {
+      "id": "diyeego_laugh_track",
+      "path": "audio/diyeego_laugh_track.m4a",
+      "url": "https://raw.githubusercontent.com/Diyeego/naiwa-pet/1827c36d2abdca7935858ff11d37f50ec49d13af/naiwa/laugh.m4a",
+      "git_blob_sha1": "2ebd976f0fa7aca6884a08cad75db1c14fabaa6d",
+      "title": "奶蛙笑声音轨",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.laugh"
+      ],
+      "license_status": "no_license_noncommercial_notice",
+      "source_url": "https://github.com/Diyeego/naiwa-pet",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "diyeego_voices"
+      ],
+      "notes": "未见LICENSE；README要求学习交流勿商用。只取奶蛙短声音，不下载大狗/歌曲合集，不运行程序。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 145876
+    },
+    {
+      "id": "niulai_mama_mp3",
+      "path": "audio/niulai_mama_mp3.mp3",
+      "url": "https://raw.githubusercontent.com/jxwb125646/dsh-niu-lai/c856997b74f9900e719ec63261d15f4db02035ca/assets/%E5%A6%88%E5%A6%88.mp3",
+      "git_blob_sha1": "ce7a85be73c6b671f705731a0a86e323cc146b30",
+      "title": "妈妈（电影片段）",
+      "kind": "audio",
+      "character_ids": [
+        "niulai"
+      ],
+      "cue_ids": [
+        "niulai.mama"
+      ],
+      "license_status": "third_party_movie_personal_noncommercial_only",
+      "source_url": "https://github.com/jxwb125646/dsh-niu-lai",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "niulai_jxwb"
+      ],
+      "notes": "NOTICE明确电影录音不适用代码MIT。只作本地研究候选，不当可再分发声音包。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 210759
+    },
+    {
+      "id": "niulai_name_mp3",
+      "path": "audio/niulai_name_mp3.mp3",
+      "url": "https://raw.githubusercontent.com/jxwb125646/dsh-niu-lai/c856997b74f9900e719ec63261d15f4db02035ca/assets/%E7%89%9B%E6%9D%A5.mp3",
+      "git_blob_sha1": "1f40776a7f03998a91f54d86a2f19972cd0bce72",
+      "title": "牛来（电影片段）",
+      "kind": "audio",
+      "character_ids": [
+        "niulai"
+      ],
+      "cue_ids": [
+        "niulai.name"
+      ],
+      "license_status": "third_party_movie_personal_noncommercial_only",
+      "source_url": "https://github.com/jxwb125646/dsh-niu-lai",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "niulai_jxwb"
+      ],
+      "notes": "NOTICE明确电影录音不适用代码MIT。只作本地研究候选，不当可再分发声音包。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 63381
+    },
+    {
+      "id": "dsh_theme_laugh",
+      "path": "audio/dsh_theme_laugh.mp3",
+      "url": "https://raw.githubusercontent.com/DevourerM/dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/assets/naiwa-complete-laugh.mp3",
+      "git_blob_sha1": "28fa61c2534256b4d7c0e5fb27dc87c3ac868674",
+      "title": "完成短笑声候选",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.laugh"
+      ],
+      "license_status": "third_party_recordings_excluded_from_mit",
+      "source_url": "https://github.com/DevourerM/dsh-naiwa-theme/blob/main/ASSETS_NOTICE.md",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "dsh_theme_edits"
+      ],
+      "notes": "ASSETS_NOTICE明确音效由网络视频音轨剪出，第三方权利未转授；仅本地研究。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 44096
+    },
+    {
+      "id": "dsh_theme_crawl",
+      "path": "audio/dsh_theme_crawl.mp3",
+      "url": "https://raw.githubusercontent.com/DevourerM/dsh-naiwa-theme/e25421d9247aceecdc97852091991708a5897df0/assets/naiwa-send-crawl.mp3",
+      "git_blob_sha1": "0130e7ade3688bc729ff0011bff8ecc187f18864",
+      "title": "爬行动作音候选",
+      "kind": "audio",
+      "character_ids": [
+        "naiwa"
+      ],
+      "cue_ids": [
+        "naiwa.crawl"
+      ],
+      "license_status": "third_party_recordings_excluded_from_mit",
+      "source_url": "https://github.com/DevourerM/dsh-naiwa-theme/blob/main/ASSETS_NOTICE.md",
+      "tags": [
+        "existing_audio",
+        "local_reference_only",
+        "audition_pending",
+        "dsh_theme_edits"
+      ],
+      "notes": "ASSETS_NOTICE明确音效由网络视频音轨剪出，第三方权利未转授；仅本地研究。 现成录音，仅本地研究候选；未试听，不代表匹配目标音色或获发布许可。",
+      "research_source": "research/audio-resources.json",
+      "usage_scope": "local_reference_only",
+      "bytes": 18392
+    },
+    {
+      "id": "eco-asset-lulu-community-v2-spritesheet-webp",
+      "path": "ecosystem/capylulu/lulu-community-v2-spritesheet.webp",
+      "url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/spritesheet.webp",
+      "git_blob_sha1": "56d487b7c8d88b1222b04654169167bdf615c1b9",
+      "title": "lulu-community-v2-spritesheet.webp",
+      "kind": "sprite",
+      "character_ids": [
+        "capylulu"
+      ],
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "source_url": "https://github.com/czy666chen/lulu",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-lulu-community-v2"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-lulu-community-v2-spritesheet-webp",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-lulu-community-v2-look-directions-png",
+      "path": "ecosystem/capylulu/lulu-community-v2-look-directions.png",
+      "url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/look-directions.png",
+      "git_blob_sha1": "78f8416841cd5c7cdbeff608b31a13221d94ff97",
+      "title": "lulu-community-v2-look-directions.png",
+      "kind": "image",
+      "character_ids": [
+        "capylulu"
+      ],
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "source_url": "https://github.com/czy666chen/lulu",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-lulu-community-v2"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-lulu-community-v2-look-directions-png",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-lulu-community-v2-pet-json",
+      "path": "ecosystem/capylulu/lulu-community-v2-pet.json",
+      "url": "https://raw.githubusercontent.com/czy666chen/lulu/390de0431f2df2a8a9a0fcf2ba7aa62585cc46a6/pet.json",
+      "git_blob_sha1": "edfcc0c003eb0882430fce750be93e3c1e4a9335",
+      "title": "lulu-community-v2-pet.json",
+      "kind": "metadata",
+      "character_ids": [
+        "capylulu"
+      ],
+      "license_status": "repository_mit_underlying_character_rights_unverified",
+      "source_url": "https://github.com/czy666chen/lulu",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-lulu-community-v2"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-lulu-community-v2-pet-json",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-feidudu-community-spritesheet-webp",
+      "path": "ecosystem/meituan_meme/feidudu-community-spritesheet.webp",
+      "url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/pet/spritesheet.webp",
+      "git_blob_sha1": "6e64969a7f9809773a43fa248c0b7f08a294374d",
+      "title": "feidudu-community-spritesheet.webp",
+      "kind": "sprite",
+      "character_ids": [
+        "meituan_meme"
+      ],
+      "license_status": "third_party_visual_rights_excluded",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-feidudu-community"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-feidudu-community-spritesheet-webp",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-feidudu-community-look-directions-png",
+      "path": "ecosystem/meituan_meme/feidudu-community-look-directions.png",
+      "url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/assets/look-directions.png",
+      "git_blob_sha1": "7b07fd2f76da854a56863c41b1e180867940774d",
+      "title": "feidudu-community-look-directions.png",
+      "kind": "image",
+      "character_ids": [
+        "meituan_meme"
+      ],
+      "license_status": "third_party_visual_rights_excluded",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-feidudu-community"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-feidudu-community-look-directions-png",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-feidudu-community-pet-json",
+      "path": "ecosystem/meituan_meme/feidudu-community-pet.json",
+      "url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/pet/pet.json",
+      "git_blob_sha1": "c692107827b8648f5a18af6d34a0446b3fd2ed25",
+      "title": "feidudu-community-pet.json",
+      "kind": "metadata",
+      "character_ids": [
+        "meituan_meme"
+      ],
+      "license_status": "third_party_visual_rights_excluded",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-feidudu-community"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-feidudu-community-pet-json",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-feidudu-community-notice-txt",
+      "path": "ecosystem/meituan_meme/feidudu-community-NOTICE.txt",
+      "url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/NOTICE",
+      "git_blob_sha1": "df4425784f2d86077a292fef3def289b4e88f7a6",
+      "title": "feidudu-community-NOTICE.txt",
+      "kind": "metadata",
+      "character_ids": [
+        "meituan_meme"
+      ],
+      "license_status": "third_party_visual_rights_excluded",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-feidudu-community"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-feidudu-community-NOTICE-txt",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-feidudu-existing-reference-contact-sheet-jpg",
+      "path": "ecosystem/meituan_meme/feidudu-existing-reference-contact-sheet.jpg",
+      "url": "https://raw.githubusercontent.com/peibingchen/You-are-really-bold/4398a97bb2212919f530b1e168ae2828c477b0eb/references/source-images/reference-contact-sheet.jpg",
+      "git_blob_sha1": "12e22a5ceaed847d3c0d44936c6b48fc07ad6cef",
+      "title": "feidudu-existing-reference-contact-sheet.jpg",
+      "kind": "image",
+      "character_ids": [
+        "meituan_meme"
+      ],
+      "license_status": "external_reference_rights_unverified",
+      "source_url": "https://github.com/peibingchen/You-are-really-bold",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-feidudu-community"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-feidudu-existing-reference-contact-sheet-jpg",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-naidan-game-idle-png",
+      "path": "ecosystem/naidan/naidan-game-idle.png",
+      "url": "https://raw.githubusercontent.com/busgm666-cloud/naidan-slingshot/d3c9fde55b2fd33060d76d167b55a2fc66c1fe5a/assets/naidan_idle.png",
+      "git_blob_sha1": "5f704bd491b7e15929aa7a78955a32b4b9387e1e",
+      "title": "naidan-game-idle.png",
+      "kind": "image",
+      "character_ids": [
+        "naidan"
+      ],
+      "license_status": "fan_media_constraints_unverified",
+      "source_url": "https://github.com/busgm666-cloud/naidan-slingshot",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-naidan-game"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-naidan-game-idle-png",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-naidan-game-back-png",
+      "path": "ecosystem/naidan/naidan-game-back.png",
+      "url": "https://raw.githubusercontent.com/busgm666-cloud/naidan-slingshot/d3c9fde55b2fd33060d76d167b55a2fc66c1fe5a/assets/naidan_back.png",
+      "git_blob_sha1": "78f1109e94a88eb959d74d3afaf1f45be0a9e489",
+      "title": "naidan-game-back.png",
+      "kind": "image",
+      "character_ids": [
+        "naidan"
+      ],
+      "license_status": "fan_media_constraints_unverified",
+      "source_url": "https://github.com/busgm666-cloud/naidan-slingshot",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-naidan-game"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-naidan-game-back-png",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-naidan-existing-idle-png",
+      "path": "ecosystem/naidan/naidan-existing-idle.png",
+      "url": "https://raw.githubusercontent.com/musemantic/NaiLoong/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+      "git_blob_sha1": "7216cc56751a426bd81e9f2ec98c8f48298c5202",
+      "title": "奶蛋呆呆站立",
+      "kind": "image",
+      "character_ids": [
+        "naidan"
+      ],
+      "license_status": "community_media_unverified",
+      "source_url": "https://github.com/musemantic/NaiLoong/blob/ab974a47c2a5e731a22ff9f5a7f23f60e62c3fd9/assets/memes/naiwa_0040.png",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-naidan-catalog"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-naidan-existing-idle-png",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "eco-asset-naidan-existing-angry-gif",
+      "path": "ecosystem/naidan/naidan-existing-angry.gif",
+      "url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0136.gif",
+      "git_blob_sha1": "ddb001ed82cf4f3db0796990b5604e8482279730",
+      "title": "生气叉腰的奶蛋",
+      "kind": "animation",
+      "character_ids": [
+        "naidan"
+      ],
+      "license_status": "community_media_unverified",
+      "source_url": "https://github.com/musemantic/NaiLoong/blob/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0136.gif",
+      "tags": [
+        "ecosystem",
+        "existing_resource",
+        "local_reference_only",
+        "identity_not_approved",
+        "eco-naidan-catalog"
+      ],
+      "notes": "现成社区资源；未通过视觉验收、未批准身份，相关角色及第三方媒体权利未清，仅本地参考。metadata只读取不执行。",
+      "research_id": "eco-asset-naidan-existing-angry-gif",
+      "research_source": "research/ecosystem-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "unconfirmed"
+    },
+    {
+      "id": "visual-nai-hub-classic-laugh",
+      "path": "identity/naiwa/visual-nai-hub-classic-laugh.jpg",
+      "url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0137.jpg",
+      "git_blob_sha1": "e6b3e2e8702145f80a16e89f97070b54c1a1df89",
+      "title": "经典奶蛙捧腹大笑目录候选",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "license_status": "community_media_rights_unresolved",
+      "source_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0137.jpg",
+      "tags": [
+        "classic_candidate",
+        "existing_network_image",
+        "local_reference_only",
+        "visual_review_pending"
+      ],
+      "notes": "NaiLoong奶蛙静态目录中的固定提交条目；本次原站HEAD200 image/jpeg，未下载/看图，不把目录标题当作已通过身份验收。 仅本地参考；下载不等于形象验收或授权通过。",
+      "research_source": "research/identity-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "network_3d_candidate",
+      "bytes": 169507
+    },
+    {
+      "id": "visual-nai-hub-confident-standing",
+      "path": "identity/naiwa/visual-nai-hub-confident-standing.jpg",
+      "url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0138.jpg",
+      "git_blob_sha1": "1efebac1405f8d8175f3432c5ec5f2ea05d53c32",
+      "title": "奶蛙抱胸自信站立目录候选",
+      "kind": "image",
+      "character_ids": [
+        "naiwa"
+      ],
+      "license_status": "community_media_rights_unresolved",
+      "source_url": "https://raw.githubusercontent.com/musemantic/NaiLoong/a7b1122cbccbb16e5f47e3f49742cad3d59bd161/assets/memes/naiwa_0138.jpg",
+      "tags": [
+        "classic_candidate",
+        "existing_network_image",
+        "local_reference_only",
+        "visual_review_pending"
+      ],
+      "notes": "NaiLoong奶蛙静态目录中的固定提交条目；本次原站HEAD200 image/jpeg，未下载/看图，不把目录标题当作已通过身份验收。 仅本地参考；下载不等于形象验收或授权通过。",
+      "research_source": "research/identity-resources.json",
+      "usage_scope": "local_reference_only",
+      "identity_tier": "network_3d_candidate",
+      "bytes": 271031
+    }
+  ],
+  "skipped": []
+}

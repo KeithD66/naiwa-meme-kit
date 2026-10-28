@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-28T18:53:40.639804+00:00",
+  "scope": "Codex orchestration -> VideoPipeline contract -> user-defined draft/standard/polish routing; source project synchronization.",
+  "implementation": {
+    "package": "video_pipeline",
+    "cli": "scripts/video-pipeline.py",
+    "configuration": "library/video-providers.json",
+    "workflow": "skill/references/video-pipeline.md",
+    "sample_request": "templates/video-pipeline-request.json",
+    "sample_plan": "production/video-pipeline/naiwa-draft-plan.json",
+    "provider_research": "research/video-provider-sources.json"
+  },
+  "tiers": {
+    "draft": [
+      "hailuo-lite",
+      "grok",
+      "veo-draft"
+    ],
+    "standard": [
+      "kling-720p",
+      "wan",
+      "jimeng"
+    ],
+    "polish": [
+      "seedance",
+      "veo-fast"
+    ]
+  },
+  "route_profiles": 8,
+  "video_providers_with_network_adapters": 0,
+  "implemented": [
+    "VideoRequest, ReferenceBinding and AudioCueBinding data contracts",
+    "ProviderAdapter capabilities/prepare/submit/get extension interface",
+    "Offline capability-aware routing without calling provider execution methods",
+    "Local media headers, SHA256, per-character identity reference and version consistency checks",
+    "Explicit 720p constraint for the Kling routing profile",
+    "Postproduction binding of existing audio cues",
+    "Candidate, registered adapter, local bytes and actual upload states are distinct"
+  ],
+  "verification": {
+    "full_suite_tests_passed": 105,
+    "pipeline_specific_tests_passed": 12,
+    "system_python_39_cli_passed": true,
+    "three_tier_plans_passed": true,
+    "kling_1080p_exclusion_passed": true,
+    "independent_forward_check_passed": true,
+    "skill_validator_passed": true,
+    "skill_copy_identical": true,
+    "catalog_integrity_ok": true,
+    "catalog_schema_ok": true,
+    "asset_total": 760,
+    "curated_assets_verified": 25,
+    "upstream_repositories_synced": 7
+  },
+  "source_sync": {
+    "upstreams": [
+      {
+        "repository": "NaiLong-Universe",
+        "ok": true,
+        "before": "eff42e2d01f5f4d545d4d65ed85feb0ebefe81e7",
+        "after": "eff42e2d01f5f4d545d4d65ed85feb0ebefe81e7",
+        "updated": false
+      },
+      {
+        "repository": "NaiLoong",
+        "ok": true,
+        "before": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+        "after": "ba17d1aeb5d62eb3d7584297a1773871f6d3fbe0",
+        "updated": false
+      },
+      {
+        "repository": "awesome_pets",
+        "ok": true,
+        "before": "3aebf5e7cdc5979bec06afe57194b60b3edf7cdd",
+        "after": "3aebf5e7cdc5979bec06afe57194b60b3edf7cdd",
+        "updated": false
+      },
+      {
+        "repository": "codex-pet-naiwa",
+        "ok": true,
+        "before": "3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50",
+        "after": "3c0cd7ca231f02e0d4d6956fc6ce86eb9f0cfb50",
+        "updated": false
+      },
+      {
+        "repository": "nailong-classification",
+        "ok": true,
+        "before": "f94a1d7bfbad266b67154575f52acd27ff2d198c",
+        "after": "f94a1d7bfbad266b67154575f52acd27ff2d198c",
+        "updated": false
+      },
+      {
+        "repository": "naiwa-pet",
+        "ok": true,
+        "before": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+        "after": "fe2523d6409bf7ac4fa58ef95aa5fdefdf5a9765",
+        "updated": false
+      },
+      {
+        "repository": "wallpaper",
+        "ok": true,
+        "before": "84a06de2012db2c0aaa258e87a74851411e053a5",
+        "after": "84a06de2012db2c0aaa258e87a74851411e053a5",
+        "updated": false
+      }
+    ],
+    "private_media_policy": "assets/private, assets/repos and outputs remain ignored; only source code, metadata, documentation and tests are synchronized",
+    "git_revision_basis": "Use Git history for the source synchronization commit and remote branch state."
+  },
+  "current_limitations": [
+    "No live network video adapters or account access have been verified.",
+    "Provider names and research model examples are not callable endpoint configuration.",
+    "Routing tiers express user workflow preferences rather than price or quality rankings.",
+    "Local media hash verification is not visual identity, audition, licensing or actual attachment verification.",
+    "No inference, video generation or publication was performed during this integration."
+  ],
+  "new_inference_api_calls": 0
+}

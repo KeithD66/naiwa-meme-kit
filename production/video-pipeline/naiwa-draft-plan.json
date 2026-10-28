@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "shot_id": "naiwa-tcp-syn-demo",
+  "tier": "draft",
+  "request": {
+    "shot_id": "naiwa-tcp-syn-demo",
+    "prompt": "保持所附同版本奶蛙形象与手脚结构。固定中景，奶蛙先看向右侧，再轻抬一只手示意发出SYN。动作小幅，角色不换形象；协议箭头与中文字幕在后期添加。",
+    "duration_seconds": 5,
+    "aspect_ratio": "9:16",
+    "resolution": "720p",
+    "tier": "draft",
+    "references": [
+      {
+        "character_id": "naiwa",
+        "version_id": "hitem3d-naiwa-reconstruction-v1",
+        "asset_id": "hitem3d-naiwa-front",
+        "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-front.png",
+        "sha256": "0c41149002fa48e65311dd9bce0f819cbef3e66c46f1876e53a14fc97bb8ccdf",
+        "role": "identity"
+      },
+      {
+        "character_id": "naiwa",
+        "version_id": "hitem3d-naiwa-reconstruction-v1",
+        "asset_id": "hitem3d-naiwa-side",
+        "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-side.png",
+        "sha256": "12ca4537e9f138a699237cfffdd4c4a32c573c23105907d1d353afb19c4fa70f",
+        "role": "camera"
+      },
+      {
+        "character_id": "naiwa",
+        "version_id": "hitem3d-naiwa-reconstruction-v1",
+        "asset_id": "hitem3d-naiwa-back",
+        "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-back.png",
+        "sha256": "c9c4fda67afa2e170393d551bf6999616a47f969458432bcfc2f5d7f10e4408a",
+        "role": "camera"
+      }
+    ],
+    "audio_cues": []
+  },
+  "execution_state": "offline_plan",
+  "execution_performed": false,
+  "api_calls": 0,
+  "plan_cost": 0,
+  "submission_ready": false,
+  "preferred_provider_id": "hailuo-lite",
+  "selected_provider_id": null,
+  "planning_candidates": [
+    {
+      "provider_id": "hailuo-lite",
+      "display_name": "海螺 / Lite",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_registered": false,
+      "capabilities_source": "configuration_only",
+      "status": "needs_adapter",
+      "blockers": [
+        {
+          "code": "adapter_not_implemented",
+          "detail": "No code adapter is registered for this planning candidate"
+        },
+        {
+          "code": "capabilities_need_verification",
+          "detail": "Configuration does not prove live image-reference support"
+        }
+      ],
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": []
+      }
+    },
+    {
+      "provider_id": "grok",
+      "display_name": "Grok",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_registered": false,
+      "capabilities_source": "configuration_only",
+      "status": "needs_adapter",
+      "blockers": [
+        {
+          "code": "adapter_not_implemented",
+          "detail": "No code adapter is registered for this planning candidate"
+        },
+        {
+          "code": "capabilities_need_verification",
+          "detail": "Configuration does not prove live image-reference support"
+        }
+      ],
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": []
+      }
+    },
+    {
+      "provider_id": "veo-draft",
+      "display_name": "Veo · 草稿",
+      "planning_status": "needs_adapter_and_model_resolution",
+      "adapter_registered": false,
+      "capabilities_source": "configuration_only",
+      "status": "needs_adapter",
+      "blockers": [
+        {
+          "code": "adapter_not_implemented",
+          "detail": "No code adapter is registered for this planning candidate"
+        },
+        {
+          "code": "capabilities_need_verification",
+          "detail": "Configuration does not prove live image-reference support"
+        }
+      ],
+      "capabilities": {
+        "supports_image_reference": null,
+        "durations_seconds": [],
+        "aspect_ratios": [],
+        "resolutions": []
+      }
+    }
+  ],
+  "verified_references": [
+    {
+      "character_id": "naiwa",
+      "version_id": "hitem3d-naiwa-reconstruction-v1",
+      "asset_id": "hitem3d-naiwa-front",
+      "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-front.png",
+      "sha256": "0c41149002fa48e65311dd9bce0f819cbef3e66c46f1876e53a14fc97bb8ccdf",
+      "role": "identity",
+      "bytes": 157648,
+      "verification_scope": "local bytes and basic media header; no identity or audition certification",
+      "attachment_status": "not_uploaded"
+    },
+    {
+      "character_id": "naiwa",
+      "version_id": "hitem3d-naiwa-reconstruction-v1",
+      "asset_id": "hitem3d-naiwa-side",
+      "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-side.png",
+      "sha256": "12ca4537e9f138a699237cfffdd4c4a32c573c23105907d1d353afb19c4fa70f",
+      "role": "camera",
+      "bytes": 133309,
+      "verification_scope": "local bytes and basic media header; no identity or audition certification",
+      "attachment_status": "not_uploaded"
+    },
+    {
+      "character_id": "naiwa",
+      "version_id": "hitem3d-naiwa-reconstruction-v1",
+      "asset_id": "hitem3d-naiwa-back",
+      "path": "assets/private/generated-reference/hitem3d-naiwa/calibrated-back.png",
+      "sha256": "c9c4fda67afa2e170393d551bf6999616a47f969458432bcfc2f5d7f10e4408a",
+      "role": "camera",
+      "bytes": 134953,
+      "verification_scope": "local bytes and basic media header; no identity or audition certification",
+      "attachment_status": "not_uploaded"
+    }
+  ],
+  "audio_postproduction": [],
+  "blockers": [
+    {
+      "code": "no_eligible_video_adapter",
+      "detail": "No verified compatible registered adapter is selected; inspect candidate reasons"
+    },
+    {
+      "code": "references_not_delivered",
+      "detail": "Verified local files have not been uploaded or attached to a video provider"
+    }
+  ],
+  "automatic_fallback_performed": false,
+  "reference_delivery_status": "not_uploaded",
+  "selection_scope": "local routing eligibility only; account access, actual attachments and execution authorization are separate workflow facts"
+}

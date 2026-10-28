@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "state": "draft_only",
+  "request": "奶蛙单主角的中文抽象雷霆短视频",
+  "mode": "image-to-video",
+  "target": {"aspect_ratio": "9:16", "duration_seconds": 20},
+  "character_ids": ["naiwa"],
+  "reference_asset_ids": ["naiwa-frame-0000", "naiwa-frame-0200"],
+  "turnaround_asset_id": null,
+  "recipe_id": "deadpan-thunder-laugh",
+  "audio_cue_ids": ["naiwa.laugh", "naiwa.hola_ganbadie", "bgm.montagem_alquimia"],
+  "audio_decisions": [],
+  "shots": [],
+  "blockers": ["先上传真实参考文件；不得仅凭角色词生成", "多角度参考尚未锁定", "音频尚未试听并确定具体版本/入出点", "舞步参考与脚本需确认后再制作"],
+  "generation_allowed": false,
+  "publishing_allowed": false
+}

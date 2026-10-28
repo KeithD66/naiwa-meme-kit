@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "scope": "剪辑与叙事配方；只编排现成角色、动作参考和声音，不创造新角色/原声。时长为可调整建议。",
+  "principles": [
+    "先让观众认出角色和声音，再加速、变焦和反转；全程最大强度会消耗笑点。",
+    "一个节奏点只突出一种信息：脸、脚步、口癖或字幕，避免四者同时争抢。",
+    "用短暂断乐和定格制造落差，再让招牌原声落下；炸裂来自反差，不靠削波增大音量。",
+    "重复动作保留第二遍的差异或结尾反转，不无意义延长；尾帧可回扣首帧。"
+  ],
+  "recipes": [
+    {
+      "id": "deadpan-thunder-laugh",
+      "name": "呆脸立誓 → 雷霆舞步 → 大笑破功",
+      "duration_seconds": [16, 22],
+      "beats": [
+        {"phase": "setup", "duration_seconds": [2, 3], "visual": "现成闭嘴脸/呆滞全身，只有一次缓慢推近", "sound": "安静或低音量铺底，字幕只给一个目标"},
+        {"phase": "trigger", "duration_seconds": [1, 2], "visual": "收笑凝视、脸部短促强变焦，圆眼一字嘴不改结构", "cue_ids": ["naiwa.hola_ganbadie", "naiwa.gajiaosai"]},
+        {"phase": "thunder", "duration_seconds": [6, 9], "visual": "照现成舞步参考做正面短侧步/摆臂，脚步在画面内；按重拍切全身与脸", "cue_ids": ["bgm.montagem_alquimia"], "requires": ["明确的舞步参考", "核对后的BGM版本"]},
+        {"phase": "hold", "duration_seconds": [0.5, 2], "visual": "突然定住，不继续叠变焦", "sound": "音乐硬切、留空"},
+        {"phase": "payoff", "duration_seconds": [3, 5], "visual": "既有捧腹大笑动作或经参考约束的短动作", "cue_ids": ["naiwa.laugh"]},
+        {"phase": "loop", "duration_seconds": [0.5, 1], "visual": "切回第一镜同构图", "sound": "切断笑声，首尾自然连回"}
+      ]
+    },
+    {
+      "id": "call-response-duo",
+      "name": "角色口癖接力 → 奶蛙反应",
+      "duration_seconds": [12, 18],
+      "beats": [
+        {"phase": "identify", "visual": "配角先单独出镜，使用其自己的现成参考与口癖", "cue_ids": ["niulai.mama", "niulai.name", "naidan.andi"]},
+        {"phase": "reaction", "visual": "硬切奶蛙闭嘴脸，不把配角眼睛/肚皮带进来", "sound": "留半拍再接奶蛙短句"},
+        {"phase": "repeat", "visual": "同一镜头重复一次，只改节奏或镜头距离，不变角色身份"},
+        {"phase": "payoff", "visual": "奶蛙捧腹笑，配角保持自己的形象", "cue_ids": ["naiwa.laugh"]}
+      ],
+      "requires": ["每个角色独立素材ID", "配角身份已消歧", "每条口癖已试听"],
+      "notes": "牛来不替代唐牛；奶蛋andi不默认归奶蛙。配角只选已落地的，不用猜测形象凑齐。"
+    },
+    {
+      "id": "three-step-escalation",
+      "name": "三次重复，每次只加一个离谱点",
+      "duration_seconds": [12, 20],
+      "beats": [
+        {"phase": "one", "visual": "普通动作/正常机位，先让观众学会节奏", "cue_ids": ["naiwa.dupu"]},
+        {"phase": "two", "visual": "同动作配一次突进变焦", "cue_ids": ["naiwa.gajiaosai"]},
+        {"phase": "three", "visual": "同动作先停住，再转现成大笑片段", "cue_ids": ["naiwa.laugh"]}
+      ],
+      "notes": "不把改模型体型、增手指、换眼睛当升级笑点；升级发生在剪辑与节奏。"
+    },
+    {
+      "id": "fake-finale",
+      "name": "假装结束 → 短暂停顿 → 返场",
+      "duration_seconds": [10, 16],
+      "beats": [
+        {"phase": "main", "visual": "一个可辨认的小动作段，声音与动作同步"},
+        {"phase": "false_end", "visual": "定格、字幕短句，不超过两行", "sound": "BGM停止"},
+        {"phase": "return", "visual": "奶蛙脸突然回到近景，随后切回全身笑", "cue_ids": ["naiwa.hola_ganbadie", "naiwa.laugh"]}
+      ]
+    },
+    {
+      "id": "existing-loop-remix",
+      "name": "只剪现成原片的雷霆循环",
+      "duration_seconds": [8, 15],
+      "mode": "existing-edit",
+      "beats": [
+        {"phase": "recognize", "visual": "原片闭嘴/待机动作，先展示网传形象"},
+        {"phase": "cut", "visual": "短促正反打、同源原片定格、裁切变焦", "sound": "只剪已取得的口癖/笑声"},
+        {"phase": "laugh", "visual": "保留原片连续捧腹笑，不靠AI补动作", "cue_ids": ["naiwa.laugh"]},
+        {"phase": "loop", "visual": "按原动作回环衔接，必要时缩短片长"}
+      ],
+      "notes": "没有合格多角度参考时可策划此路线；素材仍受本地使用/发布许可限制。它不是已生成的AI舞步。"
+    }
+  ]
+}

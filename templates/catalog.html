@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>奶蛙现成素材目录</title>
+<style>
+body{font:15px/1.6 system-ui,sans-serif;background:#171b22;color:#f5f5ef;margin:0;padding:24px}
+header{position:sticky;top:0;background:#171b22;padding:12px 0;z-index:1}
+h1{font-size:26px;margin:0}input,select{font:inherit;padding:10px;margin:8px 8px 8px 0;max-width:90%}
+main{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:16px}
+article{border:1px solid #4a4f57;border-radius:12px;padding:15px;overflow-wrap:anywhere}
+article[hidden]{display:none}article img,video{display:block;width:100%;height:230px;object-fit:contain;background:#303844}
+audio{width:100%}h2{font-size:17px}a{color:#f5d377}code{font-size:12px}small{color:#bdc4ce}
+</style>
+<header>
+<h1>奶蛙 · 现成素材目录</h1>
+<small>本地查图与试听，不自动播放。网传原版候选、再绘变体、远程索引及许可未知分别标记；存在不等于可发布。</small><br>
+<input id="q" placeholder="搜索角色、口癖、动作或素材 ID">
+<select id="kind"><option value="">全部类型</option><option>image</option><option>animation</option><option>audio</option><option>video</option><option>sprite</option></select>
+<label><input id="local" type="checkbox">仅已下载</label><span id="count"></span>
+</header>
+<main>{{CARDS}}</main>
+<script>
+const q=document.querySelector('#q'),k=document.querySelector('#kind'),l=document.querySelector('#local');
+const cards=[...document.querySelectorAll('article')];
+function filter(){
+ let n=0;
+ for(const c of cards){
+  const show=c.dataset.search.includes(q.value.toLowerCase())&&(!k.value||c.dataset.kind===k.value)&&(!l.checked||c.dataset.local==='local');
+  c.hidden=!show;
+  if(show)n++;
+ }
+ document.querySelector('#count').textContent=`${n} 项`;
+}
+q.addEventListener('input',filter);k.addEventListener('change',filter);l.addEventListener('change',filter);filter();
+</script>
+</html>

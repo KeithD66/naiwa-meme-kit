@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "asset_id": "naiwa-frame-0000",
+      "sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "visual": {
+        "result": "visual_checked",
+        "note": "已实际看完整帧：金黄梨形无脖子、圆眼一字嘴、乳白大腹斑、褐色手脚；此帧为同源原序列的侧正面捧肚站姿，不是完整三视图。",
+        "reviewed_at": "2026-10-28T17:20:15.528676+00:00",
+        "identity_bundle_id": "naiwa-pet-network-3d",
+        "reference_role": "neutral"
+      }
+    },
+    {
+      "asset_id": "naiwa-frame-0200",
+      "sha256": "36118d59ec8ae570fa31e017012a0628503e1cf38bc06cb00642438be6695b28",
+      "visual": {
+        "result": "visual_checked",
+        "note": "已实际查看同源笑态帧；可用于原片动作参照，不能把闭眼开口表情当默认静态五官或三视图。",
+        "reviewed_at": "2026-10-28T17:20:15.571754+00:00",
+        "identity_bundle_id": "naiwa-pet-network-3d",
+        "reference_role": "laugh"
+      }
+    },
+    {
+      "asset_id": "wallpaper-00cf59e4791a",
+      "sha256": "d638195b8d531192052cdb93ae15fab0a406e9bde6450d2f7ec8ef7cdc27b7c9",
+      "visual": {
+        "result": "rejected",
+        "note": "实际看图为奶龙：独立圆头/颈部、粉色掌垫、三爪、大开嘴；虽上游标题称奶蛙，不得当网传奶蛙参考。",
+        "reviewed_at": "2026-10-28T17:20:15.632507+00:00"
+      }
+    },
+    {
+      "asset_id": "visual-nai-hub-confident-standing",
+      "sha256": "480fbaad98154688ce53d0cd5d4879945a7d405bb43396d058da4e1f9b5c29c1",
+      "visual": {
+        "result": "visual_checked",
+        "note": "已实际查看：网传奶蛙抱胸半身图，圆眼、梨形大腹、灰绿色眼圈与一字嘴；有原图平台水印，保留不移除。与原片不是同一动作序列，不混做正背三视图。",
+        "reviewed_at": "2026-10-28T17:20:15.675361+00:00",
+        "identity_bundle_id": "nai-hub-classic-static",
+        "reference_role": "identity"
+      }
+    },
+    {
+      "asset_id": "eco-asset-naidan-game-back-png",
+      "sha256": "01f3f84de4c62a26a5bec4834aadf4feb7d6244ff53a77d34a6be7f1bbc640a0",
+      "visual": {
+        "result": "rejected",
+        "note": "独立试用实际看图：这是紫色正面毛绒奶蛋与循环箭头，不是背面图；不用于网传奶蛋正背参照。",
+        "reviewed_at": "2026-10-28T17:20:15.715222+00:00"
+      }
+    },
+    {
+      "asset_id": "hitem3d-naiwa-front",
+      "sha256": "0c41149002fa48e65311dd9bce0f819cbef3e66c46f1876e53a14fc97bb8ccdf",
+      "visual": {
+        "result": "visual_checked",
+        "note": "实际看图：相机-45度获得正面，灰绿圆眼一字嘴和大腹部保持；这是AI重建候选，不是原始网络3D身份认证。",
+        "reviewed_at": "2026-10-28T17:34:55.202089+00:00",
+        "identity_bundle_id": "hitem3d-naiwa-reconstruction-v1",
+        "reference_role": "front"
+      }
+    },
+    {
+      "asset_id": "hitem3d-naiwa-side",
+      "sha256": "12ca4537e9f138a699237cfffdd4c4a32c573c23105907d1d353afb19c4fa70f",
+      "visual": {
+        "result": "visual_checked",
+        "note": "实际看图：相机45度获得侧面，梨形大腹与褐手脚保持；模型有贴图接缝，保留本地候选。",
+        "reviewed_at": "2026-10-28T17:34:55.245505+00:00",
+        "identity_bundle_id": "hitem3d-naiwa-reconstruction-v1",
+        "reference_role": "side"
+      }
+    },
+    {
+      "asset_id": "hitem3d-naiwa-back",
+      "sha256": "c9c4fda67afa2e170393d551bf6999616a47f969458432bcfc2f5d7f10e4408a",
+      "visual": {
+        "result": "visual_checked",
+        "note": "实际看图：相机135度获得背面；可见背身/腿部贴图接缝。此背面由单图推测，不冒称网传原型背面已确认。",
+        "reviewed_at": "2026-10-28T17:34:55.288777+00:00",
+        "identity_bundle_id": "hitem3d-naiwa-reconstruction-v1",
+        "reference_role": "back"
+      }
+    }
+  ]
+}
