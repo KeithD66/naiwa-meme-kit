@@ -135,6 +135,24 @@ class LibraryTests(unittest.TestCase):
         self.assertEqual(self.asset('nai-hub-andi')['audio_review'], 'not_auditioned')
         self.assertEqual(self.asset('nai-hub-andi')['review_status'], 'stale_hash')
 
+    def test_hyper3d_geometry_preview_is_searchable_without_identity_approval(self):
+        self.write('assets/private/hyper3d/front.png', b'geometry-preview')
+        self.write_json('library/hyper3d-assets.json', {'assets': [{
+            'id': 'hyper3d-geometry-front', 'title': 'Geometry-only preview', 'kind': 'image',
+            'character_ids': ['naiwa'], 'local_path': 'assets/private/hyper3d/front.png',
+            'identity_bundle_id': 'hyper3d-geometry-v1', 'identity_tier': 'geometry_only_reconstruction_candidate',
+            'reference_role': 'geometry_inspection_only', 'default_identity': False,
+            'color_identity_reference_ready': False, 'source_textures_provided': False,
+            'license_status': 'unresolved_local_only'
+        }]})
+        self.run_cli('index')
+        item = self.asset('hyper3d-geometry-front')
+        self.assertEqual(item['availability'], 'local')
+        self.assertEqual(item['visual_review'], 'not_reviewed')
+        self.assertFalse(item['source_textures_provided'])
+        self.assertFalse(item['color_identity_reference_ready'])
+        self.assertFalse(self.lib.multiview_ready([item]))
+
     def test_andi_never_binds_to_naiwa(self):
         self.approve_duo()
         self.run_cli('handoff', '--character', 'naiwa', '--reference', 'frog-ref', '--audio', 'nai-hub-andi',

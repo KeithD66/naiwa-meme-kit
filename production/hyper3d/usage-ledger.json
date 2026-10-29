@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "model": "hyper3d-gen2-260112",
+  "batch_limit_tokens": 30000,
+  "max_submissions": 1,
+  "free_allowance_confirmed_by_user": true,
+  "declared_free_tokens": null,
+  "account_remaining_verified": false,
+  "entries": [
+    {
+      "job_id": "hyper3d-naiwa-quad-v1",
+      "model": "hyper3d-gen2-260112",
+      "task_id": "cgt-20261029144646-854ct",
+      "status": "succeeded",
+      "reserved_tokens": 0,
+      "reported_usage_tokens": 30000,
+      "submission_attempts": 1,
+      "request_sha256": "eec2741ff6ba7390a9d4f8260d0d3eeb1711260f8fbe3f322b1ae3acddd99555",
+      "reference_sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+      "submitted_png_sha256": "d31f793199e249d8e893d2f51e281fd1eaa5f64aaea36679006d2deb2a2fc516",
+      "authorization": "[REDACTED]",
+      "usage_basis": "reported_terminal_usage",
+      "created_at": "2026-10-29T06:46:43.648318+00:00",
+      "synced_at": "2026-10-29T06:48:53.287220+00:00",
+      "download_manifest": "assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/manifest.json",
+      "output_sha256": "964f21ce8f09bb4d860dab7950ef302bf09497756f2d870030e72a5d4923455f",
+      "material_delivery": "not_returned_in_direct_obj",
+      "visual_acceptance": "rejected_extra_limbs_missing_materials",
+      "native_topology_acceptance": "43947_quads_100_percent_source_topology",
+      "automatic_retry": false
+    }
+  ],
+  "updated_at": "2026-10-29T06:48:53.288824+00:00"
+}

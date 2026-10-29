@@ -133,6 +133,36 @@ class PackageCharacterTests(unittest.TestCase):
         self.assertEqual(card['transformation']['height'], 2)
         self.assertIn('normalized', card['transformation']['units'])
 
+    def test_obj_uv_without_mtl_keeps_geometry_and_uv_but_exports_no_fake_texture(self):
+        model = self.source / 'untextured-quad.obj'
+        source = ('v 0 0 0\nv 2 0 0\nv 2 4 0\nv 0 4 0\n'
+                  'vt 0 0\nvt 1 0\nvt 1 1\nvt 0 1\n'
+                  'vn 0 0 1\nf 1/1/1 2/2/1 3/3/1 4/4/1\n')
+        model.write_text(source)
+        card = self.run_package(model=model, yaw=None)
+        self.assertEqual(model.read_text(), source)
+        self.assertFalse(card['capabilities']['uv_textured'])
+        self.assertTrue(card['capabilities']['uv_coordinates_present'])
+        self.assertFalse(card['source_materials_provided'])
+        self.assertFalse(card['source_textures_provided'])
+        self.assertTrue(card['appearance']['display_only_neutral_material'])
+        self.assertIsNone(card['material_master'])
+        self.assertEqual(card['working_summary']['triangle_count'], 2)
+        self.assertEqual(card['transformation']['front_calibration'], 'uncalibrated')
+        self.assertFalse(list(self.output.glob('*.png')))
+        self.assertNotIn('map_Kd', (self.output / 'character.mtl').read_text())
+        native = MODULE.AUDIT.audit_model(model, self.source)
+        self.assertEqual(native['meshes'][0]['source_face_vertex_histogram'], {'4': 1})
+        generated = MODULE.AUDIT.audit_model(self.output / 'character.glb', self.output)
+        self.assertEqual(generated['image_count'], 0)
+        self.assertEqual(generated['texture_count'], 0)
+        self.assertEqual(generated['triangle_count'], 2)
+        loaded = trimesh.load_scene(self.output / 'character.glb', process=False)
+        material = next(iter(loaded.geometry.values())).visual.material
+        self.assertIsNone(material.baseColorTexture)
+        self.assertTrue(np.allclose(material.baseColorFactor[:3], [180, 180, 180]))
+        self.assertEqual(card['working_summary']['meshes'][0]['uv_bounds'], [[0.0, 0.0], [1.0, 1.0]])
+
 
 if __name__ == '__main__':
     unittest.main()

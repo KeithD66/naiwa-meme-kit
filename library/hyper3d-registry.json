@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "model": "hyper3d-gen2-260112",
+  "versions": [
+    {
+      "job_id": "hyper3d-naiwa-quad-v1",
+      "task_id": "cgt-20261029144646-854ct",
+      "version_id": "naiwa-pet-network-3d-hyper3d-quad-v1",
+      "native_asset_id": "hyper3d-naiwa-quad-v1-native-obj",
+      "preview_asset_id": "hyper3d-naiwa-quad-v1-geometry-preview",
+      "native_sha256": "964f21ce8f09bb4d860dab7950ef302bf09497756f2d870030e72a5d4923455f",
+      "native_face_count": 43947,
+      "source_face_vertex_histogram": {
+        "4": 43947
+      },
+      "quad_face_fraction": 1.0,
+      "material_count": 0,
+      "reported_usage_tokens": 30000,
+      "visual_status": "rejected_extra_limbs_missing_materials",
+      "visual_findings": [
+        "The source has a single pair of hands holding the belly.",
+        "The reconstruction keeps the belly-holding arms and adds another pair extended sideways: four arms.",
+        "The actual OBJ has no material, vertex colour or texture files, despite requested PBR/HighPack.",
+        "100% quadrilateral topology is technically verified but does not establish character identity."
+      ],
+      "default_identity": false,
+      "color_identity_reference_ready": false,
+      "views": 24,
+      "masks": 24,
+      "source_input": "assets/private/hyper3d/requests/hyper3d-naiwa-quad-v1/inputs/reference-00.png",
+      "model_directory": "assets/private/hyper3d/models/hyper3d-naiwa-quad-v1"
+    }
+  ],
+  "reported_usage_tokens": 30000,
+  "reserved_tokens": 0,
+  "account_remaining_verified": false,
+  "free_allowance_confirmed_by_user": true,
+  "declared_free_tokens": null,
+  "asset_records": 53
+}

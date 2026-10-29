@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "reviews": [
+    {
+      "job_id": "hyper3d-naiwa-quad-v1",
+      "native_model_sha256": "964f21ce8f09bb4d860dab7950ef302bf09497756f2d870030e72a5d4923455f",
+      "preview_model_sha256": "3d7089298208fbafaa19de98fdb02bf633b114eb704945b36897efb610bcbb40",
+      "status": "rejected_extra_limbs_missing_materials",
+      "reviewed_at": "2026-10-29T08:06:03.078269+00:00",
+      "method": "Source PNG plus actual front and side renders inspected with view_image; independent third-party image claims not used.",
+      "findings": [
+        "The source has a single pair of hands holding the belly.",
+        "The reconstruction keeps the belly-holding arms and adds another pair extended sideways: four arms.",
+        "The actual OBJ has no material, vertex colour or texture files, despite requested PBR/HighPack.",
+        "100% quadrilateral topology is technically verified but does not establish character identity."
+      ],
+      "default_identity": false,
+      "color_identity_reference_ready": false,
+      "geometry_editing_only": true,
+      "rigged": false,
+      "animation_ready": false,
+      "publishing_allowed": false,
+      "automatic_retry": false
+    }
+  ]
+}

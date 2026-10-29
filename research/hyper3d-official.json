@@ -2,7 +2,7 @@
   "schema_version": 1,
   "checked_at": "2026-10-28T18:38:32.740338+00:00",
   "model": "hyper3d-gen2-260112",
-  "scope": "只读公开官方文档研究；未读取用户凭据、未查询账号、未提交任何推理、未安装厂商连接器。仅新增本研究JSON，不生成素材索引。",
+  "scope": "公开官方文档研究，加上后续用户授权后由root完成的一次真实Hyper3D任务观测；本次维护仅核对本地非敏感审计/计量摘要，未调用API、读取凭据或原始签名URL。原文档捕获时间、来源及当时计划保留于sources和documentation_snapshot。",
   "sources": [
     {
       "id": "shadoweye-create-3d-generation-task-api",
@@ -227,7 +227,8 @@
       "returns_skeleton_or_skinning_guaranteed": false,
       "reason": "当前Ark接口没有bone_template、skeleton、skinning或animation参数，也没有保证输出bones/joints/weights。标准静态姿态只是后续绑定准备，不是已绑定。",
       "project_first_trial": false,
-      "identity_caveat": "奶蛙短肢/无颈形象不一定适合通用类人重摆姿；首试保持同源输入，避免姿态条件改变体型。"
+      "identity_caveat": "奶蛙短肢/无颈形象不一定适合通用类人重摆姿；首试保持同源输入，避免姿态条件改变体型。",
+      "observed_trial": "TAPose=false was submitted; this generated trial nevertheless has two additional outstretched arms alongside the source belly-holding pair. No causal attribution is established."
     },
     "bbox_condition": {
       "type": "integer array",
@@ -279,7 +280,8 @@
       "Gen2_HighPack": "Vendor says 2K to 4K pack textures only, no geometry change or extra high-poly model.",
       "hd_texture": "Vendor describes additional texture super-resolution/enhancement with possible artifacts, not final 2K/4K selection.",
       "applicability": "Descriptive native context only; Ark actual files/behavior still need a real controlled trial."
-    }
+    },
+    "delivery_observation": "Requested PBR and HighPack did not produce a delivered material/texture bundle in this trial: the direct OBJ contains UV but no mtllib/usemtl/material/color and has no delivered texture dependencies. Capability/request flags are not delivery evidence."
   },
   "output": {
     "create_source_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
@@ -299,11 +301,11 @@
       ]
     },
     "download_field": "content.file_url",
-    "download_container": "zip",
-    "inside_zip": "selected model file format, with associated files as actually returned; exact layout not specified",
+    "download_container": "detect actual response bytes; one observed OBJ trial returned direct OBJ despite documented ZIP",
+    "inside_zip": "If a ZIP is returned, inspect its actual files. This trial delivered a direct OBJ, so no ZIP/MTL/texture files may be assumed.",
     "combination_matrix": "Ark lists Quad/Raw, PBR/Shaded/All/None and formats independently; it provides no explicit compatibility matrix or guarantee of native quad persistence for each Quad+PBR+format combination. Verify real archive.",
     "native_quad_preservation": {
-      "preferred_master": "untouched provider OBJ/MTL/textures and original ZIP",
+      "preferred_master": "untouched provider artifact plus hash; for this trial files/model.obj is the native Quad master. Retain original ZIP only when an archive was actually delivered.",
       "verification": "Count vertex references per original OBJ f-line, record face-size histogram and n==4 fraction before using trimesh or any triangulating importer. Inspect UVs/material references, non-manifold edges, separate parts and source hashes.",
       "GLB_role": "useful PBR rendering/interchange; do not label it proof of retained native quadrilateral topology",
       "existing_project_limit": "package-character.py/trimesh processing triangulates representation; its exported character.obj is a triangle diffuse exchange, not the provider-native Quad OBJ. Keep native_quad source separate, never overwrite it."
@@ -323,7 +325,8 @@
     ],
     "generated_files_ttl_hours": 24,
     "task_metadata_ttl_days": 7,
-    "safe_handling": "Save raw signed responses privately, download promptly, retain original ZIP/hashes, validate ZIP paths/symlinks/model external dependencies before import."
+    "safe_handling": "Save signed responses privately, detect the downloaded payload format, retain original bytes/hash, validate paths/dependencies before importing; do not read or publish signed URLs in metadata summaries.",
+    "documented_download_container": "zip"
   },
   "cancellation": {
     "source_url": "https://docs.volcengine.com/docs/ark/shadoweye-delete-3d-api?lang=zh",
@@ -350,8 +353,8 @@
     "quota_owner": "per-model allowance shared under main account and subaccounts; not per API key",
     "separate_from_Seed3D_2M": true,
     "account_free_remaining_verified": false,
-    "current_user_Hyper3D_free_allowance_confirmed": false,
-    "instruction_for_this_research": "Do not start inference merely because official catalog lists initial gift; root is awaiting user/account-specific allowance clarification.",
+    "current_user_Hyper3D_free_allowance_confirmed": true,
+    "instruction_for_this_research": "用户已确认此模型有独立免费额度并明确授权开始；总量及账号余额未知。一次授权同图试制已经成功，实际计量30000，预留0。复用既有任务/文件，不重复POST，不从官方初始赠额推算其真实余额。",
     "quota_query": {
       "source_url": "https://docs.volcengine.com/docs/ark/get-model-activation-api?lang=zh",
       "endpoint": "POST https://ark.cn-beijing.volcengineapi.com/?Action=GetModelActivation&Version=2024-01-01",
@@ -365,10 +368,15 @@
       "expected_tokens": 30000,
       "standard_yuan_if_no_free_credit": 1.8,
       "purpose": "same reviewed existing naiwa image, Quad 50k + PBR + native OBJ; isolate topology and identity trade-off against existing Seed3D model",
-      "free_or_paid_status": "unknown until account-specific allowance is confirmed",
-      "not_executed": true,
-      "next_trials": "Only after inspecting identity/native quad histogram/materials should an optional T/A-pose or real multiple-image experiment be considered; each extra successful task is another 30000 tokens."
-    }
+      "free_or_paid_status": "user confirmed independent free allowance exists; quantity/current balance and settled cash charge not measured",
+      "not_executed": false,
+      "next_trials": "No additional retry for this result. Preserve it as a rejected character failure sample / benchmark; do not infer usability from all-Quad topology.",
+      "execution_status": "succeeded_once_after_user_authorization",
+      "actual_reported_tokens": 30000,
+      "task_id": "cgt-20261029144646-854ct",
+      "observed_delivery": "native Quad OBJ with UV, no delivered materials/textures, and visually rejected extra pair of arms (four arms total)"
+    },
+    "user_confirmed_free_token_quantity": null
   },
   "ark_versus_native_rodin": {
     "ark": {
@@ -447,6 +455,150 @@
   "notes": [
     "The user-provided quadrupedal mech pure-text example demonstrates service syntax, not an authorized project character design reference. Project characters continue to require actual existing image attachments.",
     "Reference-bound character rebuilding is a local candidate workflow; no official character canon, media rights, animation readiness or publication permission follows from API success.",
-    "No inference was performed by this task; JSON records documentation and a proposed bounded trial, not generated assets or measured account balance."
+    "The original public-document research did not invoke inference. A later explicitly authorized root execution completed one trial; this metadata reconciliation did not call APIs, read credentials or inspect raw signed output URLs.",
+    "Root visually confirmed source-versus-output identity failure: the source has two belly-holding arms, while the generated model retains those and adds two outstretched arms. Record rejected_extra_limbs plus missing_materials; TAPose=false did not prevent it, cause unknown, no additional retry."
+  ],
+  "documentation_snapshot": {
+    "captured_at": "2026-10-28T18:38:32.740338+00:00",
+    "scope": "只读公开官方文档研究；未读取用户凭据、未查询账号、未提交任何推理、未安装厂商连接器。仅新增本研究JSON，不生成素材索引。",
+    "output_delivery_claim": {
+      "download_container": "zip",
+      "inside_zip": "selected model file format, with associated files as actually returned; exact layout not specified"
+    },
+    "initial_trial_state": {
+      "jobs": 1,
+      "expected_tokens": 30000,
+      "standard_yuan_if_no_free_credit": 1.8,
+      "purpose": "same reviewed existing naiwa image, Quad 50k + PBR + native OBJ; isolate topology and identity trade-off against existing Seed3D model",
+      "free_or_paid_status": "unknown until account-specific allowance is confirmed",
+      "not_executed": true,
+      "next_trials": "Only after inspecting identity/native quad histogram/materials should an optional T/A-pose or real multiple-image experiment be considered; each extra successful task is another 30000 tokens."
+    },
+    "initial_user_allowance_confirmed": false
+  },
+  "reconciled_at": "2026-10-29T08:04:35.432976+00:00",
+  "actual_observations": [
+    {
+      "observation_id": "hyper3d-naiwa-quad-v1-first-completed",
+      "observed_at": "2026-10-29",
+      "job_id": "hyper3d-naiwa-quad-v1",
+      "model": "hyper3d-gen2-260112",
+      "task_id": "cgt-20261029144646-854ct",
+      "status": "succeeded",
+      "authorization": "User explicitly confirmed an independent free allowance and authorized start; allowance quantity remains unspecified.",
+      "evidence": {
+        "native_audit": "assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/native-audit.json",
+        "usage_ledger": "production/hyper3d/usage-ledger.json",
+        "source": "root execution summary and local non-sensitive audit/usage fields; signed raw responses were not read for this update",
+        "visual_review_record": "production/hyper3d/visual-reviews.json"
+      },
+      "request_summary": {
+        "source_asset_id": "naiwa-frame-0000",
+        "image_preparation": "same-size lossless decoded-RGBA-equivalent WebP-to-PNG conversion",
+        "mesh_mode": "Quad",
+        "quality_override": 50000,
+        "material": "PBR",
+        "addons": "HighPack",
+        "fileformat": "obj",
+        "TAPose": false
+      },
+      "usage": {
+        "reported_usage_tokens": 30000,
+        "reserved_tokens": 0,
+        "account_balance_queried": false,
+        "cash_charge_verified": false
+      },
+      "delivery": {
+        "container": "direct_obj",
+        "zip_delivered": false,
+        "original_path": "assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/files/model.obj",
+        "sha256": "964f21ce8f09bb4d860dab7950ef302bf09497756f2d870030e72a5d4923455f",
+        "bytes": 6569272,
+        "other_formats_generalized_from_this_trial": false
+      },
+      "native_topology": {
+        "vertex_count": 43941,
+        "face_count": 43947,
+        "source_face_vertex_histogram": {
+          "4": 43947
+        },
+        "native_quad_count": 43947,
+        "native_triangle_count": 0,
+        "native_ngon_count": 0,
+        "quad_face_fraction": 1.0,
+        "equivalent_triangle_count": 87894,
+        "vertex_connected_components": 1,
+        "boundary_edge_count": 0,
+        "nonmanifold_edge_count": 0,
+        "basis": "original OBJ vertex/face indices; no welding, retopology or repairs"
+      },
+      "appearance": {
+        "uv_present": true,
+        "uv_count": 47369,
+        "mtllib_present": false,
+        "usemtl_present": false,
+        "material_count": 0,
+        "vertex_colors_present": false,
+        "texture_files_delivered": false,
+        "texture_dependencies": [],
+        "PBR_delivery_verified": false,
+        "appearance_identity_verified": false
+      },
+      "acceptance": {
+        "technical_import_status": "warnings; safe_to_import true with no_materials warning",
+        "use": "local rejected character failure sample / benchmark only",
+        "ready_for_video_identity_reference": false,
+        "identity_approved": false,
+        "rigging_verified": false,
+        "real_world_scale_verified": false,
+        "unseen_views_canonical": false,
+        "identity_status": "rejected_extra_limbs",
+        "failure_codes": [
+          "rejected_extra_limbs",
+          "missing_materials"
+        ],
+        "native_quad_success_does_not_override_identity_rejection": true,
+        "additional_retry_authorized_or_planned": false
+      },
+      "preview_separation": {
+        "native_master": "files/model.obj",
+        "derived_preview": "preview-package/ is a triangulated gray geometry preview, not a native Quad master or textured PBR character master",
+        "local_gallery_target": "assets/private/hyper3d/index.html",
+        "visual_comparison": "The gallery should expose source versus failed four-arm gray preview; neither native Quad statistics nor preview packaging counts as identity acceptance.",
+        "gallery_generation_verified_in_this_metadata_update": false,
+        "visual_comparison_confirmed_by_root": true
+      },
+      "recovery": "Already-completed task with a visually rejected four-arm character. Preserve task ID, original artifact, accounting and failure benchmark. Do not repeat POST or append a retry.",
+      "visual_review": {
+        "method": "root actual view_image comparison of existing source and generated gray preview",
+        "source_arm_count": 2,
+        "source_pose": "both arms holding belly",
+        "generated_arm_count": 4,
+        "observed_failure": "Original belly-holding arms remain and an additional pair of outstretched arms is present.",
+        "identity_status": "rejected_extra_limbs",
+        "additional_failure": "missing_materials",
+        "default_character_identity_approved": false,
+        "TAPose_request": false,
+        "TAPose_false_prevented_extra_limbs": false,
+        "cause": "not established; do not infer service/parameter handling from the observation",
+        "record": "production/hyper3d/visual-reviews.json"
+      }
+    }
+  ],
+  "documentation_discrepancies": [
+    {
+      "topic": "download container",
+      "official_url": "https://docs.volcengine.com/docs/ark/shadoweye-get-3d-generation-task-api?lang=zh",
+      "documented_claim": "Query API describes generated model files as ZIP downloads.",
+      "observed": "This one completed obj-format task returned direct OBJ bytes.",
+      "handling": "Preserve both documentary claim and observed result, detect payload type, and do not generalize the direct-OBJ observation to GLB/FBX/other formats."
+    },
+    {
+      "topic": "requested PBR versus delivered appearance",
+      "official_url": "https://docs.volcengine.com/docs/ark/shadoweye-create-3d-generation-task-api?lang=zh",
+      "documented_capability": "PBR/HighPack and OBJ are listed as request options; no complete per-format delivery matrix is documented.",
+      "observed": "PBR+HighPack was requested, but the saved direct OBJ has UV and no material/color/MTL directives/texture files.",
+      "handling": "Record material delivery as missing for this artifact. Do not label PBR completeness, textured identity or image-to-video readiness as passed; do not auto-submit another job."
+    }
   ]
 }

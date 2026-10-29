@@ -191,6 +191,11 @@ def package_character(model, source_root, job_id, character_id, output, front_ya
         raise ValueError('Animated/skinned source must not be flattened by a static-reference packager')
     settings = {'job_id': job_id, 'character_id': character_id, 'source_sha256': source_audit['sha256'],
                 'source_dependencies': source_audit['dependencies'], 'front_yaw_degrees': front_yaw, 'up_axis': up_axis}
+    untextured_obj = model.suffix.lower() == '.obj' and source_audit.get('material_count', 0) == 0
+    if untextured_obj:
+        # Invalidate older no-MTL packages which accidentally exported trimesh's
+        # synthetic 2x2 texture as if it were a supplied character texture.
+        settings['untextured_obj_material_policy'] = 'neutral_display_only_no_generated_texture'
     if output.exists():
         card_path = output / 'character-card.json'
         if card_path.is_file():
@@ -207,6 +212,19 @@ def package_character(model, source_root, job_id, character_id, output, front_ya
     # OBJ UV seams may require splitting a position into distinct UV vertices.
     # This importer step is representation-only, never welding or face repair.
     scene = trimesh.load_scene(model, process=False, maintain_order=model.suffix.lower() != '.obj')
+    display_only_material = False
+    if untextured_obj:
+        for geometry in scene.geometry.values():
+            # TextureVisuals invents an empty image when an OBJ has UVs but no
+            # MTL. Keep those UVs, discard only that known loader default, and
+            # use a plainly labelled achromatic display material with NO image.
+            # Real MTL materials never enter this branch; vertex-colour visuals
+            # are also left untouched.
+            if geometry.visual.kind == 'texture':
+                geometry.visual.material = trimesh.visual.material.PBRMaterial(
+                    name='display_only_neutral_gray_not_source_material',
+                    baseColorFactor=[180, 180, 180, 255], metallicFactor=0, roughnessFactor=1)
+                display_only_material = True
     original = summarize(scene)
     if original['triangle_count'] != source_audit['triangle_count']:
         raise ValueError('Loader triangle count differs from independent source audit')
@@ -273,6 +291,9 @@ def package_character(model, source_root, job_id, character_id, output, front_ya
         master_summary = summarize(trimesh.load_scene(master, process=False, maintain_order=True))
         verify_roundtrip(normalized, master_summary)
         losses = write_obj(scene, build)
+        if untextured_obj:
+            # Neutral display parameters are not lost source PBR information.
+            losses = [loss for loss in losses if loss == 'normal_vectors_recomputed_by_importer_not_embedded_in_obj']
         obj_audit = AUDIT.audit_model(build / 'character.obj', build)
         if not obj_audit['safe_to_import']:
             raise ValueError('Exported OBJ failed independent safety audit')
@@ -287,6 +308,9 @@ def package_character(model, source_root, job_id, character_id, output, front_ya
         dump(build / 'source-audit.json', source_audit)
         dump(build / 'safe-import-report.json', {'source': source_audit, 'glb': master_audit, 'obj': obj_audit,
               'roundtrip': {'glb_geometry_uv_texture_pixels': 'passed', 'obj_geometry_uv_diffuse_pixels': 'passed'},
+              'source_materials_provided': source_audit.get('material_count', 0) > 0,
+              'source_textures_provided': bool(texture_inventory(original)),
+              'display_only_neutral_material': display_only_material,
               'obj_pbr_losses': losses})
         card = {'schema_version': 1, 'settings': settings, 'character_id': character_id, 'job_id': job_id,
                 'source': {'path': str(model), 'sha256': source_audit['sha256'], 'immutable': True},
@@ -300,14 +324,26 @@ def package_character(model, source_root, job_id, character_id, output, front_ya
                                    'height': 2, 'units': 'normalized units, not metres or centimetres',
                                    'pivot': 'horizontal bounds centre at lowest geometry Y=0'},
                 'source_summary': original, 'working_summary': master_summary, 'obj_summary': obj_summary,
+                'source_materials_provided': source_audit.get('material_count', 0) > 0,
+                'source_textures_provided': bool(texture_inventory(original)),
+                'appearance': {'display_only_neutral_material': display_only_material,
+                               'loader_default_texture_discarded': display_only_material,
+                               'source_appearance_reconstructed': False,
+                               'note': ('Source OBJ supplied no material or texture. Neutral gray is for geometry inspection only; UVs do not imply a supplied texture.'
+                                        if untextured_obj else 'Source materials and texture images are preserved by roundtrip checks.')},
                 'capabilities': {'static_reference_render': True, 'uv_textured': bool(texture_inventory(master_summary)),
+                                 'uv_coordinates_present': master_summary['uv_mesh_count'] > 0,
                                  'rigged': False, 'animated': False, 'animation_ready': False,
                                  'identity_verified': False, 'unseen_views_verified': False,
                                  'mesh_repair_or_welding': False},
-                'material_master': 'character.glb', 'exchange_obj': 'character.obj',
+                'material_master': None if untextured_obj else 'character.glb',
+                'geometry_preview': 'character.glb', 'exchange_obj': 'character.obj',
                 'obj_pbr_losses': losses, 'files': []}
         text = f"# {character_id} · {job_id}\n\nExisting-reference reconstruction candidate for local use. Identity and inferred back views require visual review.\n\n"
-        text += 'Use `character.glb` as the PBR material master. `character.obj` + `character.mtl` + PNG files are a diffuse Blender exchange copy.\n\n'
+        if untextured_obj:
+            text += 'The source OBJ has no material or texture. `character.glb` is a geometry preview with a neutral gray display-only material, not returned PBR or restored character colour. UVs are retained; no placeholder diffuse image is exported. The original OBJ remains the native topology source.\n\n'
+        else:
+            text += 'Use `character.glb` as the PBR material master. `character.obj` + `character.mtl` + PNG files are a diffuse Blender exchange copy.\n\n'
         text += 'Height: 2 normalized units; +Y up; horizontal bounds centred; geometry bottom Y=0. This is not a real-world measurement.\n\n'
         text += f"Source SHA256: `{source_audit['sha256']}`. Front: {card['transformation']['front_calibration']}.\n\n"
         text += 'No rigging, topology repair, welding, retopology, or invented character views were added. The lowest source geometry is the pivot; it is not a semantic foot detector.\n\n'

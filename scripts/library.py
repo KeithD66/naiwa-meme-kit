@@ -260,7 +260,7 @@ def index_assets():
                     existing.setdefault(field, deepcopy(item[field]))
     # Local API reconstructions remain separate from the indexed network originals.
     # Missing derivative files are optional local outputs, never auto-regenerated.
-    for manifest in ['derived-assets.json', 'seed3d-assets.json', 'seed3d-local-variants.json']:
+    for manifest in ['derived-assets.json', 'seed3d-assets.json', 'seed3d-local-variants.json', 'hyper3d-assets.json']:
         for item in read_json(ROOT / 'library' / manifest, {}).get('assets', []):
             add(dict(item))
     ids = [item['id'] for item in assets]

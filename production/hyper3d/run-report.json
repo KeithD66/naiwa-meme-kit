@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-10-29T08:32:10.966946+00:00",
+  "job_id": "hyper3d-naiwa-quad-v1",
+  "model": "hyper3d-gen2-260112",
+  "task_id": "cgt-20261029144646-854ct",
+  "api_status": "succeeded",
+  "acceptance_status": "rejected_extra_limbs_missing_materials",
+  "inference_submissions": 1,
+  "reported_usage_tokens": 30000,
+  "pending_reserved_tokens": 0,
+  "declared_free_tokens": null,
+  "free_allowance_confirmed_by_user": true,
+  "account_remaining_verified": false,
+  "additional_retry_performed": false,
+  "input": {
+    "source_asset_id": "naiwa-frame-0000",
+    "source_sha256": "0186113e8cdf7e5b8109b7679eaa17fc3523e664f62010ed8db0894f858e0332",
+    "submitted_png_sha256": "d31f793199e249d8e893d2f51e281fd1eaa5f64aaea36679006d2deb2a2fc516",
+    "request_sha256": "eec2741ff6ba7390a9d4f8260d0d3eeb1711260f8fbe3f322b1ae3acddd99555",
+    "preparation": "same-size pixel-identical RGBA PNG from the existing WebP; no text character design"
+  },
+  "native": {
+    "path": "assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/files/model.obj",
+    "sha256": "964f21ce8f09bb4d860dab7950ef302bf09497756f2d870030e72a5d4923455f",
+    "bytes": 6569272,
+    "vertices": 43941,
+    "faces": 43947,
+    "source_face_vertex_histogram": {
+      "4": 43947
+    },
+    "quad_face_fraction": 1.0,
+    "triangle_equivalent_count": 87894,
+    "connected_components": 1,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "uv_count": 47369,
+    "source_materials_provided": false,
+    "source_textures_provided": false,
+    "vertex_colors_provided": false,
+    "download_container": "direct_obj"
+  },
+  "visual_review": {
+    "job_id": "hyper3d-naiwa-quad-v1",
+    "native_model_sha256": "964f21ce8f09bb4d860dab7950ef302bf09497756f2d870030e72a5d4923455f",
+    "preview_model_sha256": "3d7089298208fbafaa19de98fdb02bf633b114eb704945b36897efb610bcbb40",
+    "status": "rejected_extra_limbs_missing_materials",
+    "reviewed_at": "2026-10-29T08:06:03.078269+00:00",
+    "method": "Source PNG plus actual front and side renders inspected with view_image; independent third-party image claims not used.",
+    "findings": [
+      "The source has a single pair of hands holding the belly.",
+      "The reconstruction keeps the belly-holding arms and adds another pair extended sideways: four arms.",
+      "The actual OBJ has no material, vertex colour or texture files, despite requested PBR/HighPack.",
+      "100% quadrilateral topology is technically verified but does not establish character identity."
+    ],
+    "default_identity": false,
+    "color_identity_reference_ready": false,
+    "geometry_editing_only": true,
+    "rigged": false,
+    "animation_ready": false,
+    "publishing_allowed": false,
+    "automatic_retry": false
+  },
+  "artifacts": {
+    "gallery": "assets/private/hyper3d/index.html",
+    "geometry_preview": "assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/geometry-preview-package/character.glb",
+    "preview_is_native_quads": false,
+    "preview_material": "neutral_display_only_no_texture",
+    "views": 24,
+    "masks": 24,
+    "turntable": "assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/references/turntable.mp4",
+    "turntable_seconds": 6,
+    "mesh_animation": false,
+    "comparison": "assets/private/hyper3d/comparison/uniform-neutral/comparison.jpg",
+    "comparison_report": "assets/private/hyper3d/comparison/uniform-neutral/comparison-report.json",
+    "comparison_shared_half_frame": 1.8816408339825288,
+    "comparison_material": "neutral override only in memory; source PBR model files unchanged"
+  },
+  "reusable_changes": [
+    "Original quad mesh retained as a failed-identity benchmark, with separate native and triangulated geometry preview roles.",
+    "53 existing-file metadata records integrated into the main catalog with non-default geometry-inspection labels.",
+    "Fixed OBJ importer placeholder texture being mistaken for a source image when the real OBJ has UVs but no MTL.",
+    "Recorded actual direct OBJ delivery and missing materials instead of assuming a ZIP/PBR bundle."
+  ],
+  "verification": {
+    "full_suite_tests_passed": 110,
+    "skill_validator_passed": true,
+    "source_and_preview_hashes_bound": true,
+    "native_source_unchanged": true,
+    "preview_texture_images": 0,
+    "temporary_runtime_credential_file_removed": true,
+    "independent_final_audit_passed": true,
+    "gallery_local_links_verified": 7,
+    "reference_views_and_masks_hash_verified": true,
+    "ffprobe_turntable_passed": true,
+    "geometry_preview_is_not_multiview_identity_ready": true
+  },
+  "recommendation": "Keep the actual network reference and prior reviewed candidates for character identity. This Hyper3D result is a failure benchmark and geometry inspection sample, not a default video character asset."
+}

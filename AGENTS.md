@@ -14,9 +14,18 @@
 任务和预算恢复用 `seed3d-batch.py status/adopt/sync/download`，不重复 POST、不靠 DELETE 中止运行任务。
 
 用户随后追加 `hyper3d-gen2-260112` 供项目使用。它补充真实多图输入和原生Quad四边面候选，
-仍以现成角色图约束身份，额度与Seed3D独立核算；未声明该模型账号余额。
+仍以现成角色图约束身份，额度与Seed3D独立核算。用户已确认该模型有独立免费额度并明确授权开始，
+总量及账号剩余额度未知。本轮一次同图试制已成功：`cgt-20261029144646-854ct`，
+实际30,000 tokens、预留0；使用已有账本与任务ID，不重复POST。
 离线请求准备见 `scripts/hyper3d-request.py`、`library/hyper3d-plan.json` 与
 `skill/references/hyper3d.md`。准备器不提交任务；原生Quad与三角化预览件分开保存。
+本次直接返回无材质OBJ：43,947原生四边面100%，有UV，无颜色、MTL引用或贴图。
+实际看图发现保留原捧腹双臂又多出一对展开臂，成为四臂；按 `rejected_extra_limbs` +
+`missing_materials` 拒绝默认身份，仅保留失败样本/benchmark，不追加重试。
+`TAPose=false` 未避免额外肢体，不推测原因；拓扑成功不代表可用奶蛙。视觉记录为
+`production/hyper3d/visual-reviews.json`。请求PBR/HighPack没有证明纹理交付，不能称身份或视频参考就绪。
+文档ZIP说法与此件实物不同，
+按任务实物记录交付方式，不将本件direct OBJ外推至所有格式。原始OBJ哈希及计量见研究与账本。
 
 用户已要求扩充素材库，并进一步授权制作奶蛙 TCP 科普视频。按最新请求继续所需的本地研究、
 策划和制作，不再把早期 `production/001-script.md` 的脚本确认关口当成永久制作禁令。

@@ -173,17 +173,32 @@ POST超时保留预留、不重提；运行中不能DELETE刹车。
 ## Hyper3D 四边面候选接入
 
 `hyper3d-gen2-260112` 可补充1–5张图输入和Quad四边面编辑底模；TAPose仅请求静态姿态，
-不包含骨骼或角色动画。已准备同一奶蛙原图的Quad 50k/PBR/OBJ对照计划，原图WebP按相同
-RGBA像素转PNG，已有Hitem3D与Seed3D作为同源对照。当前完成离线接入，尚未提交推理。
+不包含骨骼或角色动画。用户确认有独立免费额度并授权开始后，同一奶蛙原图的Quad
+50k/PBR/HighPack/OBJ对照已完成一次，API报告30,000 tokens、预留归零。原图WebP按相同
+RGBA像素转PNG，已有Hitem3D与Seed3D作为同源对照；独立免费额度的总量和实际余额未核验。
+
+实际产物是直接返回的OBJ，共43,947个原生四边面（100%，原生三角面和五边以上n-gon均为0），
+等价三角形87,894个。按原始顶点索引统计为单连通分量，无边界边或非流形边。
+文件有UV，却没有材质、颜色、MTL引用或贴图；**请求PBR/HighPack不代表本次已交付纹理**。
+实际对照源图和灰预览后还发现：源图只有捧腹双臂，生成件保留捧腹臂的同时多出一对展开臂，
+成为四臂。身份结论为 **`rejected_extra_limbs` + `missing_materials`**，拒绝作默认奶蛙模型或
+视频身份参考。`TAPose=false` 未避免额外肢体，原因未确定；全Quad拓扑通过不能覆盖身份失败。
+本件保留为失败样本/benchmark，不追加重试；视觉证据见`production/hyper3d/visual-reviews.json`。
 
 ```bash
 .venv-render/bin/python scripts/hyper3d-request.py prepare hyper3d-naiwa-quad-v1 --dry-run
 .venv-render/bin/python scripts/hyper3d-request.py prepare hyper3d-naiwa-quad-v1
 ```
 
-本地准备不读密钥或消耗额度。官方每成功任务固定30,000 tokens、按量1.80元；
-该模型的免费额度与Seed3D分别计算，实际余额尚未核验。原生Quad文件须另存，
-不能把三角化的GLB/交换OBJ称作四边面。用法、验收与限制见
+以上仅复现离线准备，不会再次提交。已有任务`cgt-20261029144646-854ct`及独立账本
+`production/hyper3d/usage-ledger.json`，不要重复POST。官方按量单价1.80元/成功任务，
+不能据此声称本次已扣现金；该模型额度与Seed3D分别计算。
+原生件保留在`assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/files/model.obj`，
+其原始四边面与`geometry-preview-package/`中的三角化灰预览分开。
+本地图册为`assets/private/hyper3d/index.html`；`python3 scripts/build-hyper3d-library.py`
+可从已下载结果重建索引与图册，不调用推理。24视图、24 mask及转台均作几何失败样本检查。
+文档说下载ZIP，本次却直接得到OBJ，未来按实际响应检查，不能据一次推断所有格式。
+用法、验收与限制见
 [Hyper3D工作流](skill/references/hyper3d.md) 和 `library/hyper3d-plan.json`。
 
 ## 角色生态与雷霆节奏

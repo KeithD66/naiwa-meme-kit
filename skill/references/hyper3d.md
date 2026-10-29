@@ -3,6 +3,53 @@
 `hyper3d-gen2-260112` 是影眸的静态 3D 生成模型。对本项目有价值的补充是
 1–5 张图片输入、Quad 四边面网格、面数控制和 PBR 材质。生成视频、现成梗音效、
 骨骼绑定和角色动作仍需其它来源或工具。
+PBR是可请求的模型能力，逐件仍须检查实际交付；本次OBJ没有交付材质或贴图。
+
+## 本次实际结果
+
+用户已确认有独立免费额度并明确授权执行一次同图试制，总量与账号余额仍未知。
+`hyper3d-naiwa-quad-v1` 已成功，任务 `cgt-20261029144646-854ct` 的API实际报告
+30,000 tokens，`production/hyper3d/usage-ledger.json` 中预留为0。
+这份任务已经完成，恢复或查看时使用已有ID和文件，不能再次POST。
+
+本次下载是 **direct OBJ**，没有ZIP封装；官方查询文档所说“打包为ZIP”与这件实物不同。
+保留文档捕获和本次观测，不将一次OBJ结果外推为其它模型格式也一定直接返回。
+原始文件为：
+
+```text
+assets/private/hyper3d/models/hyper3d-naiwa-quad-v1/files/model.obj
+SHA-256: 964f21ce8f09bb4d860dab7950ef302bf09497756f2d870030e72a5d4923455f
+```
+
+`native-audit.json` 的源索引检查记录43,947个面，全为四顶点面；原生三角面及五边以上n-gon为0，
+等价三角形87,894个。单连通分量，边界边/非流形边为0，没有做焊接、修复或重新拓扑。
+这些是几何统计，不证明关节环线、无自交或变形质量。
+
+文件有UV，但没有 `mtllib`、`usemtl`、材质、顶点颜色或贴图。因此本件只能先作为
+**无材质的几何检查件**。实际查看源图与灰预览后，身份已被拒绝：源图只有捧腹双臂，
+生成件保留捧腹臂又多出一对展开臂，成为四臂。结论是 **`rejected_extra_limbs` +
+`missing_materials`**，不能作默认奶蛙模型或视频身份参考。`TAPose=false` 未避免额外肢体，
+原因未确定，不据此推测参数如何被服务处理。
+
+本件仅保留为失败样本/benchmark，不追加重试；`production/hyper3d/visual-reviews.json`
+记录实际视觉证据。43,947个全Quad面证明的是原生拓扑统计，不能推翻形象失败。
+PBR/HighPack请求也不能替代材质交付。原生OBJ与 `geometry-preview-package/` 的三角化灰预览分别保留，后者用于
+几何查看，不是带纹理PBR主本或原生四边面档案。
+本地图册为 `assets/private/hyper3d/index.html`，包含输入对照、灰模、转台和原件下载。
+`library/hyper3d-registry.json` 记录实测状态，`library/hyper3d-assets.json` 已接入素材检索；
+这53项文件均保留几何检查用途与身份拒绝标签，不升级为视频身份参考。
+
+```bash
+python3 scripts/build-hyper3d-library.py
+python3 scripts/library.py index
+python3 scripts/library.py search --query Hyper3D --local
+```
+
+24视图、24轮廓mask和6秒相机转台均由同一灰模本地渲染，无新推理。
+`comparison/uniform-neutral/comparison.jpg` 与报告统一三模型的高度、相机和中性显示材质，
+用于比较几何。中性材质只在内存中应用，原模型颜色和文件不变；不能据灰模图比较贴图质量。
+打包器已修复无MTL但有UV的OBJ会被加载器自动注入2×2灰图的问题：现在明确记录
+无源贴图、仅有中性显示材质，不再把占位图当供应商PBR交付。
 
 ## 何时使用
 
@@ -44,16 +91,21 @@ Hyper3D 接收 JPG/JPEG/PNG；现有 WebP 源图按原尺寸转 RGBA PNG，
   当前候选保留原姿态，实际是否遵从仍须看结果。
 - 官方固定每成功任务 30,000 tokens，当前按量价 1.80 元；模型列表所列免费额度
   不是当前账号余额，Seed3D 的 2M 也不自动共用。本计划限制一次试验、30,000 tokens，
-  本次接入阶段未提交。新的实际调用根据当时用户授权、模型额度与价格执行。
+  本次已报告30,000、预留归零；用户确认有独立免费额度，但未给总量，不把官方初始赠额
+  直接当作其当前余额，也不从单价推断已扣现金。新的调用再根据具体授权、额度和价格执行。
 
 通用 `ark-task.py` 支持一次显式 POST 和按任务 ID 查询，见 [生成工具说明](generation-tools.md)。
 它没有 Hyper3D 专用的原子额度台账或跨进程防重复提交能力；不能把请求准备器当成计费控制器。
 实际提交前登记独立执行记录，已有任务 ID 就查询；POST 超时保留不确定状态，不自动重发。
 结果及时下载到私有目录，记录 task_id、输入/原生输出哈希与实际用量。
+已有成功结果不因缺纹理而自动重提；先审查本件和交付差异，再决定有明确目的的新试验。
+任务文件按官方文档仅保留24小时，应及时转存，原始响应中的签名URL只留私有目录。
+`running` 不支持取消；成功后DELETE只删除任务记录，不退还用量。
 
 ## 生成后的验收与复用
 
-保留下载的原件、所有贴图和依赖。先用现有检查器读取原生 OBJ：
+保留实际下载的原件，以及确实交付的贴图和依赖。不要为满足清单而假定存在ZIP/MTL/贴图。
+先用现有检查器读取原生 OBJ：
 
 ```bash
 python3 scripts/inspect-model.py assets/private/hyper3d/models/JOB/files/model.obj \

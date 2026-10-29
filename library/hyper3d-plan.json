@@ -10,7 +10,8 @@
     "free_balance_verified": false,
     "declared_free_tokens": null,
     "payg_price_cny_per_success": 1.8,
-    "note": "独立Hyper3D额度未知；Seed3D的2M不是本模型额度。本地准备不调用API。"
+    "note": "用户确认Hyper3D有独立免费额度，总量未提供、账户余额未核验；已明确开始本次单成功任务30,000 tokens试验，不与Seed3D混记。",
+    "free_allowance_confirmed_by_user": true
   },
   "jobs": [
     {
